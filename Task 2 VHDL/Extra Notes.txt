@@ -1,0 +1,5 @@
+Arduino -> Data --> Random Data
+
+Transmiited to --> ESP32.
+
+ESp32 --> Showing Monitoring Through IP or Serial Monitor
