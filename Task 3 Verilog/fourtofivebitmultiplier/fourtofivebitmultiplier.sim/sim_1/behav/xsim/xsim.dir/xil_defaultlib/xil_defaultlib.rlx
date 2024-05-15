@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/AKSA-SDS/Task 3 Verilog/fourtofivebitmultiplier/fourtofivebitmultiplier.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/AKSA-SDS/Task 3 Verilog/fourtofivebitmultiplier/fourtofivebitmultiplier.srcs/sources_1/new/FullAdder.v,1715664764,verilog,,D:/AKSA-SDS/Task 3 Verilog/fourtofivebitmultiplier/fourtofivebitmultiplier.srcs/sources_1/new/HalfAdder.v,,FullAdder,,,,,,,,
+D:/AKSA-SDS/Task 3 Verilog/fourtofivebitmultiplier/fourtofivebitmultiplier.srcs/sources_1/new/HalfAdder.v,1715664764,verilog,,D:/AKSA-SDS/Task 3 Verilog/fourtofivebitmultiplier/fourtofivebitmultiplier.srcs/sources_1/new/arrayMultiplier.v,,HalfAdder,,,,,,,,
+D:/AKSA-SDS/Task 3 Verilog/fourtofivebitmultiplier/fourtofivebitmultiplier.srcs/sources_1/new/arrayMultiplier.v,1715678527,verilog,,D:/AKSA-SDS/Task 3 Verilog/fourtofivebitmultiplier/fourtofivebitmultiplier.srcs/sources_1/new/testMult.v,,arrayMultiplier,,,,,,,,
+D:/AKSA-SDS/Task 3 Verilog/fourtofivebitmultiplier/fourtofivebitmultiplier.srcs/sources_1/new/testMult.v,1715669863,verilog,,,,testMult,,,,,,,,
