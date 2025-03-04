@@ -1,0 +1,27 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace port SDO -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port SCLK -pg 1 -lvl 3 -x 590 -y 20 -defaultsOSRD
+preplace port SDI -pg 1 -lvl 3 -x 590 -y 240 -defaultsOSRD
+preplace port uart_tx -pg 1 -lvl 3 -x 590 -y 330 -defaultsOSRD
+preplace port CSn_n -pg 1 -lvl 3 -x 590 -y -10 -defaultsOSRD
+preplace inst spi_0 -pg 1 -lvl 1 -x 160 -y 190 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 2 -x 450 -y 130 -defaultsOSRD
+preplace inst uart_adc_0 -pg 1 -lvl 2 -x 450 -y 330 -defaultsOSRD
+preplace netloc clk_1 1 0 2 20 80 310
+preplace netloc reset_1 1 0 2 40 100 280J
+preplace netloc SDO_1 1 0 2 30 90 330J
+preplace netloc spi_0_SCLK 1 1 2 300 20 NJ
+preplace netloc spi_0_SDI 1 1 2 330 240 NJ
+preplace netloc spi_0_DATA_in 1 1 1 320 180n
+preplace netloc uart_adc_0_uart_tx 1 2 1 NJ 330
+preplace netloc spi_0_CSn_n 1 1 2 290 -10 N
+levelinfo -pg 1 0 160 450 590
+pagesize -pg 1 -db -bbox -sgen -80 -30 690 420
+"
+}
+

@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../bd/ADC_RX_Test/ip/ADC_RX_Test_spi_0_0/sim/ADC_RX_Test_spi_0_0.vhd" \
+"../../../bd/ADC_RX_Test/ip/ADC_RX_Test_uart_adc_0_0/sim/ADC_RX_Test_uart_adc_0_0.vhd" \
+"../../../bd/ADC_RX_Test/ip/ADC_RX_Test_ila_0_0/sim/ADC_RX_Test_ila_0_0.vhd" \
+"../../../bd/ADC_RX_Test/sim/ADC_RX_Test.vhd" \
+
+nosort

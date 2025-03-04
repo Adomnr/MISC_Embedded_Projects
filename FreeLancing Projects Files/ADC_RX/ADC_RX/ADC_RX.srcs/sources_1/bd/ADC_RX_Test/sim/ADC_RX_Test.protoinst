@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"ADC_RX_Test": {
+			"proto_instances": {
+			}
+		}
+	}
+}
