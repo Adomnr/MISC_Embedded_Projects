@@ -1,8 +1,0 @@
-Make a PowerPoint presentation of SDR / Software Defined Radio. The Presentation should include
-1. SDR Definition
-2. Difference between SDR and Conventional Radio.
-3. Benefits of SDR.
-4. Block Diagram / Architecture of SDR.
-5. Complex Numbers / IQ in SDR.
-6. Sensitivity in SDR.
-7. Dynamic Range in SDR.

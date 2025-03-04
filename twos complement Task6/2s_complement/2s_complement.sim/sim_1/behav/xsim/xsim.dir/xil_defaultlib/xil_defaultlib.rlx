@@ -1,9 +1,0 @@
-0.6
-2019.1
-May 24 2019
-15:06:07
-D:/AKSA-SDS/twos complement Task6/2s_complement/2s_complement.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-D:/AKSA-SDS/twos complement Task6/2s_complement/2s_complement.srcs/sim_1/new/tb_TwosComplement_Inversion_Adder.v,1716120560,verilog,,,,tb_TwosComplement_Inversion_Adder,,,,,,,,
-D:/AKSA-SDS/twos complement Task6/2s_complement/2s_complement.srcs/sim_1/new/tb_TwosComplement_XOR_Incrementer.v,1716120569,verilog,,,,tb_TwosComplement_XOR_Incrementer,,,,,,,,
-D:/AKSA-SDS/twos complement Task6/2s_complement/2s_complement.srcs/sources_1/new/TwosComplement_Inversion_Adder.v,1716119765,verilog,,D:/AKSA-SDS/twos complement Task6/2s_complement/2s_complement.srcs/sim_1/new/tb_TwosComplement_Inversion_Adder.v,,Adder10Bit;TwosComplement_Inversion_Adder,,,,,,,,
-D:/AKSA-SDS/twos complement Task6/2s_complement/2s_complement.srcs/sources_1/new/TwosComplement_XOR_Incrementor.v,1716119817,verilog,,D:/AKSA-SDS/twos complement Task6/2s_complement/2s_complement.srcs/sim_1/new/tb_TwosComplement_XOR_Incrementer.v,,Incrementer10Bit;TwosComplement_XOR_Incrementer,,,,,,,,

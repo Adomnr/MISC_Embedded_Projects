@@ -1,0 +1,47 @@
+RF Tuner down converts analog RF signals to analog IF Frequencies.
+A/D Converter digitzes the IF signal creating real digital samples.
+Digital Mixer and Local Oscillator translate digital IF to complex baseband
+Digital FIR Low Pass filter limits the complex baseband signal bandwidth.
+DDC = Complex Mixer + Local Oscillator + Decimating Low Pass Filter.
+Digital Signal Processing stage performs signal demodulation, etc.
+
+
+DDC: Two-Step Signal Processing
+
+Frequency Translation
+	Tuning (down conversion frequency) is controlled by Local Oscillator Setting
+Low Pass Filtering
+	Decimation Setting controls filter bandwidth AND decimation
+	As the filter bandwidth becomes lower, the decimation factor increases.
+
+Digital Upconverters - DUCs
+	Transmitter System
+	Interpolation
+
+Software Radio Transmitter
+
+DSP stage generates complex baseband digital signal
+Digital up Converter translates complex baseband digital signal.
+D/A converter converts real digital IF samples to analog IF signal.
+RF Upconverter translates analog IF signals to analog RF Frequencies
+Power amplifier boosts signal energy to antenna.
+
+
+
+Digital UpConverter
+
+D/A output rate must be high enough to satisfy Nyquist for IF output.
+Digital Mixer translates baseband samples up to IF frequency.
+Mixer must deliver output samples at the D/A sample rate.
+Mixer generates one output samples for each of two input samples.
+Local Oscillator & baseband sample rate must be at D/A sample raate
+Digital baseband input sample rate is much lower
+Interpolation filter solves the problem.
+
+Complex Interpolating Filter
+Interpolation filter increases the sampling rate of the complex baseband input signal.
+Interpolation Factor N determines the ratio.
+Interpolation does NOT change the baseband frequenct - just increases the sample rate.
+
+
+

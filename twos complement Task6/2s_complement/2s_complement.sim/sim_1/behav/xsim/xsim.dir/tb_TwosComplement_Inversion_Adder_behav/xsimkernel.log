@@ -1,4 +1,0 @@
-Running: xsim.dir/tb_TwosComplement_Inversion_Adder_behav/xsimk.exe -simmode gui -wdb tb_TwosComplement_Inversion_Adder_behav.wdb -simrunnum 0 -socket 58995
-Design successfully loaded
-Design Loading Memory Usage: 5900 KB (Peak: 5900 KB)
-Design Loading CPU Usage: 30 ms

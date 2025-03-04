@@ -1,1 +1,0 @@
--wto "3fef1bc9ccc6459eb0c2f392b8c4bbad" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "tb_TwosComplement_XOR_Incrementer_behav" "xil_defaultlib.tb_TwosComplement_XOR_Incrementer" "xil_defaultlib.glbl" -log "elaborate.log" 

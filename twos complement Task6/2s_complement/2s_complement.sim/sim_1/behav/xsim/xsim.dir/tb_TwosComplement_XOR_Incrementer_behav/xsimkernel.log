@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_TwosComplement_XOR_Incrementer_behav/xsimk.exe -simmode gui -wdb tb_TwosComplement_XOR_Incrementer_behav.wdb -simrunnum 0 -socket 58979
-Design successfully loaded
-Design Loading Memory Usage: 5944 KB (Peak: 5944 KB)
-Design Loading CPU Usage: 30 ms
-Simulation completed
-Simulation Memory Usage: 6540 KB (Peak: 6540 KB)
-Simulation CPU Usage: 30 ms
