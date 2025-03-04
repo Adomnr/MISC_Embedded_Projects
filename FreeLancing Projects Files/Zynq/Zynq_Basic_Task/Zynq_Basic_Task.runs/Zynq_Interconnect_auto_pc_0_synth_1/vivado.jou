@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 26 19:54:39 2024
+# Process ID: 12168
+# Current directory: D:/Extra_Projects/Zynq/Zynq_Basic_Task/Zynq_Basic_Task.runs/Zynq_Interconnect_auto_pc_0_synth_1
+# Command line: vivado.exe -log Zynq_Interconnect_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Zynq_Interconnect_auto_pc_0.tcl
+# Log file: D:/Extra_Projects/Zynq/Zynq_Basic_Task/Zynq_Basic_Task.runs/Zynq_Interconnect_auto_pc_0_synth_1/Zynq_Interconnect_auto_pc_0.vds
+# Journal file: D:/Extra_Projects/Zynq/Zynq_Basic_Task/Zynq_Basic_Task.runs/Zynq_Interconnect_auto_pc_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Zynq_Interconnect_auto_pc_0.tcl -notrace
