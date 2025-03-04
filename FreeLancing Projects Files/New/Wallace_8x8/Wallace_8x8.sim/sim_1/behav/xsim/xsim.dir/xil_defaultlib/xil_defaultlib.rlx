@@ -1,0 +1,7 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Extra_Projects/New/Wallace_8x8/Wallace_8x8.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Extra_Projects/New/Wallace_8x8/Wallace_8x8.srcs/sim_1/new/tb_wallace.v,1730649703,verilog,,D:/Extra_Projects/New/Wallace_8x8/Wallace_8x8.srcs/sources_1/new/wallace.v,,tb_wallace_multiplier,,,,,,,,
+D:/Extra_Projects/New/Wallace_8x8/Wallace_8x8.srcs/sources_1/new/wallace.v,1730649565,verilog,,D:/Extra_Projects/New/Wallace_8x8/Wallace_8x8.srcs/sim_1/new/tb_wallace.v,,FullAdder;HalfAdder;wallace_8x8_multiplier,,,,,,,,

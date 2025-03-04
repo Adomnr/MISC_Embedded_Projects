@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Extra_Projects/New/Submission/basysuart/basysuart.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Extra_Projects/New/Submission/basysuart/basysuart.srcs/sources_1/ip/memory_data/sim/memory_data.v,1729346603,verilog,,,,memory_data,,,,,,,,
+D:/Extra_Projects/New/Submission/basysuart/files/Edge_Detector.vhd,1729757272,vhdl,,,,edge_detector,,,,,,,,
+D:/Extra_Projects/New/Submission/basysuart/files/UART_TX.vhd,1729715720,vhdl,,,,uart_tx,,,,,,,,
+D:/Extra_Projects/New/Submission/basysuart/files/tb_top.vhd,1729754273,vhdl,,,,tb_top_wrapper,,,,,,,,
+D:/Extra_Projects/New/Submission/basysuart/files/top.vhd,1729767304,vhdl,,,,top,,,,,,,,
+D:/Extra_Projects/New/Submission/basysuart/files/uart_controller.vhd,1729766485,vhdl,,,,uart_controller,,,,,,,,

@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Extra_Projects/New/Submission/basysuart/files/Edge_Detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Edge_Detector'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Extra_Projects/New/Submission/basysuart/files/UART_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UART_TX'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Extra_Projects/New/Submission/basysuart/files/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Extra_Projects/New/Submission/basysuart/files/uart_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Extra_Projects/New/Submission/basysuart/files/tb_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_top_wrapper'

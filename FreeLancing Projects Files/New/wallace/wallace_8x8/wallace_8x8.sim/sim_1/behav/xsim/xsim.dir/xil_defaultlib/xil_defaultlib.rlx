@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Extra_Projects/New/wallace/wallace_8x8/wallace_8x8.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Extra_Projects/New/wallace/wallace_8x8/wallace_8x8.srcs/sim_1/new/tb_wallace_8x8.v,1730650633,verilog,,,,tb_wallace_8x8,,,,,,,,
+D:/Extra_Projects/New/wallace/wallace_8x8/wallace_8x8.srcs/sources_1/new/FA.v,1730662998,verilog,,D:/Extra_Projects/New/wallace/wallace_8x8/wallace_8x8.srcs/sources_1/new/HA.v,,FA,,,,,,,,
+D:/Extra_Projects/New/wallace/wallace_8x8/wallace_8x8.srcs/sources_1/new/HA.v,1730663023,verilog,,D:/Extra_Projects/New/wallace/wallace_8x8/wallace_8x8.srcs/sources_1/new/wallace_8x8.v,,HA,,,,,,,,
+D:/Extra_Projects/New/wallace/wallace_8x8/wallace_8x8.srcs/sources_1/new/wallace_8x8.v,1730650550,verilog,,D:/Extra_Projects/New/wallace/wallace_8x8/wallace_8x8.srcs/sim_1/new/tb_wallace_8x8.v,,wallace_8x8,,,,,,,,
