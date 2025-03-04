@@ -1,0 +1,65 @@
+% Open serial port connection
+serialPort = 'COMx';   % Replace 'COMx' with the actual COM port number (e.g., 'COM3')
+baudRate = 115200;     % Baud rate as per the specification
+
+s = serialport(serialPort, baudRate);  % Create the serial port object
+configureTerminator(s, 'CR/LF');       % Set terminator for the serial port (optional)
+flush(s);                              % Clear the serial buffer
+
+% Data reception
+startCode = uint32(hex2dec('55AACC03'));   % Start code as per the document
+endCode = uint32(hex2dec('AA5503CC'));     % End code
+receivedData = [];
+
+% Function to concatenate four 8-bit segments into a 32-bit word
+concatenate_32bit = @(b1, b2, b3, b4) bitor(bitor(bitor(bitor(uint32(b1), bitshift(uint32(b2), 8)), bitshift(uint32(b3), 16)), bitshift(uint32(b4), 24)));
+
+fprintf('Waiting for start code...\n');
+foundStartCode = false;
+
+% First, look for the start code
+while true
+    if s.NumBytesAvailable >= 4
+        % Read 4 bytes (32 bits) and check if they match the start code
+        data = read(s, 4, 'uint8');
+        value = concatenate_32bit(data(1), data(2), data(3), data(4));
+        
+        if value == startCode
+            fprintf('Start code received. Reading data...\n');
+            foundStartCode = true;
+            break;
+        end
+    end
+end
+
+% Now read the 8-bit data and concatenate to form 32-bit words
+if foundStartCode
+    while true
+        if s.NumBytesAvailable >= 4
+            % Read the next 4 bytes (each 8-bit) and concatenate them into a 32-bit word
+            byte1 = read(s, 1, 'uint8');
+            byte2 = read(s, 1, 'uint8');
+            byte3 = read(s, 1, 'uint8');
+            byte4 = read(s, 1, 'uint8');
+            
+            % Concatenate them to form a 32-bit word
+            dataWord = concatenate_32bit(byte1, byte2, byte3, byte4);
+            
+            % Check if this is the end code
+            if dataWord == endCode
+                fprintf('End code received. Transmission complete.\n');
+                break;
+            else
+                % Append the 32-bit word to the received data array
+                receivedData = [receivedData, dataWord];
+            end
+        end
+    end
+end
+
+% Post-process received data
+fprintf('Data received:\n');
+disp(receivedData);
+
+% Close serial port connection
+clear s;

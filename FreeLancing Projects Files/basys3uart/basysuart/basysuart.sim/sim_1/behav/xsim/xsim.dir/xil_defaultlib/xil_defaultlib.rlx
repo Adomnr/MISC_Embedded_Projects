@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Extra_Projects/basys3uart/basysuart/basysuart.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Extra_Projects/basys3uart/basysuart/basysuart.srcs/sim_1/new/tb_top_wrapper.vhd,1729360413,vhdl,,,,tb_top_wrapper,,,,,,,,
+D:/Extra_Projects/basys3uart/basysuart/basysuart.srcs/sources_1/ip/memory_data/sim/memory_data.v,1729346603,verilog,,,,memory_data,,,,,,,,
+D:/Extra_Projects/basys3uart/basysuart/basysuart.srcs/sources_1/new/top_wrapper.vhd,1729360730,vhdl,,,,top_wrapper,,,,,,,,
+D:/Extra_Projects/basys3uart/basysuart/basysuart.srcs/sources_1/new/uart_basys.vhd,1729360726,vhdl,,,,uart_basys,,,,,,,,

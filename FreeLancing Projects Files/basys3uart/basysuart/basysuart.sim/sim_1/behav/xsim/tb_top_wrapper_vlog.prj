@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog blk_mem_gen_v8_4_3  \
+"../../../../basysuart.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" \
+
+verilog xil_defaultlib  \
+"../../../../basysuart.srcs/sources_1/ip/memory_data/sim/memory_data.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
