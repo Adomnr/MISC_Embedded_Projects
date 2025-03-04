@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Files/FSM.v" \
+"../../../../Files/RVM.v" \
+"../../../../Files/RVM_wrapper.v" \
+"../../../../Files/bottle_counter.v" \
+"../../../../Files/can_counter.v" \
+"../../../../Files/clk_div.v" \
+"../../../../Files/display.v" \
+"../../../../Files/tb_RVM_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

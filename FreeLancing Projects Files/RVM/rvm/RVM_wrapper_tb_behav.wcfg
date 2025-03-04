@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="RVM_wrapper_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="RVM_wrapper_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999994600fs"></ZoomStartTime>
+      <ZoomEndTime time="1000001081fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="286"></NameColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="64" />
+   <wvobject fp_name="/RVM_wrapper_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/sensor" type="array">
+      <obj_property name="ElementShortName">sensor[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sensor[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/AF" type="logic">
+      <obj_property name="ElementShortName">AF</obj_property>
+      <obj_property name="ObjectShortName">AF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/BF" type="logic">
+      <obj_property name="ElementShortName">BF</obj_property>
+      <obj_property name="ObjectShortName">BF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/LED" type="logic">
+      <obj_property name="ElementShortName">LED</obj_property>
+      <obj_property name="ObjectShortName">LED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/SF" type="logic">
+      <obj_property name="ElementShortName">SF</obj_property>
+      <obj_property name="ObjectShortName">SF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/anodes" type="array">
+      <obj_property name="ElementShortName">anodes[3:0]</obj_property>
+      <obj_property name="ObjectShortName">anodes[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/cathodes" type="array">
+      <obj_property name="ElementShortName">cathodes[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cathodes[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider19">
+      <obj_property name="label">Clk_Div</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/clk_div_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/clk_div_0/clk_reset" type="logic">
+      <obj_property name="ElementShortName">clk_reset</obj_property>
+      <obj_property name="ObjectShortName">clk_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/clk_div_0/clk_div" type="logic">
+      <obj_property name="ElementShortName">clk_div</obj_property>
+      <obj_property name="ObjectShortName">clk_div</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/clk_div_0/divider_clk_counter" type="array">
+      <obj_property name="ElementShortName">divider_clk_counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">divider_clk_counter[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/clk_div_0/done_counter" type="array">
+      <obj_property name="ElementShortName">done_counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">done_counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/clk_div_0/clk_reset_det" type="logic">
+      <obj_property name="ElementShortName">clk_reset_det</obj_property>
+      <obj_property name="ObjectShortName">clk_reset_det</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/clk_div_0/clk_inv" type="logic">
+      <obj_property name="ElementShortName">clk_inv</obj_property>
+      <obj_property name="ObjectShortName">clk_inv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/clk_div_0/REQUIRED_CLK" type="array">
+      <obj_property name="ElementShortName">REQUIRED_CLK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REQUIRED_CLK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider28">
+      <obj_property name="label">FSM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/sensor" type="array">
+      <obj_property name="ElementShortName">sensor[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sensor[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/AF" type="logic">
+      <obj_property name="ElementShortName">AF</obj_property>
+      <obj_property name="ObjectShortName">AF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/SF" type="logic">
+      <obj_property name="ElementShortName">SF</obj_property>
+      <obj_property name="ObjectShortName">SF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/BF" type="logic">
+      <obj_property name="ElementShortName">BF</obj_property>
+      <obj_property name="ObjectShortName">BF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/BC" type="logic">
+      <obj_property name="ElementShortName">BC</obj_property>
+      <obj_property name="ObjectShortName">BC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/CC" type="logic">
+      <obj_property name="ElementShortName">CC</obj_property>
+      <obj_property name="ObjectShortName">CC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/LED" type="logic">
+      <obj_property name="ElementShortName">LED</obj_property>
+      <obj_property name="ObjectShortName">LED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/LED_ON" type="logic">
+      <obj_property name="ElementShortName">LED_ON</obj_property>
+      <obj_property name="ObjectShortName">LED_ON</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/state_counter" type="array">
+      <obj_property name="ElementShortName">state_counter[9:0]</obj_property>
+      <obj_property name="ObjectShortName">state_counter[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/data_counter" type="array">
+      <obj_property name="ElementShortName">data_counter[1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_counter[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/can_counter" type="array">
+      <obj_property name="ElementShortName">can_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">can_counter[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/bottle_counter" type="array">
+      <obj_property name="ElementShortName">bottle_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bottle_counter[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/Error_counter" type="array">
+      <obj_property name="ElementShortName">Error_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Error_counter[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/FSM_0/LED_Counter" type="array">
+      <obj_property name="ElementShortName">LED_Counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_Counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider47">
+      <obj_property name="label">Bottle Counter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/bottle_counter_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/bottle_counter_0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/bottle_counter_0/BC" type="logic">
+      <obj_property name="ElementShortName">BC</obj_property>
+      <obj_property name="ObjectShortName">BC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/bottle_counter_0/bot_counter" type="array">
+      <obj_property name="ElementShortName">bot_counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bot_counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/bottle_counter_0/BC_det" type="logic">
+      <obj_property name="ElementShortName">BC_det</obj_property>
+      <obj_property name="ObjectShortName">BC_det</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider53">
+      <obj_property name="label">Can Counter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/can_counter_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/can_counter_0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/can_counter_0/CC" type="logic">
+      <obj_property name="ElementShortName">CC</obj_property>
+      <obj_property name="ObjectShortName">CC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/can_counter_0/can_counter" type="array">
+      <obj_property name="ElementShortName">can_counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">can_counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/can_counter_0/CC_det" type="logic">
+      <obj_property name="ElementShortName">CC_det</obj_property>
+      <obj_property name="ObjectShortName">CC_det</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider59">
+      <obj_property name="label">Display</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/clk_div" type="logic">
+      <obj_property name="ElementShortName">clk_div</obj_property>
+      <obj_property name="ObjectShortName">clk_div</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/can_counter" type="array">
+      <obj_property name="ElementShortName">can_counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">can_counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/bottle_counter" type="array">
+      <obj_property name="ElementShortName">bottle_counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bottle_counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/cathodes" type="array">
+      <obj_property name="ElementShortName">cathodes[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cathodes[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/anodes" type="array">
+      <obj_property name="ElementShortName">anodes[3:0]</obj_property>
+      <obj_property name="ObjectShortName">anodes[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/switch" type="array">
+      <obj_property name="ElementShortName">switch[1:0]</obj_property>
+      <obj_property name="ObjectShortName">switch[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/clock_counter" type="array">
+      <obj_property name="ElementShortName">clock_counter[19:0]</obj_property>
+      <obj_property name="ObjectShortName">clock_counter[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/clk_counter_1" type="array">
+      <obj_property name="ElementShortName">clk_counter_1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_counter_1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/clk_counter_2" type="array">
+      <obj_property name="ElementShortName">clk_counter_2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_counter_2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/clk_counter_3" type="array">
+      <obj_property name="ElementShortName">clk_counter_3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_counter_3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RVM_wrapper_tb/DUT/RVM_i/display_0/switcheroni" type="array">
+      <obj_property name="ElementShortName">switcheroni[1:0]</obj_property>
+      <obj_property name="ObjectShortName">switcheroni[1:0]</obj_property>
+   </wvobject>
+</wave_config>

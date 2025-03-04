@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Extra_Projects/RVM/rvm/Files/FSM.v,1733247909,verilog,,D:/Extra_Projects/RVM/rvm/Files/RVM.v,,FSM,,,,,,,,
+D:/Extra_Projects/RVM/rvm/Files/RVM.v,1733247272,verilog,,D:/Extra_Projects/RVM/rvm/Files/RVM_wrapper.v,,RVM,,,,,,,,
+D:/Extra_Projects/RVM/rvm/Files/RVM_wrapper.v,1733179234,verilog,,D:/Extra_Projects/RVM/rvm/Files/bottle_counter.v,,RVM_wrapper,,,,,,,,
+D:/Extra_Projects/RVM/rvm/Files/bottle_counter.v,1733163688,verilog,,D:/Extra_Projects/RVM/rvm/Files/can_counter.v,,bottle_counter,,,,,,,,
+D:/Extra_Projects/RVM/rvm/Files/can_counter.v,1733163813,verilog,,D:/Extra_Projects/RVM/rvm/Files/clk_div.v,,can_counter,,,,,,,,
+D:/Extra_Projects/RVM/rvm/Files/clk_div.v,1733177932,verilog,,D:/Extra_Projects/RVM/rvm/Files/display.v,,clk_div,,,,,,,,
+D:/Extra_Projects/RVM/rvm/Files/display.v,1733179213,verilog,,D:/Extra_Projects/RVM/rvm/Files/tb_RVM_wrapper.v,,display,,,,,,,,
+D:/Extra_Projects/RVM/rvm/Files/tb_RVM_wrapper.v,1733247387,verilog,,,,RVM_wrapper_tb,,,,,,,,
+D:/Extra_Projects/RVM/rvm/rvm.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
