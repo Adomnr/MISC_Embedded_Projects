@@ -1,0 +1,2 @@
+Warning (10273): Verilog HDL warning at triStateBuff.v(31): extended using "x" or "z" File: D:/Extra_Projects/Tri_state_adder/triStateBus_restored/triStateBuff.v Line: 31
+Warning (10268): Verilog HDL information at triAdder16.v(59): always construct contains both blocking and non-blocking assignments File: D:/Extra_Projects/Tri_state_adder/triStateBus_restored/triAdder16.v Line: 59

@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Extra_Projects/tsa/eightBitRegister.v,1737818459,verilog,,D:/Extra_Projects/tsa/tri_state_adder_viv/tri_state_adder_viv.srcs/sources_1/new/triAdder16.v,,WBitRegister,,,,,,,,
+D:/Extra_Projects/tsa/testBus.v,1737826942,verilog,,,,testBus,,,,,,,,
+D:/Extra_Projects/tsa/triStateBuff.v,1737818350,verilog,,D:/Extra_Projects/tsa/triStateBus.v,,triStateBuff,,,,,,,,
+D:/Extra_Projects/tsa/triStateBus.v,1737825834,verilog,,D:/Extra_Projects/tsa/testBus.v,,triStateBus,,,,,,,,
+D:/Extra_Projects/tsa/tri_state_adder_viv/tri_state_adder_viv.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Extra_Projects/tsa/tri_state_adder_viv/tri_state_adder_viv.srcs/sources_1/new/triAdder16.v,1737819138,verilog,,D:/Extra_Projects/tsa/triStateBuff.v,,triWbitAdder,,,,,,,,

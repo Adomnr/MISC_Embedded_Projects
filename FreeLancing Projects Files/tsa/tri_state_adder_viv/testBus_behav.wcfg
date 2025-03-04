@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testBus_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testBus" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="147076060fs"></ZoomEndTime>
+      <Cursor1Time time="308454000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/testBus/uut/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/enbIn" type="logic">
+      <obj_property name="ElementShortName">enbIn</obj_property>
+      <obj_property name="ObjectShortName">enbIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/inData" type="array">
+      <obj_property name="ElementShortName">inData[15:0]</obj_property>
+      <obj_property name="ObjectShortName">inData[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/dataBus" type="array">
+      <obj_property name="ElementShortName">dataBus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataBus[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/enbA" type="logic">
+      <obj_property name="ElementShortName">enbA</obj_property>
+      <obj_property name="ObjectShortName">enbA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/enbB" type="logic">
+      <obj_property name="ElementShortName">enbB</obj_property>
+      <obj_property name="ObjectShortName">enbB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/enbC" type="logic">
+      <obj_property name="ElementShortName">enbC</obj_property>
+      <obj_property name="ObjectShortName">enbC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/enbD" type="logic">
+      <obj_property name="ElementShortName">enbD</obj_property>
+      <obj_property name="ObjectShortName">enbD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/ldA" type="logic">
+      <obj_property name="ElementShortName">ldA</obj_property>
+      <obj_property name="ObjectShortName">ldA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/dataOutA" type="array">
+      <obj_property name="ElementShortName">dataOutA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOutA[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/ldB" type="logic">
+      <obj_property name="ElementShortName">ldB</obj_property>
+      <obj_property name="ObjectShortName">ldB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/dataOutB" type="array">
+      <obj_property name="ElementShortName">dataOutB[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOutB[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/ldC" type="logic">
+      <obj_property name="ElementShortName">ldC</obj_property>
+      <obj_property name="ObjectShortName">ldC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/dataOutC" type="array">
+      <obj_property name="ElementShortName">dataOutC[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOutC[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/ldD" type="logic">
+      <obj_property name="ElementShortName">ldD</obj_property>
+      <obj_property name="ObjectShortName">ldD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/dataOutD" type="array">
+      <obj_property name="ElementShortName">dataOutD[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOutD[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/AdderOutA" type="array">
+      <obj_property name="ElementShortName">AdderOutA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">AdderOutA[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/enbAdd" type="logic">
+      <obj_property name="ElementShortName">enbAdd</obj_property>
+      <obj_property name="ObjectShortName">enbAdd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBus/uut/enbBusA" type="logic">
+      <obj_property name="ElementShortName">enbBusA</obj_property>
+      <obj_property name="ObjectShortName">enbBusA</obj_property>
+   </wvobject>
+</wave_config>

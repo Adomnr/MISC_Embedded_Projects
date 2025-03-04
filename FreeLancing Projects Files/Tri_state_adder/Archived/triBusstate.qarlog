@@ -1,0 +1,19 @@
+Quartus Prime Archive log --	D:/Extra_Projects/Tri_state_adder/Archived/triBusstate.qarlog
+
+Archive:	D:/Extra_Projects/Tri_state_adder/Archived/triBusstate.qar
+Date:		Sat Jan 25 22:15:13 2025
+Quartus Prime		23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+	=========== Files Selected: ===========
+D:/Extra_Projects/Tri_state_adder/triStateBus_restored/eightBitRegister.v
+D:/Extra_Projects/Tri_state_adder/triStateBus_restored/testBus.v
+D:/Extra_Projects/Tri_state_adder/triStateBus_restored/triAdder16.v
+D:/Extra_Projects/Tri_state_adder/triStateBus_restored/triStateBuff.v
+D:/Extra_Projects/Tri_state_adder/triStateBus_restored/triStateBus.qpf
+D:/Extra_Projects/Tri_state_adder/triStateBus_restored/triStateBus.qsf
+D:/Extra_Projects/Tri_state_adder/triStateBus_restored/triStateBus.v
+D:/Extra_Projects/Tri_state_adder/triStateBus_restored/triStateBus_assignment_defaults.qdf
+	======= Total: 8 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

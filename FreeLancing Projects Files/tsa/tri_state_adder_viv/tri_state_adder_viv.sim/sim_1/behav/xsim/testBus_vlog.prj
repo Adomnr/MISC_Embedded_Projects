@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../eightBitRegister.v" \
+"../../../../tri_state_adder_viv.srcs/sources_1/new/triAdder16.v" \
+"../../../../../triStateBuff.v" \
+"../../../../../triStateBus.v" \
+"../../../../../testBus.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

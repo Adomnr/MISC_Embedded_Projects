@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Extra_Projects/tsa/eightBitRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WBitRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Extra_Projects/tsa/tri_state_adder_viv/tri_state_adder_viv.srcs/sources_1/new/triAdder16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module triWbitAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Extra_Projects/tsa/triStateBuff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module triStateBuff
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Extra_Projects/tsa/triStateBus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module triStateBus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Extra_Projects/tsa/testBus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testBus

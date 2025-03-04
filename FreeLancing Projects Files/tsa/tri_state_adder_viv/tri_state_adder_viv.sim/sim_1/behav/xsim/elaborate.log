@@ -1,0 +1,16 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f5057a48cb934961bf822a2e845c4f3e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testBus_behav xil_defaultlib.testBus xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.triStateBuff(W=16)
+Compiling module xil_defaultlib.WBitRegister
+Compiling module xil_defaultlib.triWbitAdder
+Compiling module xil_defaultlib.triStateBus
+Compiling module xil_defaultlib.testBus
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testBus_behav
