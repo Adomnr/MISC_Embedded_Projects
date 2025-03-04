@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Extra_Projects/Lab_ADC/Lab_ADC/Lab_ADC.srcs/sim_1/new/tb_Lab_ADC.vhd,1729533213,vhdl,,,,tb_lab_adc,,,,,,,,
+D:/Extra_Projects/Lab_ADC/Lab_ADC/Lab_ADC.srcs/sim_1/new/tb_PreEmphasisFilter.vhd,1730058303,vhdl,,,,tb_preemphasisfilter,,,,,,,,
+D:/Extra_Projects/Lab_ADC/Lab_ADC/Lab_ADC.srcs/sim_1/new/tb_SPI_Master.vhd,1730057729,vhdl,,,,tb_spi_master,,,,,,,,
+D:/Extra_Projects/Lab_ADC/Lab_ADC/Lab_ADC.srcs/sources_1/new/Lab_ADC.vhd,1729533089,vhdl,D:/Extra_Projects/Lab_ADC/Lab_ADC/Lab_ADC.srcs/sim_1/new/tb_Lab_ADC.vhd,,,lab_adc,,,,,,,,
+D:/Extra_Projects/Lab_ADC/Lab_ADC/Lab_ADC.srcs/sources_1/new/PreEmphasisFilter.vhd,1730058676,vhdl,,,,preemphasisfilter,,,,,,,,
+D:/Extra_Projects/Lab_ADC/Lab_ADC/Lab_ADC.srcs/sources_1/new/SPI_Master.vhd,1730057689,vhdl,,,,spi_master,,,,,,,,
