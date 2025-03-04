@@ -1,0 +1,15 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado20192/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ae405a4365cd4b24ad176f214359a540 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CRC_tb_behav xil_defaultlib.CRC_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Extra_Projects/crc/CRC/CRC.srcs/sources_1/new/CRC.v" Line 156. Module CRC doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CRC
+Compiling module xil_defaultlib.CRC_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CRC_tb_behav

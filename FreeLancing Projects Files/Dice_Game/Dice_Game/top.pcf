@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Oct 26 11:44:58 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "anodes_out<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "cathodes_out<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "anodes_out<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "cathodes_out<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "anodes_out<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "cathodes_out<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "anodes_out<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "cathodes_out<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "cathodes_out<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "cathodes_out<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "cathodes_out<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "Rb" LOCATE = SITE "T10" LEVEL 1;
+COMP "Win" LOCATE = SITE "U16" LEVEL 1;
+COMP "clock" LOCATE = SITE "V10" LEVEL 1;
+COMP "Lose" LOCATE = SITE "V16" LEVEL 1;
+COMP "Reset" LOCATE = SITE "T9" LEVEL 1;
+SCHEMATIC END;
+
