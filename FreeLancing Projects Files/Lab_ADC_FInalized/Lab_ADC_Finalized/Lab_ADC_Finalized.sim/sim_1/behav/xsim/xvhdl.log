@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.srcs/sources_1/new/ADC_FSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADC_FSM'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.srcs/sources_1/bd/Lab_ADC/hdl/Lab_ADC_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_ADC_wrapper'

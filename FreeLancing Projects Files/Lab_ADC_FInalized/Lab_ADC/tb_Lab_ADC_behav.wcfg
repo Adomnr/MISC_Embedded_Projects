@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Top_Level_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_Top_Level" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="16180000001fs"></ZoomEndTime>
+      <Cursor1Time time="9580000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="164"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="84" />
+   <wvobject fp_name="/tb_Top_Level/tb_clk" type="logic">
+      <obj_property name="ElementShortName">tb_clk</obj_property>
+      <obj_property name="ObjectShortName">tb_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/tb_reset" type="logic">
+      <obj_property name="ElementShortName">tb_reset</obj_property>
+      <obj_property name="ObjectShortName">tb_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/tb_start" type="logic">
+      <obj_property name="ElementShortName">tb_start</obj_property>
+      <obj_property name="ObjectShortName">tb_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/tb_spi_data_in" type="logic">
+      <obj_property name="ElementShortName">tb_spi_data_in</obj_property>
+      <obj_property name="ObjectShortName">tb_spi_data_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/tb_spi_data_in" type="logic">
+      <obj_property name="ElementShortName">tb_spi_data_in</obj_property>
+      <obj_property name="ObjectShortName">tb_spi_data_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/tb_addr_in" type="array">
+      <obj_property name="ElementShortName">tb_addr_in[13:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_addr_in[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/tb_data_out" type="array">
+      <obj_property name="ElementShortName">tb_data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_data_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/tb_ready" type="logic">
+      <obj_property name="ElementShortName">tb_ready</obj_property>
+      <obj_property name="ObjectShortName">tb_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/tb_spi_clk_out" type="logic">
+      <obj_property name="ElementShortName">tb_spi_clk_out</obj_property>
+      <obj_property name="ObjectShortName">tb_spi_clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/tb_chip_sel_out" type="logic">
+      <obj_property name="ElementShortName">tb_chip_sel_out</obj_property>
+      <obj_property name="ObjectShortName">tb_chip_sel_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/spi_clk_out" type="logic">
+      <obj_property name="ElementShortName">spi_clk_out</obj_property>
+      <obj_property name="ObjectShortName">spi_clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/chip_sel_out" type="logic">
+      <obj_property name="ElementShortName">chip_sel_out</obj_property>
+      <obj_property name="ObjectShortName">chip_sel_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/spi_data_in" type="logic">
+      <obj_property name="ElementShortName">spi_data_in</obj_property>
+      <obj_property name="ObjectShortName">spi_data_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/adc_data_out" type="array">
+      <obj_property name="ElementShortName">adc_data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_data_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/spi_clk_div" type="array">
+      <obj_property name="ElementShortName">spi_clk_div[2:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_clk_div[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/start_flag" type="logic">
+      <obj_property name="ElementShortName">start_flag</obj_property>
+      <obj_property name="ObjectShortName">start_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/spi_clk" type="logic">
+      <obj_property name="ElementShortName">spi_clk</obj_property>
+      <obj_property name="ObjectShortName">spi_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/chip_select" type="logic">
+      <obj_property name="ElementShortName">chip_select</obj_property>
+      <obj_property name="ObjectShortName">chip_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/bit_count" type="other">
+      <obj_property name="ElementShortName">bit_count</obj_property>
+      <obj_property name="ObjectShortName">bit_count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/data_reg" type="array">
+      <obj_property name="ElementShortName">data_reg[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/shift_reg" type="array">
+      <obj_property name="ElementShortName">shift_reg[11:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_reg[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/read_done" type="logic">
+      <obj_property name="ElementShortName">read_done</obj_property>
+      <obj_property name="ObjectShortName">read_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/counter_delay" type="array">
+      <obj_property name="ElementShortName">counter_delay[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_delay[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/sample_in" type="array">
+      <obj_property name="ElementShortName">sample_in[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_in[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/addr_in" type="array">
+      <obj_property name="ElementShortName">addr_in[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_in[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ram_we" type="logic">
+      <obj_property name="ElementShortName">ram_we</obj_property>
+      <obj_property name="ObjectShortName">ram_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ram_addr_a" type="array">
+      <obj_property name="ElementShortName">ram_addr_a[13:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr_a[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ram_dina" type="array">
+      <obj_property name="ElementShortName">ram_dina[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_dina[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ram_addr_b" type="array">
+      <obj_property name="ElementShortName">ram_addr_b[13:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr_b[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ram_doutb" type="array">
+      <obj_property name="ElementShortName">ram_doutb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_doutb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/write_addr" type="array">
+      <obj_property name="ElementShortName">write_addr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">write_addr[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/write_en" type="logic">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/sample_counter" type="other">
+      <obj_property name="ElementShortName">sample_counter</obj_property>
+      <obj_property name="ObjectShortName">sample_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/PreEmphasisFilter_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/PreEmphasisFilter_inst/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/PreEmphasisFilter_inst/sample_in" type="array">
+      <obj_property name="ElementShortName">sample_in[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_in[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/PreEmphasisFilter_inst/sample_out" type="array">
+      <obj_property name="ElementShortName">sample_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/PreEmphasisFilter_inst/prev_sample" type="array">
+      <obj_property name="ElementShortName">prev_sample[11:0]</obj_property>
+      <obj_property name="ObjectShortName">prev_sample[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/PreEmphasisFilter_inst/curr_sample" type="array">
+      <obj_property name="ElementShortName">curr_sample[11:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_sample[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/PreEmphasisFilter_inst/filter_out" type="array">
+      <obj_property name="ElementShortName">filter_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">filter_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/spi_clk_out" type="logic">
+      <obj_property name="ElementShortName">spi_clk_out</obj_property>
+      <obj_property name="ObjectShortName">spi_clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/chip_sel_out" type="logic">
+      <obj_property name="ElementShortName">chip_sel_out</obj_property>
+      <obj_property name="ObjectShortName">chip_sel_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/spi_data_in" type="logic">
+      <obj_property name="ElementShortName">spi_data_in</obj_property>
+      <obj_property name="ObjectShortName">spi_data_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/adc_data_out" type="array">
+      <obj_property name="ElementShortName">adc_data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_data_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/spi_clk_div" type="array">
+      <obj_property name="ElementShortName">spi_clk_div[2:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_clk_div[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/spi_clk" type="logic">
+      <obj_property name="ElementShortName">spi_clk</obj_property>
+      <obj_property name="ObjectShortName">spi_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/chip_select" type="logic">
+      <obj_property name="ElementShortName">chip_select</obj_property>
+      <obj_property name="ObjectShortName">chip_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/bit_count" type="other">
+      <obj_property name="ElementShortName">bit_count</obj_property>
+      <obj_property name="ObjectShortName">bit_count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/data_reg" type="array">
+      <obj_property name="ElementShortName">data_reg[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/shift_reg" type="array">
+      <obj_property name="ElementShortName">shift_reg[11:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_reg[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/read_done" type="logic">
+      <obj_property name="ElementShortName">read_done</obj_property>
+      <obj_property name="ObjectShortName">read_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/start_flag" type="logic">
+      <obj_property name="ElementShortName">start_flag</obj_property>
+      <obj_property name="ObjectShortName">start_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/SPI_Master_inst/counter_delay" type="array">
+      <obj_property name="ElementShortName">counter_delay[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_delay[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/sample_in" type="array">
+      <obj_property name="ElementShortName">sample_in[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_in[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/addr_in" type="array">
+      <obj_property name="ElementShortName">addr_in[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_in[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ram_we" type="logic">
+      <obj_property name="ElementShortName">ram_we</obj_property>
+      <obj_property name="ObjectShortName">ram_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ram_addr_a" type="array">
+      <obj_property name="ElementShortName">ram_addr_a[13:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr_a[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ram_dina" type="array">
+      <obj_property name="ElementShortName">ram_dina[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_dina[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ram_addr_b" type="array">
+      <obj_property name="ElementShortName">ram_addr_b[13:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr_b[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/ram_doutb" type="array">
+      <obj_property name="ElementShortName">ram_doutb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_doutb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/write_addr" type="array">
+      <obj_property name="ElementShortName">write_addr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">write_addr[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/write_en" type="logic">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/sample_counter" type="other">
+      <obj_property name="ElementShortName">sample_counter</obj_property>
+      <obj_property name="ObjectShortName">sample_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_Level/uut/RAM_Controller_inst/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+</wave_config>

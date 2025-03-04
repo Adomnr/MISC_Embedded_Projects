@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 24 15:47:14 2024
+# Process ID: 18056
+# Current directory: D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.sim/sim_1/behav/xsim/xsim.dir/tb_top_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.sim/sim_1/behav/xsim/xsim.dir/tb_top_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace

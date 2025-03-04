@@ -1,0 +1,405 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 24 15:55:11 2024
+# Process ID: 5124
+# Current directory: D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.runs/synth_2
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.runs/synth_2/top.vds
+# Journal file: D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.srcs/sources_1/ip/memory_data/memory_data.xci
+
+INFO: [IP_Flow 19-2162] IP 'memory_data' is locked:
+* Current project part 'xc7a35tcpg236-1' and the part 'xc7a35tcsg325-1' used to customize the IP 'memory_data' do not match.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4944 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 806.434 ; gain = 179.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/top.vhd:57]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'UART_TX' declared at 'D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/UART_TX.vhd:25' bound to instance 'uut' of component 'UART_TX' [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/top.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'UART_TX' [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/UART_TX.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'UART_TX' (1#1) [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/UART_TX.vhd:36]
+INFO: [Synth 8-3491] module 'uart_controller' declared at 'D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/uart_controller.vhd:34' bound to instance 'uut2' of component 'uart_controller' [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/top.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'uart_controller' [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/uart_controller.vhd:51]
+	Parameter N bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'reset_in' is read in the process but is not in the sensitivity list [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/uart_controller.vhd:62]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/uart_controller.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'uart_controller' (2#1) [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/uart_controller.vhd:51]
+INFO: [Synth 8-3491] module 'memory_data' declared at 'D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.runs/synth_2/.Xil/Vivado-5124-AK-HWD-0095/realtime/memory_data_stub.vhdl:5' bound to instance 'uut3' of component 'memory_data' [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/top.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'memory_data' [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.runs/synth_2/.Xil/Vivado-5124-AK-HWD-0095/realtime/memory_data_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'Edge_Detector' declared at 'D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/Edge_Detector.vhd:8' bound to instance 'uut4' of component 'Edge_Detector' [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/top.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'Edge_Detector' [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/Edge_Detector.vhd:16]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/Edge_Detector.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'Edge_Detector' (3#1) [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/Edge_Detector.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'top' (4#1) [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/files/top.vhd:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 873.547 ; gain = 246.359
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 873.547 ; gain = 246.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 873.547 ; gain = 246.359
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.srcs/sources_1/ip/memory_data/memory_data/memory_data_in_context.xdc] for cell 'uut3'
+Finished Parsing XDC File [d:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.srcs/sources_1/ip/memory_data/memory_data/memory_data_in_context.xdc] for cell 'uut3'
+Parsing XDC File [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 992.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 992.941 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'uut3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for uut3. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_TX'
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'uart_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+               start_bit |                               01 |                               01
+               data_bits |                               10 |                               10
+                stop_bit |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                   start |                              001 |                              001
+                    data |                              010 |                              010
+                    stop |                              011 |                              011
+                    done |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_state_reg' using encoding 'sequential' in module 'uart_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 6     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module UART_TX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+Module uart_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 6     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 11    
+Module Edge_Detector 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\uut2/ready_out_reg )
+INFO: [Synth 8-3886] merging instance 'i_3/uut2/delay_counter_reg[6]' (FDE) to 'i_3/uut2/delay_counter_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut2/delay_counter_reg[7]' (FDE) to 'i_3/uut2/delay_counter_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut2/delay_counter_reg[4]' (FDE) to 'i_3/uut2/delay_counter_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut2/delay_counter_reg[5]' (FDE) to 'i_3/uut2/delay_counter_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut2/delay_counter_reg[8]' (FDE) to 'i_3/uut2/delay_counter_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_3/uut2/delay_counter_reg[9]' (FDE) to 'i_3/uut2/delay_counter_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\uut2/delay_counter_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uut2/memory_address_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |memory_data   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |memory_data_bbox_0 |     1|
+|2     |BUFG               |     1|
+|3     |CARRY4             |    24|
+|4     |LUT1               |     2|
+|5     |LUT2               |    75|
+|6     |LUT3               |     6|
+|7     |LUT4               |    41|
+|8     |LUT5               |    11|
+|9     |LUT6               |    32|
+|10    |FDCE               |    70|
+|11    |FDPE               |     1|
+|12    |FDRE               |    38|
+|13    |IBUF               |     3|
+|14    |OBUF               |     2|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+---------+----------------+------+
+|      |Instance |Module          |Cells |
++------+---------+----------------+------+
+|1     |top      |                |   338|
+|2     |  uut    |UART_TX         |   210|
+|3     |  uut2   |uart_controller |    87|
+|4     |  uut4   |Edge_Detector   |     3|
++------+---------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1001.887 ; gain = 374.699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1001.887 ; gain = 246.359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1001.887 ; gain = 374.699
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1013.590 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1013.590 ; gain = 625.531
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1013.590 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/file/Updated/Files_Projects/Extra_Projects/basys3uart/basysuart/basysuart.runs/synth_2/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 24 15:55:46 2024...

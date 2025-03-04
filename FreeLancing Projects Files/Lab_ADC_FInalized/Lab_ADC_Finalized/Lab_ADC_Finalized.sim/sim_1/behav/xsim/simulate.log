@@ -1,0 +1,26 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Block Memory Generator module Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_3 collision detected at time: 395000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 555000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 715000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 875000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 1035000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 1195000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 1355000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 1515000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 1675000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 1835000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 1995000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 2155000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 2315000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 2475000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 2635000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 2795000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 2955000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 3115000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 3275000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 3435000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 3595000, Instance: Lab_ADC_wrapper_tb.DUT.Lab_ADC_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+Note: Simulation complete
+Time: 4500 ns  Iteration: 0  Process: /Lab_ADC_wrapper_tb/stimulus_process  File: D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.srcs/sim_1/new/tb_Lab_ADC_wrapper.vhd

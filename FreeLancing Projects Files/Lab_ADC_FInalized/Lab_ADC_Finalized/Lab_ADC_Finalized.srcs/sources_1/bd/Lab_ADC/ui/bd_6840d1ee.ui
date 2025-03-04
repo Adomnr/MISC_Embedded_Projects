@@ -1,0 +1,46 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port chip_select_out -pg 1 -lvl 5 -x 2070 -y 520 -defaultsOSRD
+preplace port clock_in -pg 1 -lvl 0 -x -40 -y 300 -defaultsOSRD
+preplace port ready_out -pg 1 -lvl 5 -x 2070 -y 580 -defaultsOSRD
+preplace port reset_in -pg 1 -lvl 0 -x -40 -y 530 -defaultsOSRD
+preplace port spi_clk_out -pg 1 -lvl 5 -x 2070 -y 500 -defaultsOSRD
+preplace port spi_data_in -pg 1 -lvl 0 -x -40 -y 560 -defaultsOSRD
+preplace port start_in -pg 1 -lvl 0 -x -40 -y 420 -defaultsOSRD
+preplace portBus addr_in -pg 1 -lvl 0 -x -40 -y 640 -defaultsOSRD
+preplace portBus data_out -pg 1 -lvl 5 -x 2070 -y 280 -defaultsOSRD
+preplace inst CLK_DIVIDER_0 -pg 1 -lvl 1 -x 140 -y 290 -defaultsOSRD
+preplace inst Edge_Detector_0 -pg 1 -lvl 1 -x 140 -y 400 -defaultsOSRD
+preplace inst Edge_Detector_1 -pg 1 -lvl 1 -x 140 -y 520 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -x 970 -y 560 -defaultsOSRD
+preplace inst PreEmphasisFilter_0 -pg 1 -lvl 3 -x 970 -y 360 -defaultsOSRD
+preplace inst RAM_Controller_0 -pg 1 -lvl 2 -x 540 -y 530 -defaultsOSRD
+preplace inst threshold_0 -pg 1 -lvl 4 -x 1290 -y 340 -defaultsOSRD
+preplace inst ADC_FSM_0 -pg 1 -lvl 2 -x 540 -y 310 -defaultsOSRD
+preplace netloc ADC_FSM_0_addr_bram_out 1 1 2 310 190 740
+preplace netloc ADC_FSM_0_chip_select_out 1 2 3 760 260 N 260 1440
+preplace netloc ADC_FSM_0_ready_out 1 1 4 320 410 740 700 NJ 700 1450
+preplace netloc ADC_FSM_0_sample_out 1 2 1 790 310n
+preplace netloc ADC_FSM_0_spi_clk_out 1 2 3 750 250 N 250 1450
+preplace netloc CLK_DIVIDER_0_clock_out 1 1 2 280 180 780
+preplace netloc Edge_Detector_0_PULSE 1 1 1 270 400n
+preplace netloc Edge_Detector_1_PULSE 1 1 3 260 200 800 280 1130
+preplace netloc PreEmphasisFilter_0_sample_out 1 3 1 N 360
+preplace netloc RAM_Controller_0_memory_write_data_out 1 1 2 320 210 730
+preplace netloc RAM_Controller_0_ram_addr_a 1 2 1 770 500n
+preplace netloc RAM_Controller_0_ram_dina 1 2 1 N 540
+preplace netloc RAM_Controller_0_ram_we 1 2 1 750 500n
+preplace netloc addr_in_1 1 0 3 NJ 640 290J 420 760
+preplace netloc blk_mem_gen_0_doutb 1 2 3 810 240 N 240 1460
+preplace netloc clock_in_1 1 0 4 -20 170 N 170 N 170 1140
+preplace netloc reset_in_1 1 0 1 NJ 530
+preplace netloc spi_data_in_1 1 0 2 -10J 220 300J
+preplace netloc start_in_1 1 0 2 0J 230 290
+preplace netloc threshold_0_data_out 1 1 4 320 710 N 710 N 710 1430
+levelinfo -pg 1 -40 140 540 970 1290 2070
+pagesize -pg 1 -db -bbox -sgen -180 -80 2220 860
+"
+}
+0

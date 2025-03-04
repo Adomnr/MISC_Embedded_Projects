@@ -1,0 +1,22 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_ADC_FSM_0_0/sim/Lab_ADC_ADC_FSM_0_0.vhd,1731244200,vhdl,,,,lab_adc_adc_fsm_0_0,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_CLK_DIVIDER_0_0/sim/Lab_ADC_CLK_DIVIDER_0_0.vhd,1731229375,vhdl,,,,lab_adc_clk_divider_0_0,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_Edge_Detector_0_0/sim/Lab_ADC_Edge_Detector_0_0.vhd,1731229375,vhdl,,,,lab_adc_edge_detector_0_0,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_Edge_Detector_1_0/sim/Lab_ADC_Edge_Detector_1_0.vhd,1731229375,vhdl,,,,lab_adc_edge_detector_1_0,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_PreEmphasisFilter_0_0/sim/Lab_ADC_PreEmphasisFilter_0_0.vhd,1731229375,vhdl,,,,lab_adc_preemphasisfilter_0_0,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_RAM_Controller_0_0/sim/Lab_ADC_RAM_Controller_0_0.vhd,1731229375,vhdl,,,,lab_adc_ram_controller_0_0,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_blk_mem_gen_0_0/sim/Lab_ADC_blk_mem_gen_0_0.v,1731229375,verilog,,,,Lab_ADC_blk_mem_gen_0_0,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_threshold_0_0/sim/Lab_ADC_threshold_0_0.vhd,1731229375,vhdl,,,,lab_adc_threshold_0_0,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/sim/Lab_ADC.vhd,1731244199,vhdl,,,,lab_adc,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.srcs/sim_1/new/tb_Lab_ADC_wrapper.vhd,1731231224,vhdl,,,,lab_adc_wrapper_tb,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.srcs/sources_1/bd/Lab_ADC/hdl/Lab_ADC_wrapper.vhd,1731244756,vhdl,,,,lab_adc_wrapper,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.srcs/sources_1/new/ADC_FSM.vhd,1731244711,vhdl,,,,adc_fsm,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.srcs/sources_1/new/CLK_DIVIDER.vhd,1731171922,vhdl,,,,clk_divider,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.srcs/sources_1/new/Edge_Detector.vhd,1730643976,vhdl,,,,edge_detector,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.srcs/sources_1/new/PreEmphasisFilter.vhd,1730304779,vhdl,,,,preemphasisfilter,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.srcs/sources_1/new/RAM_Controller.vhd,1731223841,vhdl,,,,ram_controller,,,,,,,,
+D:/Extra_Projects/Lab_ADC_FInalized/Lab_ADC_Finalized/Lab_ADC_Finalized.srcs/sources_1/new/threshold.vhd,1731175169,vhdl,,,,threshold,,,,,,,,

@@ -1,0 +1,20 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/ADC_FSM.vhd" \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/CLK_DIVIDER.vhd" \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/Edge_Detector.vhd" \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/PreEmphasisFilter.vhd" \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/RAM_Controller.vhd" \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/threshold.vhd" \
+"../../../../Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_ADC_FSM_0_0/sim/Lab_ADC_ADC_FSM_0_0.vhd" \
+"../../../../Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_CLK_DIVIDER_0_0/sim/Lab_ADC_CLK_DIVIDER_0_0.vhd" \
+"../../../../Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_Edge_Detector_0_0/sim/Lab_ADC_Edge_Detector_0_0.vhd" \
+"../../../../Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_Edge_Detector_1_0/sim/Lab_ADC_Edge_Detector_1_0.vhd" \
+"../../../../Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_PreEmphasisFilter_0_0/sim/Lab_ADC_PreEmphasisFilter_0_0.vhd" \
+"../../../../Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_RAM_Controller_0_0/sim/Lab_ADC_RAM_Controller_0_0.vhd" \
+"../../../../Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/ip/Lab_ADC_threshold_0_0/sim/Lab_ADC_threshold_0_0.vhd" \
+"../../../../Lab_ADC_Finalized.ip_user_files/bd/Lab_ADC/sim/Lab_ADC.vhd" \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/bd/Lab_ADC/hdl/Lab_ADC_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

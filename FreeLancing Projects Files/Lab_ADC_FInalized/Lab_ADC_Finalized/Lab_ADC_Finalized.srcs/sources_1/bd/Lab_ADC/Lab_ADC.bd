@@ -1,0 +1,584 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD02B48E83078CFDE",
+      "device": "xc7a35tcpg236-1",
+      "name": "Lab_ADC",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "CLK_DIVIDER_0": "",
+      "Edge_Detector_0": "",
+      "Edge_Detector_1": "",
+      "blk_mem_gen_0": "",
+      "PreEmphasisFilter_0": "",
+      "RAM_Controller_0": "",
+      "threshold_0": "",
+      "ADC_FSM_0": ""
+    },
+    "ports": {
+      "addr_in": {
+        "direction": "I",
+        "left": "13",
+        "right": "0"
+      },
+      "chip_select_out": {
+        "direction": "O"
+      },
+      "clock_in": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Lab_ADC_clock_in",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "data_out": {
+        "direction": "O",
+        "left": "11",
+        "right": "0"
+      },
+      "ready_out": {
+        "direction": "O"
+      },
+      "reset_in": {
+        "direction": "I"
+      },
+      "spi_clk_out": {
+        "direction": "O"
+      },
+      "spi_data_in": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "start_in": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "CLK_DIVIDER_0": {
+        "vlnv": "xilinx.com:module_ref:CLK_DIVIDER:1.0",
+        "xci_name": "Lab_ADC_CLK_DIVIDER_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CLK_DIVIDER",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock_in": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Lab_ADC_clock_in",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clock_out": {
+            "type": "clk",
+            "direction": "O"
+          }
+        }
+      },
+      "Edge_Detector_0": {
+        "vlnv": "xilinx.com:module_ref:Edge_Detector:1.0",
+        "xci_name": "Lab_ADC_Edge_Detector_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Edge_Detector",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK_SYS": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Lab_ADC_clock_in",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "BUTTON_IN": {
+            "direction": "I"
+          },
+          "PULSE": {
+            "direction": "O"
+          }
+        }
+      },
+      "Edge_Detector_1": {
+        "vlnv": "xilinx.com:module_ref:Edge_Detector:1.0",
+        "xci_name": "Lab_ADC_Edge_Detector_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Edge_Detector",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK_SYS": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Lab_ADC_clock_in",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "BUTTON_IN": {
+            "direction": "I"
+          },
+          "PULSE": {
+            "direction": "O"
+          }
+        }
+      },
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "Lab_ADC_blk_mem_gen_0_0",
+        "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Enable_B": {
+            "value": "Always_Enabled"
+          },
+          "Memory_Type": {
+            "value": "Simple_Dual_Port_RAM"
+          },
+          "Operating_Mode_A": {
+            "value": "NO_CHANGE"
+          },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "16384"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "PreEmphasisFilter_0": {
+        "vlnv": "xilinx.com:module_ref:PreEmphasisFilter:1.0",
+        "xci_name": "Lab_ADC_PreEmphasisFilter_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "PreEmphasisFilter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Lab_ADC_CLK_DIVIDER_0_0_clock_out",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH"
+              }
+            }
+          },
+          "sample_in": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "sample_out": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
+      "RAM_Controller_0": {
+        "vlnv": "xilinx.com:module_ref:RAM_Controller:1.0",
+        "xci_name": "Lab_ADC_RAM_Controller_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RAM_Controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock_in": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset_in",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Lab_ADC_CLK_DIVIDER_0_0_clock_out",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset_in": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH"
+              }
+            }
+          },
+          "start_in": {
+            "direction": "I"
+          },
+          "ready_out": {
+            "direction": "I"
+          },
+          "sample_in": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "addr_in": {
+            "direction": "I",
+            "left": "14",
+            "right": "0"
+          },
+          "ram_we": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "ram_addr_a": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "ram_dina": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "memory_write_data_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "threshold_0": {
+        "vlnv": "xilinx.com:module_ref:threshold:1.0",
+        "xci_name": "Lab_ADC_threshold_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "threshold",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock_in": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset_in",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Lab_ADC_clock_in",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "reset_in": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
+      "ADC_FSM_0": {
+        "vlnv": "xilinx.com:module_ref:ADC_FSM:1.0",
+        "xci_name": "Lab_ADC_ADC_FSM_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ADC_FSM",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock_in": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset_in",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Lab_ADC_CLK_DIVIDER_0_0_clock_out",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset_in": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "start_in": {
+            "direction": "I"
+          },
+          "spi_data_in": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "spi_clk_out": {
+            "direction": "O"
+          },
+          "chip_select_out": {
+            "direction": "O"
+          },
+          "sample_out": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "addr_bram_out": {
+            "direction": "O",
+            "left": "14",
+            "right": "0"
+          },
+          "ready_out": {
+            "direction": "O"
+          },
+          "memory_write_done_in": {
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "nets": {
+      "ADC_FSM_0_addr_bram_out": {
+        "ports": [
+          "ADC_FSM_0/addr_bram_out",
+          "RAM_Controller_0/addr_in"
+        ]
+      },
+      "ADC_FSM_0_chip_select_out": {
+        "ports": [
+          "ADC_FSM_0/chip_select_out",
+          "chip_select_out"
+        ]
+      },
+      "ADC_FSM_0_ready_out": {
+        "ports": [
+          "ADC_FSM_0/ready_out",
+          "ready_out",
+          "RAM_Controller_0/ready_out"
+        ]
+      },
+      "ADC_FSM_0_sample_out": {
+        "ports": [
+          "ADC_FSM_0/sample_out",
+          "PreEmphasisFilter_0/sample_in"
+        ]
+      },
+      "ADC_FSM_0_spi_clk_out": {
+        "ports": [
+          "ADC_FSM_0/spi_clk_out",
+          "spi_clk_out"
+        ]
+      },
+      "CLK_DIVIDER_0_clock_out": {
+        "ports": [
+          "CLK_DIVIDER_0/clock_out",
+          "blk_mem_gen_0/clkb",
+          "blk_mem_gen_0/clka",
+          "PreEmphasisFilter_0/clk",
+          "RAM_Controller_0/clock_in",
+          "ADC_FSM_0/clock_in"
+        ]
+      },
+      "Edge_Detector_0_PULSE": {
+        "ports": [
+          "Edge_Detector_0/PULSE",
+          "RAM_Controller_0/start_in"
+        ]
+      },
+      "Edge_Detector_1_PULSE": {
+        "ports": [
+          "Edge_Detector_1/PULSE",
+          "PreEmphasisFilter_0/reset",
+          "RAM_Controller_0/reset_in",
+          "threshold_0/reset_in",
+          "ADC_FSM_0/reset_in"
+        ]
+      },
+      "PreEmphasisFilter_0_sample_out": {
+        "ports": [
+          "PreEmphasisFilter_0/sample_out",
+          "threshold_0/data_in"
+        ]
+      },
+      "RAM_Controller_0_memory_write_data_out": {
+        "ports": [
+          "RAM_Controller_0/memory_write_data_out",
+          "ADC_FSM_0/memory_write_done_in"
+        ]
+      },
+      "RAM_Controller_0_ram_addr_a": {
+        "ports": [
+          "RAM_Controller_0/ram_addr_a",
+          "blk_mem_gen_0/addra"
+        ]
+      },
+      "RAM_Controller_0_ram_dina": {
+        "ports": [
+          "RAM_Controller_0/ram_dina",
+          "blk_mem_gen_0/dina"
+        ]
+      },
+      "RAM_Controller_0_ram_we": {
+        "ports": [
+          "RAM_Controller_0/ram_we",
+          "blk_mem_gen_0/wea"
+        ]
+      },
+      "addr_in_1": {
+        "ports": [
+          "addr_in",
+          "blk_mem_gen_0/addrb"
+        ]
+      },
+      "blk_mem_gen_0_doutb": {
+        "ports": [
+          "blk_mem_gen_0/doutb",
+          "data_out"
+        ]
+      },
+      "clock_in_1": {
+        "ports": [
+          "clock_in",
+          "CLK_DIVIDER_0/clock_in",
+          "Edge_Detector_0/CLK_SYS",
+          "Edge_Detector_1/CLK_SYS",
+          "threshold_0/clock_in"
+        ]
+      },
+      "reset_in_1": {
+        "ports": [
+          "reset_in",
+          "Edge_Detector_1/BUTTON_IN"
+        ]
+      },
+      "spi_data_in_1": {
+        "ports": [
+          "spi_data_in",
+          "ADC_FSM_0/spi_data_in"
+        ]
+      },
+      "start_in_1": {
+        "ports": [
+          "start_in",
+          "Edge_Detector_0/BUTTON_IN",
+          "ADC_FSM_0/start_in"
+        ]
+      },
+      "threshold_0_data_out": {
+        "ports": [
+          "threshold_0/data_out",
+          "RAM_Controller_0/sample_in"
+        ]
+      }
+    }
+  }
+}

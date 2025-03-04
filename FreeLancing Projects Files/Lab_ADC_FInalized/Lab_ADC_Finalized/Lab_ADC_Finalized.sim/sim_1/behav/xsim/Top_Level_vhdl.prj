@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/Edge_Detector.vhd" \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/PreEmphasisFilter.vhd" \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/RAM_Controller.vhd" \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/SPI_Master.vhd" \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/threshold.vhd" \
+"../../../../Lab_ADC_Finalized.srcs/sources_1/new/Top_Level.vhd" \
+
+# Do not sort compile order
+nosort
