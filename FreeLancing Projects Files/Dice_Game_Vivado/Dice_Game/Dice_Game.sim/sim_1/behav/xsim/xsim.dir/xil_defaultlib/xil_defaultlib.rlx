@@ -1,0 +1,16 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/Adder.vhd,1729881528,vhdl,,,,adder,,,,,,,,
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/Control.vhd,1729963021,vhdl,,,,control,,,,,,,,
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/Test_Logic.vhd,1729886146,vhdl,,,,test_logic,,,,,,,,
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/bcdto7seg.vhd,1729967824,vhdl,,,,bcdto7seg,,,,,,,,
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/clock_divider.vhd,1729916336,vhdl,,,,clock_divider,,,,,,,,
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/clock_divider2.vhd,1729966083,vhdl,,,,clock_divider2,,,,,,,,
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/comparator.vhd,1729886865,vhdl,,,,comparator,,,,,,,,
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/edge_detector.vhd,1729874199,vhdl,,,,edge_detector,,,,,,,,
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/onetosix_counter.vhd,1730020405,vhdl,,,,onetosix_counter,,,,,,,,
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/point_register.vhd,1729916151,vhdl,,,,point_register,,,,,,,,
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/tb_top.vhd,1729966898,vhdl,,,,tb_top,,,,,,,,
+D:/Extra_Projects/Dice_Game_Vivado/Dice_Game/Dice_Game.srcs/sources_1/new/top.vhd,1730020427,vhdl,,,,top,,,,,,,,

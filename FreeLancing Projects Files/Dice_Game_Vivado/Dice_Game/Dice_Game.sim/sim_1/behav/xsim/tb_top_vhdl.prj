@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Dice_Game.srcs/sources_1/new/Adder.vhd" \
+"../../../../Dice_Game.srcs/sources_1/new/Control.vhd" \
+"../../../../Dice_Game.srcs/sources_1/new/Test_Logic.vhd" \
+"../../../../Dice_Game.srcs/sources_1/new/bcdto7seg.vhd" \
+"../../../../Dice_Game.srcs/sources_1/new/clock_divider.vhd" \
+"../../../../Dice_Game.srcs/sources_1/new/clock_divider2.vhd" \
+"../../../../Dice_Game.srcs/sources_1/new/comparator.vhd" \
+"../../../../Dice_Game.srcs/sources_1/new/edge_detector.vhd" \
+"../../../../Dice_Game.srcs/sources_1/new/onetosix_counter.vhd" \
+"../../../../Dice_Game.srcs/sources_1/new/point_register.vhd" \
+"../../../../Dice_Game.srcs/sources_1/new/top.vhd" \
+"../../../../Dice_Game.srcs/sources_1/new/tb_top.vhd" \
+
+# Do not sort compile order
+nosort

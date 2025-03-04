@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="359671916667fs"></ZoomStartTime>
+      <ZoomEndTime time="360110416668fs"></ZoomEndTime>
+      <Cursor1Time time="359745000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="96"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="76" />
+   <wvobject fp_name="/tb_top/clock_tb" type="logic">
+      <obj_property name="ElementShortName">clock_tb</obj_property>
+      <obj_property name="ObjectShortName">clock_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/reset_tb" type="logic">
+      <obj_property name="ElementShortName">reset_tb</obj_property>
+      <obj_property name="ObjectShortName">reset_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/rb_tb" type="logic">
+      <obj_property name="ElementShortName">rb_tb</obj_property>
+      <obj_property name="ObjectShortName">rb_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/win_tb" type="logic">
+      <obj_property name="ElementShortName">win_tb</obj_property>
+      <obj_property name="ObjectShortName">win_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/lose_tb" type="logic">
+      <obj_property name="ElementShortName">lose_tb</obj_property>
+      <obj_property name="ObjectShortName">lose_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/clock_period" type="other">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider7">
+      <obj_property name="label">Edge Button 1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut/BUTTON_IN" type="logic">
+      <obj_property name="ElementShortName">BUTTON_IN</obj_property>
+      <obj_property name="ObjectShortName">BUTTON_IN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut/PULSE" type="logic">
+      <obj_property name="ElementShortName">PULSE</obj_property>
+      <obj_property name="ObjectShortName">PULSE</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider7">
+      <obj_property name="label">Edge Button 2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut2/BUTTON_IN" type="logic">
+      <obj_property name="ElementShortName">BUTTON_IN</obj_property>
+      <obj_property name="ObjectShortName">BUTTON_IN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut2/PULSE" type="logic">
+      <obj_property name="ElementShortName">PULSE</obj_property>
+      <obj_property name="ObjectShortName">PULSE</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider14">
+      <obj_property name="label">Control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/Rb" type="logic">
+      <obj_property name="ElementShortName">Rb</obj_property>
+      <obj_property name="ObjectShortName">Rb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/D7_in" type="logic">
+      <obj_property name="ElementShortName">D7_in</obj_property>
+      <obj_property name="ObjectShortName">D7_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/D711_in" type="logic">
+      <obj_property name="ElementShortName">D711_in</obj_property>
+      <obj_property name="ObjectShortName">D711_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/D2312_in" type="logic">
+      <obj_property name="ElementShortName">D2312_in</obj_property>
+      <obj_property name="ObjectShortName">D2312_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/Eq_in" type="logic">
+      <obj_property name="ElementShortName">Eq_in</obj_property>
+      <obj_property name="ObjectShortName">Eq_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/Roll" type="logic">
+      <obj_property name="ElementShortName">Roll</obj_property>
+      <obj_property name="ObjectShortName">Roll</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/Win" type="logic">
+      <obj_property name="ElementShortName">Win</obj_property>
+      <obj_property name="ObjectShortName">Win</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/Lose" type="logic">
+      <obj_property name="ElementShortName">Lose</obj_property>
+      <obj_property name="ObjectShortName">Lose</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/Sp" type="logic">
+      <obj_property name="ElementShortName">Sp</obj_property>
+      <obj_property name="ObjectShortName">Sp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut3/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider14">
+      <obj_property name="label">Counter One</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut5/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut5/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut5/Roll_in" type="logic">
+      <obj_property name="ElementShortName">Roll_in</obj_property>
+      <obj_property name="ObjectShortName">Roll_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut5/counter_outting" type="array">
+      <obj_property name="ElementShortName">counter_outting[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_outting[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut5/counter_out" type="array">
+      <obj_property name="ElementShortName">counter_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut5/counter_counting" type="array">
+      <obj_property name="ElementShortName">counter_counting[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_counting[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider14">
+      <obj_property name="label">Counter Two</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut5/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut7/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut7/Roll_in" type="logic">
+      <obj_property name="ElementShortName">Roll_in</obj_property>
+      <obj_property name="ObjectShortName">Roll_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut7/counter_out" type="array">
+      <obj_property name="ElementShortName">counter_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut7/counter_counting" type="array">
+      <obj_property name="ElementShortName">counter_counting[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_counting[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider36">
+      <obj_property name="label">Clock Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut6/clock_in" type="logic">
+      <obj_property name="ElementShortName">clock_in</obj_property>
+      <obj_property name="ObjectShortName">clock_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut6/clock_out" type="logic">
+      <obj_property name="ElementShortName">clock_out</obj_property>
+      <obj_property name="ObjectShortName">clock_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut6/counter" type="other">
+      <obj_property name="ElementShortName">counter</obj_property>
+      <obj_property name="ObjectShortName">counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut6/slow_clk" type="logic">
+      <obj_property name="ElementShortName">slow_clk</obj_property>
+      <obj_property name="ObjectShortName">slow_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut6/FPGA_CLK_FREQUENCY" type="other">
+      <obj_property name="ElementShortName">FPGA_CLK_FREQUENCY</obj_property>
+      <obj_property name="ObjectShortName">FPGA_CLK_FREQUENCY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut6/REQUIRED_FREQUENCY" type="other">
+      <obj_property name="ElementShortName">REQUIRED_FREQUENCY</obj_property>
+      <obj_property name="ObjectShortName">REQUIRED_FREQUENCY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut6/MAX_COUNTER_VALUE" type="other">
+      <obj_property name="ElementShortName">MAX_COUNTER_VALUE</obj_property>
+      <obj_property name="ObjectShortName">MAX_COUNTER_VALUE</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider36">
+      <obj_property name="label">Clock Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut4/clock_in" type="logic">
+      <obj_property name="ElementShortName">clock_in</obj_property>
+      <obj_property name="ObjectShortName">clock_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut4/clock_out" type="logic">
+      <obj_property name="ElementShortName">clock_out</obj_property>
+      <obj_property name="ObjectShortName">clock_out</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider36">
+      <obj_property name="label">Clock Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut8/A" type="array">
+      <obj_property name="ElementShortName">A[2:0]</obj_property>
+      <obj_property name="ObjectShortName">A[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut8/B" type="array">
+      <obj_property name="ElementShortName">B[2:0]</obj_property>
+      <obj_property name="ObjectShortName">B[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut8/SUM" type="array">
+      <obj_property name="ElementShortName">SUM[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SUM[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider36">
+      <obj_property name="label">Clock Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut9/Sp_in" type="logic">
+      <obj_property name="ElementShortName">Sp_in</obj_property>
+      <obj_property name="ObjectShortName">Sp_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut9/SUM_IN" type="array">
+      <obj_property name="ElementShortName">SUM_IN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SUM_IN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut9/point_register_value" type="array">
+      <obj_property name="ElementShortName">point_register_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">point_register_value[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut9/point_register" type="array">
+      <obj_property name="ElementShortName">point_register[3:0]</obj_property>
+      <obj_property name="ObjectShortName">point_register[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider50">
+      <obj_property name="label">Comparator</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/sum_in" type="array">
+      <obj_property name="ElementShortName">sum_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/point_register_value" type="array">
+      <obj_property name="ElementShortName">point_register_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">point_register_value[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/Eq" type="logic">
+      <obj_property name="ElementShortName">Eq</obj_property>
+      <obj_property name="ObjectShortName">Eq</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider54">
+      <obj_property name="label">Test_Logic</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut11/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut11/sum_in" type="array">
+      <obj_property name="ElementShortName">sum_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut11/D7" type="logic">
+      <obj_property name="ElementShortName">D7</obj_property>
+      <obj_property name="ObjectShortName">D7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut11/D711" type="logic">
+      <obj_property name="ElementShortName">D711</obj_property>
+      <obj_property name="ObjectShortName">D711</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut11/D2312" type="logic">
+      <obj_property name="ElementShortName">D2312</obj_property>
+      <obj_property name="ObjectShortName">D2312</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider60">
+      <obj_property name="label">BCD To 7SEG</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut12/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut12/bcd_in_0" type="array">
+      <obj_property name="ElementShortName">bcd_in_0[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bcd_in_0[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut12/bcd_in_1" type="array">
+      <obj_property name="ElementShortName">bcd_in_1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bcd_in_1[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut12/cathodes" type="array">
+      <obj_property name="ElementShortName">cathodes[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cathodes[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut12/anodes" type="array">
+      <obj_property name="ElementShortName">anodes[7:0]</obj_property>
+      <obj_property name="ObjectShortName">anodes[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut12/clock_counter" type="other">
+      <obj_property name="ElementShortName">clock_counter</obj_property>
+      <obj_property name="ObjectShortName">clock_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut12/switch" type="logic">
+      <obj_property name="ElementShortName">switch</obj_property>
+      <obj_property name="ObjectShortName">switch</obj_property>
+   </wvobject>
+</wave_config>

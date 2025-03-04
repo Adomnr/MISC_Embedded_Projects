@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="95918852460fs"></ZoomEndTime>
+      <Cursor1Time time="35305000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="178"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="49" />
+   <wvobject fp_name="/tb_top/uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/sw" type="array">
+      <obj_property name="ElementShortName">sw[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/btn" type="array">
+      <obj_property name="ElementShortName">btn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/led" type="array">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/seven0" type="array">
+      <obj_property name="ElementShortName">seven0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seven0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/seven1" type="array">
+      <obj_property name="ElementShortName">seven1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seven1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/seven2" type="array">
+      <obj_property name="ElementShortName">seven2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seven2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/seven3" type="array">
+      <obj_property name="ElementShortName">seven3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seven3[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/clk_divided" type="logic">
+      <obj_property name="ElementShortName">clk_divided</obj_property>
+      <obj_property name="ObjectShortName">clk_divided</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/start_button" type="logic">
+      <obj_property name="ElementShortName">start_button</obj_property>
+      <obj_property name="ObjectShortName">start_button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/reset_button" type="logic">
+      <obj_property name="ElementShortName">reset_button</obj_property>
+      <obj_property name="ObjectShortName">reset_button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/playerA_button" type="logic">
+      <obj_property name="ElementShortName">playerA_button</obj_property>
+      <obj_property name="ObjectShortName">playerA_button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/playerB_button" type="logic">
+      <obj_property name="ElementShortName">playerB_button</obj_property>
+      <obj_property name="ObjectShortName">playerB_button</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider39">
+      <obj_property name="label">Battleship</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/X" type="array">
+      <obj_property name="ElementShortName">X[1:0]</obj_property>
+      <obj_property name="ObjectShortName">X[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/Y" type="array">
+      <obj_property name="ElementShortName">Y[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/pAb" type="logic">
+      <obj_property name="ElementShortName">pAb</obj_property>
+      <obj_property name="ObjectShortName">pAb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/pBb" type="logic">
+      <obj_property name="ElementShortName">pBb</obj_property>
+      <obj_property name="ObjectShortName">pBb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/disp0" type="array">
+      <obj_property name="ElementShortName">disp0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">disp0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/disp1" type="array">
+      <obj_property name="ElementShortName">disp1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">disp1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/disp2" type="array">
+      <obj_property name="ElementShortName">disp2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">disp2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/disp3" type="array">
+      <obj_property name="ElementShortName">disp3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">disp3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/led" type="array">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/counter" type="array">
+      <obj_property name="ElementShortName">counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/input_count" type="array">
+      <obj_property name="ElementShortName">input_count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">input_count[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/mapA" type="array">
+      <obj_property name="ElementShortName">mapA[0:3][3:0]</obj_property>
+      <obj_property name="ObjectShortName">mapA[0:3][3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/mapB" type="array">
+      <obj_property name="ElementShortName">mapB[0:3][3:0]</obj_property>
+      <obj_property name="ObjectShortName">mapB[0:3][3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/scoreA" type="array">
+      <obj_property name="ElementShortName">scoreA[2:0]</obj_property>
+      <obj_property name="ObjectShortName">scoreA[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/scoreB" type="array">
+      <obj_property name="ElementShortName">scoreB[2:0]</obj_property>
+      <obj_property name="ObjectShortName">scoreB[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/Z" type="logic">
+      <obj_property name="ElementShortName">Z</obj_property>
+      <obj_property name="ObjectShortName">Z</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/IDLE" type="array">
+      <obj_property name="ElementShortName">IDLE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/SHOW_A" type="array">
+      <obj_property name="ElementShortName">SHOW_A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SHOW_A[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/A_IN" type="array">
+      <obj_property name="ElementShortName">A_IN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">A_IN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/ERROR_A" type="array">
+      <obj_property name="ElementShortName">ERROR_A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ERROR_A[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/SHOW_B" type="array">
+      <obj_property name="ElementShortName">SHOW_B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SHOW_B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/B_IN" type="array">
+      <obj_property name="ElementShortName">B_IN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B_IN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/ERROR_B" type="array">
+      <obj_property name="ElementShortName">ERROR_B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ERROR_B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/SHOW_SCORE" type="array">
+      <obj_property name="ElementShortName">SHOW_SCORE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SHOW_SCORE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/A_SHOOT" type="array">
+      <obj_property name="ElementShortName">A_SHOOT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">A_SHOOT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/A_SINK" type="array">
+      <obj_property name="ElementShortName">A_SINK[3:0]</obj_property>
+      <obj_property name="ObjectShortName">A_SINK[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/A_WIN" type="array">
+      <obj_property name="ElementShortName">A_WIN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">A_WIN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/B_SHOOT" type="array">
+      <obj_property name="ElementShortName">B_SHOOT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B_SHOOT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/B_SINK" type="array">
+      <obj_property name="ElementShortName">B_SINK[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B_SINK[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut10/B_WIN" type="array">
+      <obj_property name="ElementShortName">B_WIN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B_WIN[3:0]</obj_property>
+   </wvobject>
+</wave_config>
