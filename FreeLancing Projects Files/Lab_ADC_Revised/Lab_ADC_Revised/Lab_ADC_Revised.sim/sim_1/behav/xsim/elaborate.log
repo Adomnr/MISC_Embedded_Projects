@@ -1,0 +1,61 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0eace90e0884470aaab61812e0df4c85 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_3 -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Lab_ADC_wrapper_tb_behav xil_defaultlib.Lab_ADC_wrapper_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package mult_gen_v12_0_15.mult_gen_v12_0_15_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package mult_gen_v12_0_15.mult_gen_v12_0_15_pkg
+Compiling package ieee.std_logic_signed
+Compiling package mult_gen_v12_0_15.dsp_pkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIVIDER [clk_divider_default]
+Compiling architecture lab_adc_clk_divider_0_0_arch of entity xil_defaultlib.Lab_ADC_CLK_DIVIDER_0_0 [lab_adc_clk_divider_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Edge_Detector [edge_detector_default]
+Compiling architecture lab_adc_edge_detector_0_0_arch of entity xil_defaultlib.Lab_ADC_Edge_Detector_0_0 [lab_adc_edge_detector_0_0_defaul...]
+Compiling architecture lab_adc_edge_detector_1_0_arch of entity xil_defaultlib.Lab_ADC_Edge_Detector_1_0 [lab_adc_edge_detector_1_0_defaul...]
+Compiling architecture behavioral of entity xil_defaultlib.ADC_FSM [adc_fsm_default]
+Compiling architecture lab_adc_adc_fsm_0_0_arch of entity xil_defaultlib.Lab_ADC_ADC_FSM_0_0 [lab_adc_adc_fsm_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.PreEmphasisFilter [preemphasisfilter_default]
+Compiling architecture lab_adc_preemphasisfilter_0_0_arch of entity xil_defaultlib.Lab_ADC_PreEmphasisFilter_0_0 [lab_adc_preemphasisfilter_0_0_de...]
+Compiling architecture behavioral of entity xil_defaultlib.RAM_Controller [ram_controller_default]
+Compiling architecture lab_adc_ram_controller_0_0_arch of entity xil_defaultlib.Lab_ADC_RAM_Controller_0_0 [lab_adc_ram_controller_0_0_defau...]
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.Lab_ADC_blk_mem_gen_0_0
+Compiling architecture behavioral of entity xil_defaultlib.threshold [threshold_default]
+Compiling architecture lab_adc_threshold_0_0_arch of entity xil_defaultlib.Lab_ADC_threshold_0_0 [lab_adc_threshold_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.Lab_ADC_imp_1VKOXDM [lab_adc_imp_1vkoxdm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Lab_Window_Controller [lab_window_controller_default]
+Compiling architecture lab_adc_lab_window_controller_0_0_arch of entity xil_defaultlib.Lab_ADC_Lab_Window_Controller_0_0 [lab_adc_lab_window_controller_0_...]
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.Lab_ADC_blk_mem_gen_1_0
+Compiling architecture xilinx of entity mult_gen_v12_0_15.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_15.op_resize [\op_resize(ai_width=12,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_15.dsp [\dsp(c_xdevicefamily="artix7",c_...]
+Compiling architecture xilinx of entity mult_gen_v12_0_15.mult_gen_v12_0_15_viv [\mult_gen_v12_0_15_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_15.mult_gen_v12_0_15 [\mult_gen_v12_0_15(c_xdevicefami...]
+Compiling architecture lab_adc_mult_gen_0_0_arch of entity xil_defaultlib.Lab_ADC_mult_gen_0_0 [lab_adc_mult_gen_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.Lab_Window_imp_3HQDKG [lab_window_imp_3hqdkg_default]
+Compiling architecture lab_adc_ila_0_0_arch of entity xil_defaultlib.Lab_ADC_ila_0_0 [lab_adc_ila_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.Lab_ADC [lab_adc_default]
+Compiling architecture structure of entity xil_defaultlib.Lab_ADC_wrapper [lab_adc_wrapper_default]
+Compiling architecture sim of entity xil_defaultlib.lab_adc_wrapper_tb
+Built simulation snapshot Lab_ADC_wrapper_tb_behav

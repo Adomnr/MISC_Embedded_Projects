@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov 16 10:39:36 2024
+# Process ID: 13532
+# Current directory: D:/Extra_Projects/Lab_ADC_Revised/Lab_ADC_Revised/Lab_ADC_Revised.runs/synth_1
+# Command line: vivado.exe -log Lab_ADC_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab_ADC_wrapper.tcl
+# Log file: D:/Extra_Projects/Lab_ADC_Revised/Lab_ADC_Revised/Lab_ADC_Revised.runs/synth_1/Lab_ADC_wrapper.vds
+# Journal file: D:/Extra_Projects/Lab_ADC_Revised/Lab_ADC_Revised/Lab_ADC_Revised.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Lab_ADC_wrapper.tcl -notrace

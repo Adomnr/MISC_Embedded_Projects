@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Extra_Projects/Lab_ADC_Revised/Lab_ADC_Revised/Lab_ADC_Revised.ip_user_files/bd/Lab_ADC/sim/Lab_ADC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_ADC_imp_1VKOXDM'
+INFO: [VRFC 10-3107] analyzing entity 'Lab_Window_imp_3HQDKG'
+INFO: [VRFC 10-3107] analyzing entity 'Lab_ADC'

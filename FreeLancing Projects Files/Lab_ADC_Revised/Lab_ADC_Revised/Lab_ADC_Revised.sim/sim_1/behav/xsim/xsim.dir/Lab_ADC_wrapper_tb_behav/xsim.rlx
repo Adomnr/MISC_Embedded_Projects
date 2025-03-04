@@ -1,0 +1,12 @@
+
+{ 
+    crc :  7702232798269596504  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 0eace90e0884470aaab61812e0df4c85 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_3 -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Lab_ADC_wrapper_tb_behav xil_defaultlib.Lab_ADC_wrapper_tb xil_defaultlib.glbl" , 
+    buildDate : "May 24 2019" , 
+    buildTime : "15:06:07" , 
+    linkCmd : "D:\\Vivado\\Vivado\\2019.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/Lab_ADC_wrapper_tb_behav/xsimk.exe\"   \"xsim.dir/Lab_ADC_wrapper_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/Lab_ADC_wrapper_tb_behav/obj/xsim_1.win64.obj\" -L\"D:\\Vivado\\Vivado\\2019.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Lab_ADC_wrapper_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Lab_ADC_wrapper_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="29900000001fs"></ZoomEndTime>
+      <Cursor1Time time="235000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="286"></NameColumnWidth>
+      <ValueColumnWidth column_width="125"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="61" />
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/addr_in" type="array">
+      <obj_property name="ElementShortName">addr_in[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_in[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/chip_select_out" type="logic">
+      <obj_property name="ElementShortName">chip_select_out</obj_property>
+      <obj_property name="ObjectShortName">chip_select_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/clock_in" type="logic">
+      <obj_property name="ElementShortName">clock_in</obj_property>
+      <obj_property name="ObjectShortName">clock_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/ready_out" type="logic">
+      <obj_property name="ElementShortName">ready_out</obj_property>
+      <obj_property name="ObjectShortName">ready_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/reset_in" type="logic">
+      <obj_property name="ElementShortName">reset_in</obj_property>
+      <obj_property name="ObjectShortName">reset_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/spi_clk_out" type="logic">
+      <obj_property name="ElementShortName">spi_clk_out</obj_property>
+      <obj_property name="ObjectShortName">spi_clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/spi_data_in" type="logic">
+      <obj_property name="ElementShortName">spi_data_in</obj_property>
+      <obj_property name="ObjectShortName">spi_data_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/start_in" type="logic">
+      <obj_property name="ElementShortName">start_in</obj_property>
+      <obj_property name="ObjectShortName">start_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider27">
+      <obj_property name="label">ADC_FSM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/clock_in" type="logic">
+      <obj_property name="ElementShortName">clock_in</obj_property>
+      <obj_property name="ObjectShortName">clock_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/start_in" type="logic">
+      <obj_property name="ElementShortName">start_in</obj_property>
+      <obj_property name="ObjectShortName">start_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/reset_in" type="logic">
+      <obj_property name="ElementShortName">reset_in</obj_property>
+      <obj_property name="ObjectShortName">reset_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/spi_data_in" type="logic">
+      <obj_property name="ElementShortName">spi_data_in</obj_property>
+      <obj_property name="ObjectShortName">spi_data_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/spi_clk_out" type="logic">
+      <obj_property name="ElementShortName">spi_clk_out</obj_property>
+      <obj_property name="ObjectShortName">spi_clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/chip_select_out" type="logic">
+      <obj_property name="ElementShortName">chip_select_out</obj_property>
+      <obj_property name="ObjectShortName">chip_select_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/sample_out" type="array">
+      <obj_property name="ElementShortName">sample_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/addr_bram_out" type="array">
+      <obj_property name="ElementShortName">addr_bram_out[14:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_bram_out[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/ready_out" type="logic">
+      <obj_property name="ElementShortName">ready_out</obj_property>
+      <obj_property name="ObjectShortName">ready_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/memory_write_done_in" type="logic">
+      <obj_property name="ElementShortName">memory_write_done_in</obj_property>
+      <obj_property name="ObjectShortName">memory_write_done_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/bit_counter" type="other">
+      <obj_property name="ElementShortName">bit_counter</obj_property>
+      <obj_property name="ObjectShortName">bit_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/shift_reg" type="array">
+      <obj_property name="ElementShortName">shift_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/tri_state_counter" type="other">
+      <obj_property name="ElementShortName">tri_state_counter</obj_property>
+      <obj_property name="ObjectShortName">tri_state_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/ADC_FSM_0/U0/address_bram" type="array">
+      <obj_property name="ElementShortName">address_bram[14:0]</obj_property>
+      <obj_property name="ObjectShortName">address_bram[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider28">
+      <obj_property name="label">Pre_Emphasis_Filter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/PreEmphasisFilter_0/U0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/PreEmphasisFilter_0/U0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/PreEmphasisFilter_0/U0/sample_in" type="array">
+      <obj_property name="ElementShortName">sample_in[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_in[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/PreEmphasisFilter_0/U0/sample_out" type="array">
+      <obj_property name="ElementShortName">sample_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/PreEmphasisFilter_0/U0/prev_sample" type="array">
+      <obj_property name="ElementShortName">prev_sample[11:0]</obj_property>
+      <obj_property name="ObjectShortName">prev_sample[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/PreEmphasisFilter_0/U0/curr_sample" type="array">
+      <obj_property name="ElementShortName">curr_sample[11:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_sample[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/PreEmphasisFilter_0/U0/filter_out" type="array">
+      <obj_property name="ElementShortName">filter_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">filter_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider36">
+      <obj_property name="label">Threshold</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/threshold_0/U0/clock_in" type="logic">
+      <obj_property name="ElementShortName">clock_in</obj_property>
+      <obj_property name="ObjectShortName">clock_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/threshold_0/U0/reset_in" type="logic">
+      <obj_property name="ElementShortName">reset_in</obj_property>
+      <obj_property name="ObjectShortName">reset_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/threshold_0/U0/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/threshold_0/U0/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/threshold_0/U0/threshold_value" type="array">
+      <obj_property name="ElementShortName">threshold_value[5:0]</obj_property>
+      <obj_property name="ObjectShortName">threshold_value[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider42">
+      <obj_property name="label">BRAM Controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/RAM_Controller_0/U0/clock_in" type="logic">
+      <obj_property name="ElementShortName">clock_in</obj_property>
+      <obj_property name="ObjectShortName">clock_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/RAM_Controller_0/U0/reset_in" type="logic">
+      <obj_property name="ElementShortName">reset_in</obj_property>
+      <obj_property name="ObjectShortName">reset_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/RAM_Controller_0/U0/start_in" type="logic">
+      <obj_property name="ElementShortName">start_in</obj_property>
+      <obj_property name="ObjectShortName">start_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/RAM_Controller_0/U0/ready_out" type="logic">
+      <obj_property name="ElementShortName">ready_out</obj_property>
+      <obj_property name="ObjectShortName">ready_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/RAM_Controller_0/U0/sample_in" type="array">
+      <obj_property name="ElementShortName">sample_in[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_in[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/RAM_Controller_0/U0/addr_in" type="array">
+      <obj_property name="ElementShortName">addr_in[14:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_in[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/RAM_Controller_0/U0/ram_we" type="array">
+      <obj_property name="ElementShortName">ram_we[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_we[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/RAM_Controller_0/U0/ram_addr_a" type="array">
+      <obj_property name="ElementShortName">ram_addr_a[13:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr_a[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/RAM_Controller_0/U0/ram_dina" type="array">
+      <obj_property name="ElementShortName">ram_dina[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_dina[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/RAM_Controller_0/U0/memory_write_data_out" type="logic">
+      <obj_property name="ElementShortName">memory_write_data_out</obj_property>
+      <obj_property name="ObjectShortName">memory_write_data_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/RAM_Controller_0/U0/memory_write_data_out_internal" type="logic">
+      <obj_property name="ElementShortName">memory_write_data_out_internal</obj_property>
+      <obj_property name="ObjectShortName">memory_write_data_out_internal</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider54">
+      <obj_property name="label">BRAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/blk_mem_gen_0/clka" type="logic">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/blk_mem_gen_0/wea" type="array">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/blk_mem_gen_0/addra" type="array">
+      <obj_property name="ElementShortName">addra[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/blk_mem_gen_0/dina" type="array">
+      <obj_property name="ElementShortName">dina[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/blk_mem_gen_0/clkb" type="logic">
+      <obj_property name="ElementShortName">clkb</obj_property>
+      <obj_property name="ObjectShortName">clkb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/blk_mem_gen_0/addrb" type="array">
+      <obj_property name="ElementShortName">addrb[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lab_ADC_wrapper_tb/DUT/Lab_ADC_i/blk_mem_gen_0/doutb" type="array">
+      <obj_property name="ElementShortName">doutb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[11:0]</obj_property>
+   </wvobject>
+</wave_config>
