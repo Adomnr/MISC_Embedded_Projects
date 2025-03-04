@@ -1,0 +1,7 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Extra_Projects/8x1Mux/8x1Mux/8x1Mux.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Extra_Projects/8x1Mux/8x1Mux/8x1Mux.srcs/sim_1/new/tb_and_3input.v,1731666221,verilog,,,,tb_Mux_8x1,,,,,,,,
+D:/Extra_Projects/8x1Mux/8x1Mux/8x1Mux.srcs/sources_1/new/and_3input.v,1731666972,verilog,,D:/Extra_Projects/8x1Mux/8x1Mux/8x1Mux.srcs/sim_1/new/tb_and_3input.v,,Mux_8x1;and_gate;my_nand;my_nor;not_gate;or_gate,,,,,,,,

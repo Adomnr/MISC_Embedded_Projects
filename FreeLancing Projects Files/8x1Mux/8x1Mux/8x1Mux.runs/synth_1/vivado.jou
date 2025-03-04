@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov 16 17:39:19 2024
+# Process ID: 3112
+# Current directory: D:/Extra_Projects/8x1Mux/8x1Mux/8x1Mux.runs/synth_1
+# Command line: vivado.exe -log Mux_8x1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mux_8x1.tcl
+# Log file: D:/Extra_Projects/8x1Mux/8x1Mux/8x1Mux.runs/synth_1/Mux_8x1.vds
+# Journal file: D:/Extra_Projects/8x1Mux/8x1Mux/8x1Mux.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Mux_8x1.tcl -notrace

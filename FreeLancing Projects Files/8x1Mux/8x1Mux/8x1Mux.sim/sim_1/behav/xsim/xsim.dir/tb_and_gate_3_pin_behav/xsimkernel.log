@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_and_gate_3_pin_behav/xsimk.exe -simmode gui -wdb tb_and_gate_3_pin_behav.wdb -simrunnum 0 -socket 53496
+Design successfully loaded
+Design Loading Memory Usage: 6060 KB (Peak: 6060 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 6860 KB (Peak: 6860 KB)
+Simulation CPU Usage: 61 ms
