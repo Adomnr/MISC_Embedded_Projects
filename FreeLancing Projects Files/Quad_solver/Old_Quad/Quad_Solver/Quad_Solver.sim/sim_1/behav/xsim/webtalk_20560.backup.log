@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Dec  7 16:44:19 2024
+# Process ID: 20560
+# Current directory: I:/My Drive/Projects/Quad_Solver/Quad_Solver.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source I:/My Drive/Projects/Quad_Solver/Quad_Solver.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: I:/My Drive/Projects/Quad_Solver/Quad_Solver.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: I:/My Drive/Projects/Quad_Solver/Quad_Solver.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source I:/My -notrace
+couldn't read file "I:/My": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec  7 16:44:19 2024...
