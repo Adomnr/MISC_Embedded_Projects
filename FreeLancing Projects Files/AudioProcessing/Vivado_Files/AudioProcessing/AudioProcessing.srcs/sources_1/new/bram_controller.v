@@ -20,7 +20,38 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module bram_controller(
-
+module bram_controller#
+    (
+        parameter sample_count = 44100
+    )
+    (
+    input           clk,
+    input           rstn,
+    input   [15:0]  data_in,
+    output  [15:0]  address_out
     );
+    
+reg [15:0] counter = 0;
+    
+always@(posedge clk)
+    begin
+        if(rstn)
+            begin;
+                counter <= 0;
+            end
+        else
+            begin
+                if(counter >= sample_count)
+                    begin
+                        counter <= 0;
+                    end
+                else
+                    begin
+                        counter <= counter + 1;
+                    end
+            end
+    end
+
+assign address_out = counter;
+
 endmodule
