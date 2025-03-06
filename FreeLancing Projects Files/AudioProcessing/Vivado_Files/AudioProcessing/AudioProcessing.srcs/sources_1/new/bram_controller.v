@@ -35,7 +35,7 @@ reg [15:0] counter = 0;
     
 always@(posedge clk)
     begin
-        if(rstn)
+        if(~rstn)
             begin;
                 counter <= 0;
             end

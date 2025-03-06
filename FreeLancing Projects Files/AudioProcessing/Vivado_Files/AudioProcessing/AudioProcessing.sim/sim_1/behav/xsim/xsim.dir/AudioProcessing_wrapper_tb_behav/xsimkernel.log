@@ -1,0 +1,4 @@
+Running: xsim.dir/AudioProcessing_wrapper_tb_behav/xsimk.exe -simmode gui -wdb AudioProcessing_wrapper_tb_behav.wdb -simrunnum 0 -socket 54778
+Design successfully loaded
+Design Loading Memory Usage: 7100 KB (Peak: 7100 KB)
+Design Loading CPU Usage: 15 ms

@@ -54,10 +54,10 @@ module AudioProcessing_wrapper_tb;
     rstn = 1;
     
     // Wait for some time to observe output
-    #100000;
+    #1000;
     
     // End simulation
-    $stop;
+//    $stop;
   end
 
   // Monitor outputs
