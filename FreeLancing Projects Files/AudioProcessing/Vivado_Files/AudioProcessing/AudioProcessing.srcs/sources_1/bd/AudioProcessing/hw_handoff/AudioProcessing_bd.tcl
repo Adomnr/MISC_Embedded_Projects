@@ -227,10 +227,26 @@ proc create_root_design { parentCell } {
    CONFIG.Output_Frequency1 {0} \
    CONFIG.Output_Selection {Sine} \
    CONFIG.Output_Width {16} \
-   CONFIG.PINC1 {0010000000001000} \
+   CONFIG.PINC1 {000100000001000} \
    CONFIG.Parameter_Entry {Hardware_Parameters} \
    CONFIG.Phase_Width {16} \
  ] $dds_compiler_0
+
+  # Create instance: fir_compiler_0, and set properties
+  set fir_compiler_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_0 ]
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {100.0} \
+   CONFIG.CoefficientVector {248,-364,-246,2679,-4723,-785,35959,35959,-785,-4723,2679,-246,-364,248} \
+   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {17} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Output_Rounding_Mode {Full_Precision} \
+   CONFIG.Output_Width {33} \
+   CONFIG.Quantization {Integer_Coefficients} \
+ ] $fir_compiler_0
 
   # Create instance: lowpass_fir_0, and set properties
   set block_name lowpass_fir
@@ -243,12 +259,16 @@ proc create_root_design { parentCell } {
      return 1
    }
   
+  # Create instance: xlconstant_0, and set properties
+  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
+
   # Create port connections
   connect_bd_net -net bram_controller_0_address_out [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins bram_controller_0/address_out]
-  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins bram_controller_0/clk] [get_bd_pins clock_divider_audio_0/clk] [get_bd_pins dds_compiler_0/aclk] [get_bd_pins lowpass_fir_0/clk]
-  connect_bd_net -net dds_compiler_0_m_axis_data_tdata [get_bd_pins dds_compiler_0/m_axis_data_tdata] [get_bd_pins lowpass_fir_0/input_signal]
+  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins bram_controller_0/clk] [get_bd_pins clock_divider_audio_0/clk] [get_bd_pins dds_compiler_0/aclk] [get_bd_pins fir_compiler_0/aclk] [get_bd_pins lowpass_fir_0/clk]
+  connect_bd_net -net dds_compiler_0_m_axis_data_tdata [get_bd_pins dds_compiler_0/m_axis_data_tdata] [get_bd_pins fir_compiler_0/s_axis_data_tdata] [get_bd_pins lowpass_fir_0/input_signal]
   connect_bd_net -net lowpass_fir_0_output_signal [get_bd_ports data_out] [get_bd_pins lowpass_fir_0/output_signal]
   connect_bd_net -net rstn_1 [get_bd_ports rstn] [get_bd_pins bram_controller_0/rstn]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins fir_compiler_0/s_axis_data_tvalid] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
 

@@ -8,6 +8,7 @@ verilog xil_defaultlib  \
 "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_clock_divider_audio_0_0/sim/AudioProcessing_clock_divider_audio_0_0.v" \
 "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_lowpass_fir_0_0/sim/AudioProcessing_lowpass_fir_0_0.v" \
 "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/sim/AudioProcessing.v" \
+"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_xlconstant_0_0/sim/AudioProcessing_xlconstant_0_0.v" \
 "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/hdl/AudioProcessing_wrapper.v" \
 "../../../../AudioProcessing.srcs/sim_1/new/AudioProcessing_wrapper_tb.v" \
 
