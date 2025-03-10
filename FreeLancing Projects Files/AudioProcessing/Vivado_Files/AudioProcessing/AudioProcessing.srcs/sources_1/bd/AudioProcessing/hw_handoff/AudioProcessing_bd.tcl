@@ -215,6 +215,23 @@ proc create_root_design { parentCell } {
      return 1
    }
   
+  # Create instance: dds_compiler_0, and set properties
+  set dds_compiler_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0 ]
+  set_property -dict [ list \
+   CONFIG.Frequency_Resolution {0.4} \
+   CONFIG.Has_Phase_Out {false} \
+   CONFIG.Latency {7} \
+   CONFIG.M_DATA_Has_TUSER {Not_Required} \
+   CONFIG.Mode_of_Operation {Standard} \
+   CONFIG.Noise_Shaping {None} \
+   CONFIG.Output_Frequency1 {0} \
+   CONFIG.Output_Selection {Sine} \
+   CONFIG.Output_Width {16} \
+   CONFIG.PINC1 {0000000000001000} \
+   CONFIG.Parameter_Entry {Hardware_Parameters} \
+   CONFIG.Phase_Width {16} \
+ ] $dds_compiler_0
+
   # Create instance: lowpass_fir_0, and set properties
   set block_name lowpass_fir
   set block_cell_name lowpass_fir_0
@@ -227,9 +244,9 @@ proc create_root_design { parentCell } {
    }
   
   # Create port connections
-  connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins lowpass_fir_0/input_signal]
   connect_bd_net -net bram_controller_0_address_out [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins bram_controller_0/address_out]
-  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins bram_controller_0/clk] [get_bd_pins clock_divider_audio_0/clk] [get_bd_pins lowpass_fir_0/clk]
+  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins bram_controller_0/clk] [get_bd_pins clock_divider_audio_0/clk] [get_bd_pins dds_compiler_0/aclk] [get_bd_pins lowpass_fir_0/clk]
+  connect_bd_net -net dds_compiler_0_m_axis_data_tdata [get_bd_pins dds_compiler_0/m_axis_data_tdata] [get_bd_pins lowpass_fir_0/input_signal]
   connect_bd_net -net lowpass_fir_0_output_signal [get_bd_ports data_out] [get_bd_pins lowpass_fir_0/output_signal]
   connect_bd_net -net rstn_1 [get_bd_ports rstn] [get_bd_pins bram_controller_0/rstn]
 

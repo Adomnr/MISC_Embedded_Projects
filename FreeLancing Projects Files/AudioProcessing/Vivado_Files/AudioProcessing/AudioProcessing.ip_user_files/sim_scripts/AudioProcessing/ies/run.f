@@ -14,6 +14,36 @@
   "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_lowpass_fir_0_0/sim/AudioProcessing_lowpass_fir_0_0.v" \
   "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/sim/AudioProcessing.v" \
 -endlib
+-makelib ies_lib/xbip_utils_v3_0_10 \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/1123/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/axi_utils_v2_0_6 \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/1971/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xbip_pipe_v3_0_6 \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xbip_bram18k_v3_0_6 \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/d367/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/mult_gen_v12_0_15 \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/d4d2/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xbip_dsp48_wrapper_v3_0_4 \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/cdbf/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xbip_dsp48_addsub_v3_0_6 \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/910d/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xbip_dsp48_multadd_v3_0_6 \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/b0ac/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/dds_compiler_v6_0_18 \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/ce25/hdl/dds_compiler_v6_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_dds_compiler_0_0/sim/AudioProcessing_dds_compiler_0_0.vhd" \
+-endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v
 -endlib

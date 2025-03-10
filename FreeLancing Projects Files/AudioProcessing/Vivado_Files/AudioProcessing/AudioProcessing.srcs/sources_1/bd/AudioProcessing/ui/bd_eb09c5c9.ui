@@ -2,20 +2,21 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port clock -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
-preplace port rstn -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
-preplace portBus data_out -pg 1 -lvl 4 -x 870 -y 230 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -x 670 -y 90 -defaultsOSRD
-preplace inst lowpass_fir_0 -pg 1 -lvl 3 -x 670 -y 230 -defaultsOSRD
-preplace inst bram_controller_0 -pg 1 -lvl 2 -x 350 -y 80 -defaultsOSRD
+preplace port clock -pg 1 -lvl 0 -x -40 -y 20 -defaultsOSRD
+preplace port rstn -pg 1 -lvl 0 -x -40 -y 130 -defaultsOSRD
+preplace portBus data_out -pg 1 -lvl 4 -x 880 -y 230 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -x 700 -y 90 -defaultsOSRD
+preplace inst lowpass_fir_0 -pg 1 -lvl 3 -x 700 -y 230 -defaultsOSRD
+preplace inst bram_controller_0 -pg 1 -lvl 2 -x 390 -y 80 -defaultsOSRD
 preplace inst clock_divider_audio_0 -pg 1 -lvl 1 -x 120 -y 70 -defaultsOSRD
-preplace netloc clock_1 1 0 3 20 10 220J 10 480
-preplace netloc bram_controller_0_address_out 1 2 1 N 80
-preplace netloc blk_mem_gen_0_douta 1 2 1 490 120n
-preplace netloc rstn_1 1 0 2 NJ 130 220J
+preplace inst dds_compiler_0 -pg 1 -lvl 1 -x 120 -y 350 -defaultsOSRD
+preplace netloc clock_1 1 0 3 -20 10 260J 10 530
+preplace netloc bram_controller_0_address_out 1 2 1 520 80n
+preplace netloc rstn_1 1 0 2 NJ 130 260J
 preplace netloc lowpass_fir_0_output_signal 1 3 1 N 230
-levelinfo -pg 1 0 120 350 670 870
-pagesize -pg 1 -db -bbox -sgen -90 0 1010 300
+preplace netloc dds_compiler_0_m_axis_data_tdata 1 1 2 260 240 NJ
+levelinfo -pg 1 -40 120 390 700 880
+pagesize -pg 1 -db -bbox -sgen -130 0 1020 430
 "
 }
 0

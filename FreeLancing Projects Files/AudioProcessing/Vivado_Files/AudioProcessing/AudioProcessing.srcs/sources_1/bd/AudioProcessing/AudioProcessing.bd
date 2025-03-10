@@ -12,7 +12,8 @@
       "blk_mem_gen_0": "",
       "lowpass_fir_0": "",
       "bram_controller_0": "",
-      "clock_divider_audio_0": ""
+      "clock_divider_audio_0": "",
+      "dds_compiler_0": ""
     },
     "ports": {
       "clock": {
@@ -213,6 +214,48 @@
             "direction": "O"
           }
         }
+      },
+      "dds_compiler_0": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "AudioProcessing_dds_compiler_0_0",
+        "parameters": {
+          "Frequency_Resolution": {
+            "value": "0.4"
+          },
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Latency": {
+            "value": "7"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Mode_of_Operation": {
+            "value": "Standard"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "16"
+          },
+          "PINC1": {
+            "value": "0000000000001000"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "Phase_Width": {
+            "value": "16"
+          }
+        }
       }
     },
     "nets": {
@@ -222,19 +265,14 @@
           "blk_mem_gen_0/clka",
           "lowpass_fir_0/clk",
           "clock_divider_audio_0/clk",
-          "bram_controller_0/clk"
+          "bram_controller_0/clk",
+          "dds_compiler_0/aclk"
         ]
       },
       "bram_controller_0_address_out": {
         "ports": [
           "bram_controller_0/address_out",
           "blk_mem_gen_0/addra"
-        ]
-      },
-      "blk_mem_gen_0_douta": {
-        "ports": [
-          "blk_mem_gen_0/douta",
-          "lowpass_fir_0/input_signal"
         ]
       },
       "rstn_1": {
@@ -247,6 +285,12 @@
         "ports": [
           "lowpass_fir_0/output_signal",
           "data_out"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_0/m_axis_data_tdata",
+          "lowpass_fir_0/input_signal"
         ]
       }
     }
