@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 10 13:45:55 2025" VIVADOVERSION="2019.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 10 19:43:15 2025" VIVADOVERSION="2019.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="AudioProcessing" PACKAGE="clg400" SPEEDGRADE="-3"/>
 
@@ -7,10 +7,10 @@
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock">
       <CONNECTIONS>
         <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clka"/>
-        <CONNECTION INSTANCE="lowpass_fir_0" PORT="clk"/>
         <CONNECTION INSTANCE="clock_divider_audio_0" PORT="clk"/>
         <CONNECTION INSTANCE="bram_controller_0" PORT="clk"/>
         <CONNECTION INSTANCE="dds_compiler_0" PORT="aclk"/>
+        <CONNECTION INSTANCE="lowpass_fir_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="rstn" SIGIS="rst" SIGNAME="External_Ports_rstn">
@@ -276,7 +276,7 @@
         <PARAMETER NAME="C_OUTPUT_WIDTH" VALUE="16"/>
         <PARAMETER NAME="C_PHASE_ANGLE_WIDTH" VALUE="16"/>
         <PARAMETER NAME="C_PHASE_INCREMENT" VALUE="2"/>
-        <PARAMETER NAME="C_PHASE_INCREMENT_VALUE" VALUE="0000000000001000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <PARAMETER NAME="C_PHASE_INCREMENT_VALUE" VALUE="0010000000001000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
         <PARAMETER NAME="C_RESYNC" VALUE="0"/>
         <PARAMETER NAME="C_PHASE_OFFSET" VALUE="0"/>
         <PARAMETER NAME="C_PHASE_OFFSET_VALUE" VALUE="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
@@ -341,7 +341,7 @@
         <PARAMETER NAME="Has_ARESETn" VALUE="false"/>
         <PARAMETER NAME="Has_ACLKEN" VALUE="false"/>
         <PARAMETER NAME="Output_Frequency1" VALUE="0"/>
-        <PARAMETER NAME="PINC1" VALUE="0000000000001000"/>
+        <PARAMETER NAME="PINC1" VALUE="0010000000001000"/>
         <PARAMETER NAME="Phase_Offset_Angles1" VALUE="0"/>
         <PARAMETER NAME="POFF1" VALUE="0"/>
         <PARAMETER NAME="Output_Frequency2" VALUE="0"/>

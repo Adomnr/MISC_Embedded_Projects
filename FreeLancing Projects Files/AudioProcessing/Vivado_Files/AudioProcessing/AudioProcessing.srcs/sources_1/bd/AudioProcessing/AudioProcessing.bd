@@ -10,10 +10,10 @@
     },
     "design_tree": {
       "blk_mem_gen_0": "",
-      "lowpass_fir_0": "",
       "bram_controller_0": "",
       "clock_divider_audio_0": "",
-      "dds_compiler_0": ""
+      "dds_compiler_0": "",
+      "lowpass_fir_0": ""
     },
     "ports": {
       "clock": {
@@ -105,41 +105,6 @@
           },
           "use_bram_block": {
             "value": "Stand_Alone"
-          }
-        }
-      },
-      "lowpass_fir_0": {
-        "vlnv": "xilinx.com:module_ref:lowpass_fir:1.0",
-        "xci_name": "AudioProcessing_lowpass_fir_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "lowpass_fir",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "AudioProcessing_clock",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              }
-            }
-          },
-          "input_signal": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "output_signal": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
           }
         }
       },
@@ -247,13 +212,48 @@
             "value": "16"
           },
           "PINC1": {
-            "value": "0000000000001000"
+            "value": "0010000000001000"
           },
           "Parameter_Entry": {
             "value": "Hardware_Parameters"
           },
           "Phase_Width": {
             "value": "16"
+          }
+        }
+      },
+      "lowpass_fir_0": {
+        "vlnv": "xilinx.com:module_ref:lowpass_fir:1.0",
+        "xci_name": "AudioProcessing_lowpass_fir_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "lowpass_fir",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "AudioProcessing_clock",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "input_signal": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "output_signal": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
           }
         }
       }
@@ -263,10 +263,10 @@
         "ports": [
           "clock",
           "blk_mem_gen_0/clka",
-          "lowpass_fir_0/clk",
           "clock_divider_audio_0/clk",
           "bram_controller_0/clk",
-          "dds_compiler_0/aclk"
+          "dds_compiler_0/aclk",
+          "lowpass_fir_0/clk"
         ]
       },
       "bram_controller_0_address_out": {

@@ -227,7 +227,7 @@ proc create_root_design { parentCell } {
    CONFIG.Output_Frequency1 {0} \
    CONFIG.Output_Selection {Sine} \
    CONFIG.Output_Width {16} \
-   CONFIG.PINC1 {0000000000001000} \
+   CONFIG.PINC1 {0010000000001000} \
    CONFIG.Parameter_Entry {Hardware_Parameters} \
    CONFIG.Phase_Width {16} \
  ] $dds_compiler_0

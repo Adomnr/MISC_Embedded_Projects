@@ -19,7 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module lowpass_fir(
     input clk,
     input signed [15:0]input_signal,
@@ -32,17 +31,17 @@ reg signed [15:0] coeff [0:10];
                     
 initial
     begin
-        coeff[0] = 16'h0055;
-        coeff[1] = 16'hFD78;
-        coeff[2] = 16'h0AAB;
-        coeff[3] = 16'hE61C;
-        coeff[4] = 16'hD0B5;
-        coeff[5] = 16'h2871;
-        coeff[6] = 16'hE61C;
-        coeff[7] = 16'h0AAB;
-        coeff[8] = 16'hFD78;
-        coeff[9] = 16'h0055;
-        coeff[10] = 16'h0055;
+        coeff[0] = 16'h002A;
+        coeff[1] = 16'hFEBC;
+        coeff[2] = 16'h0555;
+        coeff[3] = 16'hF34D;
+        coeff[4] = 16'h1443;
+        coeff[5] = 16'h686A;
+        coeff[6] = 16'h1443;
+        coeff[7] = 16'hF34D;
+        coeff[8] = 16'h0555;
+        coeff[9] = 16'hFEBC;
+        coeff[10] = 16'h002A;
     end
 
 
