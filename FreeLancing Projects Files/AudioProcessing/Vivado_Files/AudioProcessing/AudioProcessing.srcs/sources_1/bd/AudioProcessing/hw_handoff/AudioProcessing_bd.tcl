@@ -229,8 +229,7 @@ proc create_root_design { parentCell } {
   # Create port connections
   connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins lowpass_fir_0/input_signal]
   connect_bd_net -net bram_controller_0_address_out [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins bram_controller_0/address_out]
-  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins clock_divider_audio_0/clk] [get_bd_pins lowpass_fir_0/clk]
-  connect_bd_net -net clock_divider_audio_0_clk_div [get_bd_pins bram_controller_0/clk] [get_bd_pins clock_divider_audio_0/clk_div]
+  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins bram_controller_0/clk] [get_bd_pins clock_divider_audio_0/clk] [get_bd_pins lowpass_fir_0/clk]
   connect_bd_net -net lowpass_fir_0_output_signal [get_bd_ports data_out] [get_bd_pins lowpass_fir_0/output_signal]
   connect_bd_net -net rstn_1 [get_bd_ports rstn] [get_bd_pins bram_controller_0/rstn]
 

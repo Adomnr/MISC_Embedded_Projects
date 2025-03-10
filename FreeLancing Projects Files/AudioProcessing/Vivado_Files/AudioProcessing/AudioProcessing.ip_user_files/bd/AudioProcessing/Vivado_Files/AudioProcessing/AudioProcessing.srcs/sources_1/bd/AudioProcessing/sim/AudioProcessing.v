@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Mon Mar 10 10:13:00 2025
+//Date        : Mon Mar 10 11:24:16 2025
 //Host        : DESKTOP-Q2PB8PR running 64-bit major release  (build 9200)
 //Command     : generate_target AudioProcessing.bd
 //Design      : AudioProcessing
@@ -21,7 +21,6 @@ module AudioProcessing
   wire [15:0]blk_mem_gen_0_douta;
   wire [15:0]bram_controller_0_address_out;
   wire clock_1;
-  wire clock_divider_audio_0_clk_div;
   wire [15:0]lowpass_fir_0_output_signal;
   wire rstn_1;
 
@@ -34,11 +33,10 @@ module AudioProcessing
         .douta(blk_mem_gen_0_douta));
   AudioProcessing_bram_controller_0_0 bram_controller_0
        (.address_out(bram_controller_0_address_out),
-        .clk(clock_divider_audio_0_clk_div),
+        .clk(clock_1),
         .rstn(rstn_1));
   AudioProcessing_clock_divider_audio_0_0 clock_divider_audio_0
-       (.clk(clock_1),
-        .clk_div(clock_divider_audio_0_clk_div));
+       (.clk(clock_1));
   AudioProcessing_lowpass_fir_0_0 lowpass_fir_0
        (.clk(clock_1),
         .input_signal(blk_mem_gen_0_douta),

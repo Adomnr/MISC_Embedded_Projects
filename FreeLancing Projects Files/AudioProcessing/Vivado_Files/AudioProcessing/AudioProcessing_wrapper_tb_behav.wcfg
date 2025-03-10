@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="131400001fs"></ZoomEndTime>
-      <Cursor1Time time="20000000fs"></Cursor1Time>
+      <ZoomEndTime time="1001000000001fs"></ZoomEndTime>
+      <Cursor1Time time="1001000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="220"></NameColumnWidth>
-      <ValueColumnWidth column_width="154"></ValueColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="9" />
+   <WVObjectSize size="19" />
    <wvobject fp_name="/AudioProcessing_wrapper_tb/clock" type="logic">
       <obj_property name="ElementShortName">clock</obj_property>
       <obj_property name="ObjectShortName">clock</obj_property>
@@ -31,6 +31,11 @@
    <wvobject fp_name="/AudioProcessing_wrapper_tb/data_out" type="array">
       <obj_property name="ElementShortName">data_out[15:0]</obj_property>
       <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeMin">35640.3</obj_property>
+      <obj_property name="AnalogYRRangeMax">53055.1</obj_property>
    </wvobject>
    <wvobject type="divider" fp_name="divider4">
       <obj_property name="label">controller</obj_property>
@@ -44,16 +49,65 @@
       <obj_property name="ElementShortName">rstn</obj_property>
       <obj_property name="ObjectShortName">rstn</obj_property>
    </wvobject>
-   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/bram_controller_0/data_in" type="array">
-      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
-      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/bram_controller_0/address_out" type="array">
       <obj_property name="ElementShortName">address_out[15:0]</obj_property>
       <obj_property name="ObjectShortName">address_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/bram_controller_0/inst/counter" type="array">
       <obj_property name="ElementShortName">counter[15:0]</obj_property>
       <obj_property name="ObjectShortName">counter[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider36">
+      <obj_property name="label">BRAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/blk_mem_gen_0/clka" type="logic">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/blk_mem_gen_0/addra" type="array">
+      <obj_property name="ElementShortName">addra[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/blk_mem_gen_0/douta" type="array">
+      <obj_property name="ElementShortName">douta[15:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider49">
+      <obj_property name="label">LowPass</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/lowpass_fir_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/lowpass_fir_0/input_signal" type="array">
+      <obj_property name="ElementShortName">input_signal[15:0]</obj_property>
+      <obj_property name="ObjectShortName">input_signal[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
+      <obj_property name="AnalogYRangeMin">28623</obj_property>
+      <obj_property name="AnalogYRRangeMax">37458</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/lowpass_fir_0/output_signal" type="array">
+      <obj_property name="ElementShortName">output_signal[15:0]</obj_property>
+      <obj_property name="ObjectShortName">output_signal[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider53">
+      <obj_property name="label">Clock Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/clock_divider_audio_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/clock_divider_audio_0/clk_div" type="logic">
+      <obj_property name="ElementShortName">clk_div</obj_property>
+      <obj_property name="ObjectShortName">clk_div</obj_property>
    </wvobject>
 </wave_config>

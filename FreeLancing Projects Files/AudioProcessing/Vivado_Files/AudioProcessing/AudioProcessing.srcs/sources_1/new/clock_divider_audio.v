@@ -33,7 +33,7 @@ initial
 
 always@(posedge clk)
     begin
-        if(div_counter == 2268-1)
+        if(div_counter == 1134-1)
             begin
                 div_counter <= 0;
                 clk_div <= ~clk_div;
