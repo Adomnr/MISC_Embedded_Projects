@@ -27,7 +27,6 @@ module bram_controller#
     (
     input           clk,
     input           rstn,
-    input   [15:0]  data_in,
     output  [15:0]  address_out
     );
     

@@ -48,7 +48,7 @@ initial
 
 reg signed [15:0] delayed_signal [0:10];
 reg signed [31:0] prod[0:11];
-reg signed [32:0] sum_0 [0:4];
+reg signed [32:0] sum_0 [0:5];
 reg signed [33:0] sum_1 [0:2];
 reg signed [34:0] sum_2 [0:1];
 reg signed [35:0] sum_3;
@@ -78,9 +78,25 @@ always@(posedge clk)
         sum_0[4] <= prod[8] + prod[9];
         sum_0[5] <= prod[10];
     end
+
+
 always@(posedge clk)
     begin
-        
+        sum_1[0] = sum_0[0] + sum_0[1];
+        sum_1[1] = sum_0[2] + sum_0[3];
+        sum_1[2] = sum_0[4] + sum_0[5];
     end
 
+always@(posedge clk)
+    begin
+        sum_2[0] <= sum_1[0] + sum_1[1];
+        sum_2[1] <= sum_1[2];
+    end
+
+always@(posedge clk)
+    begin
+        sum_3 <= sum_2[0] + sum_2[1];
+    end   
+    
+assign output_signal = $signed(sum_3[35:14]);    
 endmodule

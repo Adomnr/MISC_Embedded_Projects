@@ -57,17 +57,15 @@
 module AudioProcessing_bram_controller_0_0 (
   clk,
   rstn,
-  data_in,
   address_out
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rstn, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN AudioProcessing_clock, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rstn, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME rstn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rstn RST" *)
 input wire rstn;
-input wire [15 : 0] data_in;
 output wire [15 : 0] address_out;
 
   bram_controller #(
@@ -75,7 +73,6 @@ output wire [15 : 0] address_out;
   ) inst (
     .clk(clk),
     .rstn(rstn),
-    .data_in(data_in),
     .address_out(address_out)
   );
 endmodule

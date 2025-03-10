@@ -1,1 +1,1 @@
---relax --debug typical --mt auto -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AudioProcessing xil_defaultlib.AudioProcessing xil_defaultlib.glbl -log elaborate.log
+--relax --debug typical --mt auto -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AudioProcessing xil_defaultlib.AudioProcessing xil_defaultlib.glbl -log elaborate.log

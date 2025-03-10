@@ -1,0 +1,442 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar 10 10:17:34 2025
+# Process ID: 13424
+# Current directory: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_lowpass_fir_0_0_synth_1
+# Command line: vivado.exe -log AudioProcessing_lowpass_fir_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AudioProcessing_lowpass_fir_0_0.tcl
+# Log file: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_lowpass_fir_0_0_synth_1/AudioProcessing_lowpass_fir_0_0.vds
+# Journal file: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_lowpass_fir_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source AudioProcessing_lowpass_fir_0_0.tcl -notrace
+Command: synth_design -top AudioProcessing_lowpass_fir_0_0 -part xc7z020clg400-3 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'AudioProcessing_lowpass_fir_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13540 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 831.277 ; gain = 177.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AudioProcessing_lowpass_fir_0_0' [d:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_lowpass_fir_0_0/synth/AudioProcessing_lowpass_fir_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'lowpass_fir' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lowpass_fir' (1#1) [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'AudioProcessing_lowpass_fir_0_0' (2#1) [d:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_lowpass_fir_0_0/synth/AudioProcessing_lowpass_fir_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 897.176 ; gain = 243.867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 897.176 ; gain = 243.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 897.176 ; gain = 243.867
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1012.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1013.438 ; gain = 1.074
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1013.438 ; gain = 360.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1013.438 ; gain = 360.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1013.438 ; gain = 360.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1013.438 ; gain = 360.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     35 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               35 Bit    Registers := 1     
+	               34 Bit    Registers := 4     
+	               16 Bit    Registers := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lowpass_fir 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     35 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               35 Bit    Registers := 1     
+	               34 Bit    Registers := 4     
+	               16 Bit    Registers := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[0][15:0]' into 'inst/delayed_signal_reg[0][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[2][15:0]' into 'inst/delayed_signal_reg[2][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[0][15:0]' into 'inst/delayed_signal_reg[0][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[3][15:0]' into 'inst/delayed_signal_reg[3][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[1][15:0]' into 'inst/delayed_signal_reg[1][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/sum_3_reg' and it is trimmed from '36' to '30' bits. [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:98]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/sum_2_reg[0]' and it is trimmed from '35' to '30' bits. [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:92]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/sum_1_reg[0]' and it is trimmed from '34' to '30' bits. [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:85]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/sum_1_reg[1]' and it is trimmed from '34' to '30' bits. [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:85]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/sum_0_reg[2]' and it is trimmed from '33' to '30' bits. [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:74]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/prod_reg[4]' and it is trimmed from '31' to '30' bits. [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:68]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/sum_2_reg[1]' and it is trimmed from '34' to '30' bits. [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:92]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/sum_1_reg[2]' and it is trimmed from '34' to '30' bits. [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:85]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/sum_0_reg[4]' and it is trimmed from '33' to '30' bits. [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:74]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/sum_0_reg[0]' and it is trimmed from '33' to '30' bits. [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:74]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/prod_reg[5]' and it is trimmed from '31' to '30' bits. [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:68]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[1][15:0]' into 'inst/delayed_signal_reg[1][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[4][15:0]' into 'inst/delayed_signal_reg[4][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[2][15:0]' into 'inst/delayed_signal_reg[2][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[5][15:0]' into 'inst/delayed_signal_reg[5][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[3][15:0]' into 'inst/delayed_signal_reg[3][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[4][15:0]' into 'inst/delayed_signal_reg[4][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[5][15:0]' into 'inst/delayed_signal_reg[5][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[6][15:0]' into 'inst/delayed_signal_reg[6][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[7][15:0]' into 'inst/delayed_signal_reg[7][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[8][15:0]' into 'inst/delayed_signal_reg[8][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+INFO: [Synth 8-4471] merging register 'inst/delayed_signal_reg[9][15:0]' into 'inst/delayed_signal_reg[9][15:0]' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v:58]
+DSP Report: Generating DSP inst/prod_reg[8], operation Mode is: (A''*(B:0x3fd78))'.
+DSP Report: register inst/delayed_signal_reg[7] is absorbed into DSP inst/prod_reg[8].
+DSP Report: register inst/delayed_signal_reg[8] is absorbed into DSP inst/prod_reg[8].
+DSP Report: register inst/prod_reg[8] is absorbed into DSP inst/prod_reg[8].
+DSP Report: operator p_0_out is absorbed into DSP inst/prod_reg[8].
+DSP Report: Generating DSP inst/sum_0_reg[4], operation Mode is: (PCIN+(A''*(B:0x55))')'.
+DSP Report: register inst/delayed_signal_reg[8] is absorbed into DSP inst/sum_0_reg[4].
+DSP Report: register inst/delayed_signal_reg[9] is absorbed into DSP inst/sum_0_reg[4].
+DSP Report: register inst/sum_0_reg[4] is absorbed into DSP inst/sum_0_reg[4].
+DSP Report: register inst/prod_reg[9] is absorbed into DSP inst/sum_0_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_0_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_0_reg[4].
+DSP Report: Generating DSP inst/sum_0_reg[5], operation Mode is: (A''*(B:0x55))'.
+DSP Report: register inst/delayed_signal_reg[9] is absorbed into DSP inst/sum_0_reg[5].
+DSP Report: register inst/delayed_signal_reg[10] is absorbed into DSP inst/sum_0_reg[5].
+DSP Report: register inst/sum_0_reg[5] is absorbed into DSP inst/sum_0_reg[5].
+DSP Report: register inst/prod_reg[10] is absorbed into DSP inst/sum_0_reg[5].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_0_reg[5].
+DSP Report: Generating DSP inst/sum_1_reg[2], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/sum_1_reg[2] is absorbed into DSP inst/sum_1_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_1_reg[2].
+DSP Report: Generating DSP inst/prod_reg[0], operation Mode is: (A2*(B:0x55))'.
+DSP Report: register inst/delayed_signal_reg[0] is absorbed into DSP inst/prod_reg[0].
+DSP Report: register inst/prod_reg[0] is absorbed into DSP inst/prod_reg[0].
+DSP Report: operator p_0_out is absorbed into DSP inst/prod_reg[0].
+DSP Report: Generating DSP inst/sum_0_reg[0], operation Mode is: (PCIN+(A''*(B:0x3fd78))')'.
+DSP Report: register inst/delayed_signal_reg[0] is absorbed into DSP inst/sum_0_reg[0].
+DSP Report: register inst/delayed_signal_reg[1] is absorbed into DSP inst/sum_0_reg[0].
+DSP Report: register inst/sum_0_reg[0] is absorbed into DSP inst/sum_0_reg[0].
+DSP Report: register inst/prod_reg[1] is absorbed into DSP inst/sum_0_reg[0].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_0_reg[0].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_0_reg[0].
+DSP Report: Generating DSP inst/prod_reg[2], operation Mode is: (ACIN''*(B:0xaab))'.
+DSP Report: register inst/delayed_signal_reg[1] is absorbed into DSP inst/prod_reg[2].
+DSP Report: register inst/delayed_signal_reg[2] is absorbed into DSP inst/prod_reg[2].
+DSP Report: register inst/prod_reg[2] is absorbed into DSP inst/prod_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/prod_reg[2].
+DSP Report: Generating DSP inst/sum_0_reg[1], operation Mode is: (PCIN+(ACIN''*(B:0x3e61c))')'.
+DSP Report: register inst/delayed_signal_reg[2] is absorbed into DSP inst/sum_0_reg[1].
+DSP Report: register inst/delayed_signal_reg[3] is absorbed into DSP inst/sum_0_reg[1].
+DSP Report: register inst/sum_0_reg[1] is absorbed into DSP inst/sum_0_reg[1].
+DSP Report: register inst/prod_reg[3] is absorbed into DSP inst/sum_0_reg[1].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_0_reg[1].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_0_reg[1].
+DSP Report: Generating DSP inst/sum_1_reg[0], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/sum_1_reg[0] is absorbed into DSP inst/sum_1_reg[0].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_1_reg[0].
+DSP Report: Generating DSP inst/prod_reg[4], operation Mode is: (A''*(B:0x3d0b5))'.
+DSP Report: register inst/delayed_signal_reg[3] is absorbed into DSP inst/prod_reg[4].
+DSP Report: register inst/delayed_signal_reg[4] is absorbed into DSP inst/prod_reg[4].
+DSP Report: register inst/prod_reg[4] is absorbed into DSP inst/prod_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/prod_reg[4].
+DSP Report: Generating DSP inst/sum_0_reg[2], operation Mode is: (PCIN+(ACIN2*(B:0x2871))')'.
+DSP Report: register inst/delayed_signal_reg[5] is absorbed into DSP inst/sum_0_reg[2].
+DSP Report: register inst/sum_0_reg[2] is absorbed into DSP inst/sum_0_reg[2].
+DSP Report: register inst/prod_reg[5] is absorbed into DSP inst/sum_0_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_0_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_0_reg[2].
+DSP Report: Generating DSP inst/prod_reg[6], operation Mode is: (ACIN2*(B:0x3e61c))'.
+DSP Report: register inst/delayed_signal_reg[6] is absorbed into DSP inst/prod_reg[6].
+DSP Report: register inst/prod_reg[6] is absorbed into DSP inst/prod_reg[6].
+DSP Report: operator p_0_out is absorbed into DSP inst/prod_reg[6].
+DSP Report: Generating DSP inst/sum_0_reg[3], operation Mode is: (PCIN+(A''*(B:0xaab))')'.
+DSP Report: register inst/delayed_signal_reg[6] is absorbed into DSP inst/sum_0_reg[3].
+DSP Report: register inst/delayed_signal_reg[7] is absorbed into DSP inst/sum_0_reg[3].
+DSP Report: register inst/sum_0_reg[3] is absorbed into DSP inst/sum_0_reg[3].
+DSP Report: register inst/prod_reg[7] is absorbed into DSP inst/sum_0_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_0_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_0_reg[3].
+DSP Report: Generating DSP inst/sum_1_reg[1], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/sum_1_reg[1] is absorbed into DSP inst/sum_1_reg[1].
+DSP Report: operator p_0_out is absorbed into DSP inst/sum_1_reg[1].
+DSP Report: Generating DSP inst/sum_2_reg[0], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/sum_2_reg[0] is absorbed into DSP inst/sum_2_reg[0].
+DSP Report: operator inst/ is absorbed into DSP inst/sum_2_reg[0].
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1013.438 ; gain = 360.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------------------------+-------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                     | DSP Mapping                   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------+-------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lowpass_fir                     | (A''*(B:0x3fd78))'            | 16     | 11     | -      | -      | 27     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|lowpass_fir                     | (PCIN+(A''*(B:0x55))')'       | 16     | 8      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 1    | 1    | 
+|lowpass_fir                     | (A''*(B:0x55))'               | 16     | 8      | -      | -      | 24     | 2    | 0    | -    | -    | -     | 1    | 1    | 
+|lowpass_fir                     | (PCIN+A:B)'                   | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|lowpass_fir                     | (A2*(B:0x55))'                | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|lowpass_fir                     | (PCIN+(A''*(B:0x3fd78))')'    | 16     | 11     | -      | -      | 30     | 2    | 0    | -    | -    | -     | 1    | 1    | 
+|AudioProcessing_lowpass_fir_0_0 | (ACIN''*(B:0xaab))'           | 16     | 13     | -      | -      | 29     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|lowpass_fir                     | (PCIN+(ACIN''*(B:0x3e61c))')' | 16     | 14     | -      | -      | 33     | 2    | 0    | -    | -    | -     | 1    | 1    | 
+|lowpass_fir                     | (PCIN+A:B)'                   | 12     | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|lowpass_fir                     | (A''*(B:0x3d0b5))'            | 16     | 15     | -      | -      | 31     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|AudioProcessing_lowpass_fir_0_0 | (PCIN+(ACIN2*(B:0x2871))')'   | 16     | 15     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|lowpass_fir                     | (ACIN2*(B:0x3e61c))'          | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|lowpass_fir                     | (PCIN+(A''*(B:0xaab))')'      | 16     | 13     | -      | -      | 33     | 2    | 0    | -    | -    | -     | 1    | 1    | 
+|lowpass_fir                     | (PCIN+A:B)'                   | 12     | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|AudioProcessing_lowpass_fir_0_0 | (PCIN+A:B)'                   | 12     | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++--------------------------------+-------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1060.535 ; gain = 407.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1060.832 ; gain = 407.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1081.410 ; gain = 428.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1107.441 ; gain = 454.133
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1107.441 ; gain = 454.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1107.441 ; gain = 454.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1107.441 ; gain = 454.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1107.441 ; gain = 454.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1107.441 ; gain = 454.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                     | RTL Name                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|AudioProcessing_lowpass_fir_0_0 | inst/delayed_signal_reg[2][15] | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
++--------------------------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |     8|
+|2     |DSP48E1_1  |     2|
+|3     |DSP48E1_10 |     1|
+|4     |DSP48E1_11 |     1|
+|5     |DSP48E1_12 |     1|
+|6     |DSP48E1_13 |     1|
+|7     |DSP48E1_2  |     4|
+|8     |DSP48E1_4  |     1|
+|9     |DSP48E1_6  |     2|
+|10    |DSP48E1_7  |     1|
+|11    |DSP48E1_9  |     1|
+|12    |LUT2       |    30|
+|13    |SRL16E     |    32|
+|14    |FDRE       |   126|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |   211|
+|2     |  inst   |lowpass_fir |   211|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1107.441 ; gain = 454.133
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1107.441 ; gain = 337.871
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1107.441 ; gain = 454.133
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1120.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 1120.309 ; gain = 741.688
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1120.309 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_lowpass_fir_0_0_synth_1/AudioProcessing_lowpass_fir_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1120.309 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_lowpass_fir_0_0_synth_1/AudioProcessing_lowpass_fir_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AudioProcessing_lowpass_fir_0_0_utilization_synth.rpt -pb AudioProcessing_lowpass_fir_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 10 10:18:35 2025...

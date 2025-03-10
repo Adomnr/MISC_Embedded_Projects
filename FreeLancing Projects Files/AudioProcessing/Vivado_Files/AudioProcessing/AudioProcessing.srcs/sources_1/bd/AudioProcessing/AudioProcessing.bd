@@ -5,10 +5,13 @@
       "device": "xc7z020clg400-3",
       "name": "AudioProcessing",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.1"
+      "tool_version": "2019.1",
+      "validated": "true"
     },
     "design_tree": {
       "blk_mem_gen_0": "",
+      "clock_divider_audio_0": "",
+      "lowpass_fir_0": "",
       "bram_controller_0": ""
     },
     "ports": {
@@ -16,20 +19,52 @@
         "type": "clk",
         "direction": "I",
         "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rstn",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "AudioProcessing_clock",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
           }
         }
       },
       "rstn": {
         "type": "rst",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
       },
       "data_out": {
         "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       }
     },
     "components": {
@@ -72,6 +107,69 @@
           }
         }
       },
+      "clock_divider_audio_0": {
+        "vlnv": "xilinx.com:module_ref:clock_divider_audio:1.0",
+        "xci_name": "AudioProcessing_clock_divider_audio_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_divider_audio",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "AudioProcessing_clock",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clk_div": {
+            "direction": "O"
+          }
+        }
+      },
+      "lowpass_fir_0": {
+        "vlnv": "xilinx.com:module_ref:lowpass_fir:1.0",
+        "xci_name": "AudioProcessing_lowpass_fir_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "lowpass_fir",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "AudioProcessing_clock",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "input_signal": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "output_signal": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
       "bram_controller_0": {
         "vlnv": "xilinx.com:module_ref:bram_controller:1.0",
         "xci_name": "AudioProcessing_bram_controller_0_0",
@@ -83,16 +181,23 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rstn",
+                "value_src": "constant"
+              }
+            }
           },
           "rstn": {
             "type": "rst",
-            "direction": "I"
-          },
-          "data_in": {
             "direction": "I",
-            "left": "15",
-            "right": "0"
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
           },
           "address_out": {
             "direction": "O",
@@ -107,7 +212,8 @@
         "ports": [
           "clock",
           "blk_mem_gen_0/clka",
-          "bram_controller_0/clk"
+          "clock_divider_audio_0/clk",
+          "lowpass_fir_0/clk"
         ]
       },
       "bram_controller_0_address_out": {
@@ -119,14 +225,25 @@
       "blk_mem_gen_0_douta": {
         "ports": [
           "blk_mem_gen_0/douta",
-          "data_out",
-          "bram_controller_0/data_in"
+          "lowpass_fir_0/input_signal"
         ]
       },
       "rstn_1": {
         "ports": [
           "rstn",
           "bram_controller_0/rstn"
+        ]
+      },
+      "clock_divider_audio_0_clk_div": {
+        "ports": [
+          "clock_divider_audio_0/clk_div",
+          "bram_controller_0/clk"
+        ]
+      },
+      "lowpass_fir_0_output_signal": {
+        "ports": [
+          "lowpass_fir_0/output_signal",
+          "data_out"
         ]
       }
     }
