@@ -61,6 +61,26 @@ always@(posedge clk)
                 delayed_signal[i] <= delayed_signal[i-1];
             end
     end
+always@(posedge clk)
+    begin
+        for(j=0; j<=10; j=j+1)
+            begin
+                prod[j] <= delayed_signal[j] * coeff[j];
+            end
+    end
 
+always@(posedge clk)
+    begin
+        sum_0[0] <= prod[0] + prod[1];
+        sum_0[1] <= prod[2] + prod[3];
+        sum_0[2] <= prod[4] + prod[5];
+        sum_0[3] <= prod[6] + prod[7];
+        sum_0[4] <= prod[8] + prod[9];
+        sum_0[5] <= prod[10];
+    end
+always@(posedge clk)
+    begin
+        
+    end
 
 endmodule
