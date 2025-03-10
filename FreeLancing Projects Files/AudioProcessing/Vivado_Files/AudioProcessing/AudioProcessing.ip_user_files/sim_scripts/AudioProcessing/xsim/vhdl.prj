@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_dds_compiler_0_0/sim/AudioProcessing_dds_compiler_0_0.vhd" \
+
+nosort
