@@ -2,3 +2,6 @@ Running: xsim.dir/AudioProcessing_wrapper_tb_behav/xsimk.exe -simmode gui -wdb A
 Design successfully loaded
 Design Loading Memory Usage: 11784 KB (Peak: 11784 KB)
 Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 23316 KB (Peak: 23316 KB)
+Simulation CPU Usage: 219374 ms

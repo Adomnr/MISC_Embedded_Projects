@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="172855000001fs"></ZoomEndTime>
-      <Cursor1Time time="13820000000fs"></Cursor1Time>
+      <ZoomStartTime time="105204166666fs"></ZoomStartTime>
+      <ZoomEndTime time="483649166667fs"></ZoomEndTime>
+      <Cursor1Time time="420575000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="220"></NameColumnWidth>
-      <ValueColumnWidth column_width="98"></ValueColumnWidth>
+      <ValueColumnWidth column_width="94"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="35" />
+   <WVObjectSize size="31" />
    <wvobject fp_name="/AudioProcessing_wrapper_tb/clock" type="logic">
       <obj_property name="ElementShortName">clock</obj_property>
       <obj_property name="ObjectShortName">clock</obj_property>
@@ -97,7 +97,7 @@
       <obj_property name="ObjectShortName">output_signal[15:0]</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="divider" fp_name="divider53">
       <obj_property name="label">Clock Divider</obj_property>
@@ -147,8 +147,8 @@
       <obj_property name="ObjectShortName">s_axis_data_tready</obj_property>
    </wvobject>
    <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/fir_compiler_0/s_axis_data_tdata" type="array">
-      <obj_property name="ElementShortName">s_axis_data_tdata[23:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tdata[23:0]</obj_property>
+      <obj_property name="ElementShortName">s_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
@@ -158,8 +158,8 @@
       <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
    </wvobject>
    <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/fir_compiler_0/m_axis_data_tdata" type="array">
-      <obj_property name="ElementShortName">m_axis_data_tdata[63:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tdata[63:0]</obj_property>
+      <obj_property name="ElementShortName">m_axis_data_tdata[71:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[71:0]</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
       <obj_property name="AnalogYRangeMin">-1.74757e+15</obj_property>
@@ -176,30 +176,5 @@
    <wvobject type="divider" fp_name="divider175">
       <obj_property name="label">Modulation</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-   </wvobject>
-   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/Modulation_0/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/Modulation_0/low_signal" type="array">
-      <obj_property name="ElementShortName">low_signal[11:0]</obj_property>
-      <obj_property name="ObjectShortName">low_signal[11:0]</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/Modulation_0/high_signal" type="array">
-      <obj_property name="ElementShortName">high_signal[11:0]</obj_property>
-      <obj_property name="ObjectShortName">high_signal[11:0]</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/Modulation_0/modulated_signal" type="array">
-      <obj_property name="ElementShortName">modulated_signal[23:0]</obj_property>
-      <obj_property name="ObjectShortName">modulated_signal[23:0]</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>
