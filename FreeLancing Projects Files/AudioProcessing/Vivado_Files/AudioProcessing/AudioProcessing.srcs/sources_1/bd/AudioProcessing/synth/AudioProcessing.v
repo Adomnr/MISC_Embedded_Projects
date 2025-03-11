@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Tue Mar 11 15:03:34 2025
+//Date        : Tue Mar 11 15:33:45 2025
 //Host        : DESKTOP-Q2PB8PR running 64-bit major release  (build 9200)
 //Command     : generate_target AudioProcessing.bd
 //Design      : AudioProcessing
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "AudioProcessing,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=AudioProcessing,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=4,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "AudioProcessing.hwdef" *) 
+(* CORE_GENERATION_INFO = "AudioProcessing,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=AudioProcessing,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "AudioProcessing.hwdef" *) 
 module AudioProcessing
    (clock,
     data_out,
@@ -18,23 +18,18 @@ module AudioProcessing
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.DATA_OUT DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.DATA_OUT, LAYERED_METADATA undef" *) output [15:0]data_out;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RSTN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RSTN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input rstn;
 
-  wire [23:0]Modulation_0_modulated_signal;
   wire [15:0]bram_controller_0_address_out;
   wire clock_1;
   wire [15:0]dds_compiler_0_m_axis_data_tdata;
   wire [15:0]dds_compiler_1_m_axis_data_tdata;
   wire [15:0]lowpass_fir_0_output_signal;
+  wire [31:0]mult_gen_0_P;
   wire rstn_1;
   wire [0:0]xlconstant_0_dout;
 
   assign clock_1 = clock;
   assign data_out[15:0] = lowpass_fir_0_output_signal;
   assign rstn_1 = rstn;
-  AudioProcessing_Modulation_0_0 Modulation_0
-       (.clk(clock_1),
-        .high_signal(dds_compiler_0_m_axis_data_tdata[11:0]),
-        .low_signal(dds_compiler_1_m_axis_data_tdata[11:0]),
-        .modulated_signal(Modulation_0_modulated_signal));
   AudioProcessing_blk_mem_gen_0_0 blk_mem_gen_0
        (.addra(bram_controller_0_address_out),
         .clka(clock_1));
@@ -52,12 +47,17 @@ module AudioProcessing
         .m_axis_data_tdata(dds_compiler_1_m_axis_data_tdata));
   AudioProcessing_fir_compiler_0_0 fir_compiler_0
        (.aclk(clock_1),
-        .s_axis_data_tdata(Modulation_0_modulated_signal),
+        .s_axis_data_tdata(mult_gen_0_P),
         .s_axis_data_tvalid(xlconstant_0_dout));
   AudioProcessing_lowpass_fir_0_0 lowpass_fir_0
        (.clk(clock_1),
         .input_signal(dds_compiler_0_m_axis_data_tdata),
         .output_signal(lowpass_fir_0_output_signal));
+  AudioProcessing_mult_gen_0_0 mult_gen_0
+       (.A(dds_compiler_1_m_axis_data_tdata),
+        .B(dds_compiler_0_m_axis_data_tdata),
+        .CLK(clock_1),
+        .P(mult_gen_0_P));
   AudioProcessing_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
 endmodule

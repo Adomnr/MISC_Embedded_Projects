@@ -22,8 +22,8 @@
 
 module Modulation(
     input clk,
-    input  [11:0] low_signal,
-    input  [11:0] high_signal,
+    input  signed [11:0] low_signal,
+    input  signed [11:0] high_signal,
     output [23:0] modulated_signal
     );
     

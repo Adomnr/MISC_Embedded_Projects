@@ -17,7 +17,7 @@
       "fir_compiler_0": "",
       "xlconstant_0": "",
       "dds_compiler_1": "",
-      "Modulation_0": ""
+      "mult_gen_0": ""
     },
     "ports": {
       "clock": {
@@ -213,7 +213,7 @@
             "value": "Sine"
           },
           "Output_Width": {
-            "value": "12"
+            "value": "16"
           },
           "PINC1": {
             "value": "00000000010000"
@@ -293,7 +293,7 @@
             "value": "Signed"
           },
           "Data_Width": {
-            "value": "24"
+            "value": "32"
           },
           "Filter_Architecture": {
             "value": "Systolic_Multiply_Accumulate"
@@ -302,7 +302,7 @@
             "value": "Full_Precision"
           },
           "Output_Width": {
-            "value": "59"
+            "value": "67"
           },
           "Quantization": {
             "value": "Maximize_Dynamic_Range"
@@ -339,7 +339,7 @@
             "value": "Sine"
           },
           "Output_Width": {
-            "value": "12"
+            "value": "16"
           },
           "PINC1": {
             "value": "0000010000000000"
@@ -352,43 +352,15 @@
           }
         }
       },
-      "Modulation_0": {
-        "vlnv": "xilinx.com:module_ref:Modulation:1.0",
-        "xci_name": "AudioProcessing_Modulation_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "Modulation",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "AudioProcessing_clock",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              }
-            }
+      "mult_gen_0": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "xci_name": "AudioProcessing_mult_gen_0_0",
+        "parameters": {
+          "PortAWidth": {
+            "value": "16"
           },
-          "low_signal": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "high_signal": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "modulated_signal": {
-            "direction": "O",
-            "left": "23",
-            "right": "0"
+          "PortBWidth": {
+            "value": "16"
           }
         }
       }
@@ -404,7 +376,7 @@
           "fir_compiler_0/aclk",
           "bram_controller_0/clk",
           "dds_compiler_1/aclk",
-          "Modulation_0/clk"
+          "mult_gen_0/CLK"
         ]
       },
       "bram_controller_0_address_out": {
@@ -429,7 +401,7 @@
         "ports": [
           "dds_compiler_0/m_axis_data_tdata",
           "lowpass_fir_0/input_signal",
-          "Modulation_0/high_signal"
+          "mult_gen_0/B"
         ]
       },
       "xlconstant_0_dout": {
@@ -441,12 +413,12 @@
       "dds_compiler_1_m_axis_data_tdata": {
         "ports": [
           "dds_compiler_1/m_axis_data_tdata",
-          "Modulation_0/low_signal"
+          "mult_gen_0/A"
         ]
       },
-      "Modulation_0_modulated_signal": {
+      "mult_gen_0_P": {
         "ports": [
-          "Modulation_0/modulated_signal",
+          "mult_gen_0/P",
           "fir_compiler_0/s_axis_data_tdata"
         ]
       }

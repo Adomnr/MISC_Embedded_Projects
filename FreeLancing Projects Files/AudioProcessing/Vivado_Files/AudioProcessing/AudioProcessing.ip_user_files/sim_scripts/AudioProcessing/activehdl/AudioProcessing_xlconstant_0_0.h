@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2014 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -47,31 +47,21 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:module_ref:Modulation:1.0
+// IP VLNV: xilinx.com:ip:xlconstant:1.1
 // IP Revision: 1
 
-`timescale 1ns/1ps
+#ifndef _AudioProcessing_xlconstant_0_0_H_
+#define _AudioProcessing_xlconstant_0_0_H_
 
-(* IP_DEFINITION_SOURCE = "module_ref" *)
-(* DowngradeIPIdentifiedWarnings = "yes" *)
-module AudioProcessing_Modulation_0_0 (
-  clk,
-  low_signal,
-  high_signal,
-  modulated_signal
-);
+#include "xlconstant_v1_1_6.h"
+#include "systemc.h"
+class AudioProcessing_xlconstant_0_0 : public sc_module {
+  public:
+xlconstant_v1_1_6<1,1> mod;
+  sc_out< sc_bv<1> > dout;
+AudioProcessing_xlconstant_0_0 (sc_core::sc_module_name name) :sc_module(name), mod("mod") {
+    mod.dout(dout);
+  }
+};
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN AudioProcessing_clock, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
-input wire clk;
-input wire [11 : 0] low_signal;
-input wire [11 : 0] high_signal;
-output wire [23 : 0] modulated_signal;
-
-  Modulation inst (
-    .clk(clk),
-    .low_signal(low_signal),
-    .high_signal(high_signal),
-    .modulated_signal(modulated_signal)
-  );
-endmodule
+#endif
