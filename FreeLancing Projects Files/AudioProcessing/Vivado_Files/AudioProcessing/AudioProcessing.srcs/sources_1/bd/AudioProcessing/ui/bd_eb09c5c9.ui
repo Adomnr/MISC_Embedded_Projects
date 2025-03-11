@@ -2,24 +2,25 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port clock -pg 1 -lvl 0 -x -60 -y 20 -defaultsOSRD
-preplace port rstn -pg 1 -lvl 0 -x -60 -y 130 -defaultsOSRD
-preplace portBus data_out -pg 1 -lvl 4 -x 970 -y 230 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -x 750 -y 100 -defaultsOSRD
-preplace inst bram_controller_0 -pg 1 -lvl 2 -x 410 -y 80 -defaultsOSRD
-preplace inst clock_divider_audio_0 -pg 1 -lvl 1 -x 100 -y 70 -defaultsOSRD
-preplace inst dds_compiler_0 -pg 1 -lvl 1 -x 100 -y 350 -defaultsOSRD
-preplace inst lowpass_fir_0 -pg 1 -lvl 3 -x 750 -y 250 -defaultsOSRD
-preplace inst fir_compiler_0 -pg 1 -lvl 3 -x 750 -y 420 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 2 -x 410 -y 440 -defaultsOSRD
-preplace netloc clock_1 1 0 3 -40 10 240J 10 540
-preplace netloc bram_controller_0_address_out 1 2 1 550 80n
-preplace netloc rstn_1 1 0 2 NJ 130 240J
-preplace netloc lowpass_fir_0_output_signal 1 3 1 950 230n
-preplace netloc dds_compiler_0_m_axis_data_tdata 1 1 2 N 360 550J
-preplace netloc xlconstant_0_dout 1 2 1 N 440
-levelinfo -pg 1 -60 100 410 750 970
-pagesize -pg 1 -db -bbox -sgen -150 0 1110 520
+preplace port clock -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port rstn -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace portBus data_out -pg 1 -lvl 4 -x 930 -y 250 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -x 710 -y 400 -defaultsOSRD
+preplace inst bram_controller_0 -pg 1 -lvl 2 -x 360 -y 390 -defaultsOSRD
+preplace inst clock_divider_audio_0 -pg 1 -lvl 1 -x 120 -y 340 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 2 -x 360 -y 250 -defaultsOSRD
+preplace inst lowpass_fir_0 -pg 1 -lvl 3 -x 710 -y 250 -defaultsOSRD
+preplace inst fir_compiler_0 -pg 1 -lvl 3 -x 710 -y 100 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 360 -y 120 -defaultsOSRD
+preplace netloc clock_1 1 0 3 20 280 220 320 500
+preplace netloc bram_controller_0_address_out 1 2 1 N 390
+preplace netloc rstn_1 1 0 2 NJ 400 NJ
+preplace netloc lowpass_fir_0_output_signal 1 3 1 N 250
+preplace netloc dds_compiler_0_m_axis_data_tdata 1 2 1 NJ 260
+preplace netloc xlconstant_0_dout 1 2 1 NJ 120
+preplace netloc blk_mem_gen_0_douta 1 2 1 510 80n
+levelinfo -pg 1 0 120 360 710 930
+pagesize -pg 1 -db -bbox -sgen -90 0 1070 490
 "
 }
 0

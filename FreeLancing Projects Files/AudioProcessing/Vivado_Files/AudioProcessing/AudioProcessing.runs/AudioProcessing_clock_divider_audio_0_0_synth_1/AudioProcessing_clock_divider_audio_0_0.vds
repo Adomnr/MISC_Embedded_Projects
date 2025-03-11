@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Mar 10 19:45:02 2025
-# Process ID: 16788
+# Start of session at: Tue Mar 11 06:10:49 2025
+# Process ID: 14624
 # Current directory: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_clock_divider_audio_0_0_synth_1
 # Command line: vivado.exe -log AudioProcessing_clock_divider_audio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AudioProcessing_clock_divider_audio_0_0.tcl
 # Log file: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_clock_divider_audio_0_0_synth_1/AudioProcessing_clock_divider_audio_0_0.vds
@@ -20,7 +20,7 @@ INFO: [Device 21-403] Loading part xc7z020clg400-3
 INFO: [Common 17-83] Releasing license: Synthesis
 3 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
 synth_design failed
-ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_clock_divider_audio_0_0_synth_1/D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_clock_divider_audio_0_0_synth_1/.Xil/Vivado-16788-DESKTOP-Q2PB8PR/realtime\AudioProcessing_clock_divider_audio_0_0.tcl
+ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_clock_divider_audio_0_0_synth_1/D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_clock_divider_audio_0_0_synth_1/.Xil/Vivado-14624-DESKTOP-Q2PB8PR/realtime\AudioProcessing_clock_divider_audio_0_0.tcl
 Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
 Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 10 19:45:18 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 11 06:11:05 2025...

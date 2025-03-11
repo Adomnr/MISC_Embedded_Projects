@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Mar 11 04:47:36 2025" VIVADOVERSION="2019.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Mar 11 07:06:21 2025" VIVADOVERSION="2019.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="AudioProcessing" PACKAGE="clg400" SPEEDGRADE="-3"/>
 
@@ -8,10 +8,10 @@
       <CONNECTIONS>
         <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clka"/>
         <CONNECTION INSTANCE="clock_divider_audio_0" PORT="clk"/>
-        <CONNECTION INSTANCE="bram_controller_0" PORT="clk"/>
         <CONNECTION INSTANCE="dds_compiler_0" PORT="aclk"/>
         <CONNECTION INSTANCE="lowpass_fir_0" PORT="clk"/>
         <CONNECTION INSTANCE="fir_compiler_0" PORT="aclk"/>
+        <CONNECTION INSTANCE="bram_controller_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="rstn" SIGIS="rst" SIGNAME="External_Ports_rstn">
@@ -194,7 +194,11 @@
             <CONNECTION INSTANCE="bram_controller_0" PORT="address_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="douta" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_0_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fir_compiler_0" PORT="s_axis_data_tdata"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
@@ -421,7 +425,6 @@
         <PORT DIR="O" LEFT="15" NAME="m_axis_data_tdata" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_0_m_axis_data_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="lowpass_fir_0" PORT="input_signal"/>
-            <CONNECTION INSTANCE="fir_compiler_0" PORT="s_axis_data_tdata"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -494,8 +497,8 @@
         <PARAMETER NAME="C_NUM_MADDS" VALUE="1"/>
         <PARAMETER NAME="C_OPT_MADDS" VALUE="none"/>
         <PARAMETER NAME="C_OVERSAMPLING_RATE" VALUE="7"/>
-        <PARAMETER NAME="C_INPUT_RATE" VALUE="100000"/>
-        <PARAMETER NAME="C_OUTPUT_RATE" VALUE="100000"/>
+        <PARAMETER NAME="C_INPUT_RATE" VALUE="226"/>
+        <PARAMETER NAME="C_OUTPUT_RATE" VALUE="226"/>
         <PARAMETER NAME="C_DATA_MEMTYPE" VALUE="0"/>
         <PARAMETER NAME="C_COEF_MEMTYPE" VALUE="2"/>
         <PARAMETER NAME="C_IPBUFF_MEMTYPE" VALUE="0"/>
@@ -542,7 +545,7 @@
         <PARAMETER NAME="RateSpecification" VALUE="Frequency_Specification"/>
         <PARAMETER NAME="HardwareOversamplingRate" VALUE="1"/>
         <PARAMETER NAME="SamplePeriod" VALUE="1"/>
-        <PARAMETER NAME="Sample_Frequency" VALUE="0.001"/>
+        <PARAMETER NAME="Sample_Frequency" VALUE="0.441"/>
         <PARAMETER NAME="Clock_Frequency" VALUE="100.0"/>
         <PARAMETER NAME="Coefficient_Sign" VALUE="Signed"/>
         <PARAMETER NAME="Quantization" VALUE="Integer_Coefficients"/>
@@ -604,9 +607,9 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="s_axis_data_tready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="15" NAME="s_axis_data_tdata" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_0_m_axis_data_tdata">
+        <PORT DIR="I" LEFT="15" NAME="s_axis_data_tdata" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_0_douta">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds_compiler_0" PORT="m_axis_data_tdata"/>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="douta"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axis_data_tvalid" SIGIS="undef"/>

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Tue Mar 11 04:47:35 2025
+//Date        : Tue Mar 11 07:06:21 2025
 //Host        : DESKTOP-Q2PB8PR running 64-bit major release  (build 9200)
 //Command     : generate_target AudioProcessing.bd
 //Design      : AudioProcessing
@@ -18,6 +18,7 @@ module AudioProcessing
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.DATA_OUT DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.DATA_OUT, LAYERED_METADATA undef" *) output [15:0]data_out;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RSTN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RSTN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input rstn;
 
+  wire [15:0]blk_mem_gen_0_douta;
   wire [15:0]bram_controller_0_address_out;
   wire clock_1;
   wire [15:0]dds_compiler_0_m_axis_data_tdata;
@@ -30,7 +31,8 @@ module AudioProcessing
   assign rstn_1 = rstn;
   AudioProcessing_blk_mem_gen_0_0 blk_mem_gen_0
        (.addra(bram_controller_0_address_out),
-        .clka(clock_1));
+        .clka(clock_1),
+        .douta(blk_mem_gen_0_douta));
   AudioProcessing_bram_controller_0_0 bram_controller_0
        (.address_out(bram_controller_0_address_out),
         .clk(clock_1),
@@ -42,7 +44,7 @@ module AudioProcessing
         .m_axis_data_tdata(dds_compiler_0_m_axis_data_tdata));
   AudioProcessing_fir_compiler_0_0 fir_compiler_0
        (.aclk(clock_1),
-        .s_axis_data_tdata(dds_compiler_0_m_axis_data_tdata),
+        .s_axis_data_tdata(blk_mem_gen_0_douta),
         .s_axis_data_tvalid(xlconstant_0_dout));
   AudioProcessing_lowpass_fir_0_0 lowpass_fir_0
        (.clk(clock_1),

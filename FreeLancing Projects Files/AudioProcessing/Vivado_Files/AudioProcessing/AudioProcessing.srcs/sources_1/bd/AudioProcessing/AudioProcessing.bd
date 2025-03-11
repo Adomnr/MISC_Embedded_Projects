@@ -295,6 +295,9 @@
           },
           "Quantization": {
             "value": "Integer_Coefficients"
+          },
+          "Sample_Frequency": {
+            "value": "0.441"
           }
         }
       },
@@ -309,10 +312,10 @@
           "clock",
           "blk_mem_gen_0/clka",
           "clock_divider_audio_0/clk",
-          "bram_controller_0/clk",
           "dds_compiler_0/aclk",
           "lowpass_fir_0/clk",
-          "fir_compiler_0/aclk"
+          "fir_compiler_0/aclk",
+          "bram_controller_0/clk"
         ]
       },
       "bram_controller_0_address_out": {
@@ -336,14 +339,19 @@
       "dds_compiler_0_m_axis_data_tdata": {
         "ports": [
           "dds_compiler_0/m_axis_data_tdata",
-          "lowpass_fir_0/input_signal",
-          "fir_compiler_0/s_axis_data_tdata"
+          "lowpass_fir_0/input_signal"
         ]
       },
       "xlconstant_0_dout": {
         "ports": [
           "xlconstant_0/dout",
           "fir_compiler_0/s_axis_data_tvalid"
+        ]
+      },
+      "blk_mem_gen_0_douta": {
+        "ports": [
+          "blk_mem_gen_0/douta",
+          "fir_compiler_0/s_axis_data_tdata"
         ]
       }
     }

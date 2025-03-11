@@ -13,6 +13,8 @@ vlib activehdl/xbip_dsp48_wrapper_v3_0_4
 vlib activehdl/xbip_dsp48_addsub_v3_0_6
 vlib activehdl/xbip_dsp48_multadd_v3_0_6
 vlib activehdl/dds_compiler_v6_0_18
+vlib activehdl/fir_compiler_v7_2_12
+vlib activehdl/xlconstant_v1_1_6
 
 vmap xil_defaultlib activehdl/xil_defaultlib
 vmap xpm activehdl/xpm
@@ -26,6 +28,8 @@ vmap xbip_dsp48_wrapper_v3_0_4 activehdl/xbip_dsp48_wrapper_v3_0_4
 vmap xbip_dsp48_addsub_v3_0_6 activehdl/xbip_dsp48_addsub_v3_0_6
 vmap xbip_dsp48_multadd_v3_0_6 activehdl/xbip_dsp48_multadd_v3_0_6
 vmap dds_compiler_v6_0_18 activehdl/dds_compiler_v6_0_18
+vmap fir_compiler_v7_2_12 activehdl/fir_compiler_v7_2_12
+vmap xlconstant_v1_1_6 activehdl/xlconstant_v1_1_6
 
 vlog -work xil_defaultlib  -sv2k12 \
 "D:/Vivado/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
@@ -74,6 +78,18 @@ vcom -work xil_defaultlib -93 \
 
 vlog -work xil_defaultlib  -v2k5 \
 "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/sim/AudioProcessing.v" \
+
+vcom -work fir_compiler_v7_2_12 -93 \
+"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/c2da/hdl/fir_compiler_v7_2_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -93 \
+"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_fir_compiler_0_0/sim/AudioProcessing_fir_compiler_0_0.vhd" \
+
+vlog -work xlconstant_v1_1_6  -v2k5 \
+"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 \
+"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_xlconstant_0_0/sim/AudioProcessing_xlconstant_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

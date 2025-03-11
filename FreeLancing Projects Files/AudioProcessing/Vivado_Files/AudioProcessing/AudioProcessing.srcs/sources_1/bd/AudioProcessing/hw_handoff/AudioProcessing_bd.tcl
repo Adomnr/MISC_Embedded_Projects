@@ -246,6 +246,7 @@ proc create_root_design { parentCell } {
    CONFIG.Output_Rounding_Mode {Full_Precision} \
    CONFIG.Output_Width {33} \
    CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.Sample_Frequency {0.441} \
  ] $fir_compiler_0
 
   # Create instance: lowpass_fir_0, and set properties
@@ -263,9 +264,10 @@ proc create_root_design { parentCell } {
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
 
   # Create port connections
+  connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins fir_compiler_0/s_axis_data_tdata]
   connect_bd_net -net bram_controller_0_address_out [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins bram_controller_0/address_out]
   connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins bram_controller_0/clk] [get_bd_pins clock_divider_audio_0/clk] [get_bd_pins dds_compiler_0/aclk] [get_bd_pins fir_compiler_0/aclk] [get_bd_pins lowpass_fir_0/clk]
-  connect_bd_net -net dds_compiler_0_m_axis_data_tdata [get_bd_pins dds_compiler_0/m_axis_data_tdata] [get_bd_pins fir_compiler_0/s_axis_data_tdata] [get_bd_pins lowpass_fir_0/input_signal]
+  connect_bd_net -net dds_compiler_0_m_axis_data_tdata [get_bd_pins dds_compiler_0/m_axis_data_tdata] [get_bd_pins lowpass_fir_0/input_signal]
   connect_bd_net -net lowpass_fir_0_output_signal [get_bd_ports data_out] [get_bd_pins lowpass_fir_0/output_signal]
   connect_bd_net -net rstn_1 [get_bd_ports rstn] [get_bd_pins bram_controller_0/rstn]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins fir_compiler_0/s_axis_data_tvalid] [get_bd_pins xlconstant_0/dout]
