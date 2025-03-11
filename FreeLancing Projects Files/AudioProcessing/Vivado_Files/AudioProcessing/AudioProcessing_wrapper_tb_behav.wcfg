@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="855995833333fs"></ZoomStartTime>
-      <ZoomEndTime time="1030000833334fs"></ZoomEndTime>
-      <Cursor1Time time="1001000000000fs"></Cursor1Time>
+      <ZoomStartTime time="55774166666fs"></ZoomStartTime>
+      <ZoomEndTime time="116699166667fs"></ZoomEndTime>
+      <Cursor1Time time="69695000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="220"></NameColumnWidth>
-      <ValueColumnWidth column_width="118"></ValueColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="30" />
+   <WVObjectSize size="35" />
    <wvobject fp_name="/AudioProcessing_wrapper_tb/clock" type="logic">
       <obj_property name="ElementShortName">clock</obj_property>
       <obj_property name="ObjectShortName">clock</obj_property>
@@ -147,9 +147,9 @@
       <obj_property name="ObjectShortName">s_axis_data_tready</obj_property>
    </wvobject>
    <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/fir_compiler_0/s_axis_data_tdata" type="array">
-      <obj_property name="ElementShortName">s_axis_data_tdata[15:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tdata[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="ElementShortName">s_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
    </wvobject>
@@ -158,13 +158,44 @@
       <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
    </wvobject>
    <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/fir_compiler_0/m_axis_data_tdata" type="array">
-      <obj_property name="ElementShortName">m_axis_data_tdata[39:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tdata[39:0]</obj_property>
+      <obj_property name="ElementShortName">m_axis_data_tdata[71:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[71:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">1468070000000000.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">17703300000000000.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider175">
+      <obj_property name="label">Modulation</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/Modulation_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/Modulation_0/low_signal" type="array">
+      <obj_property name="ElementShortName">low_signal[15:0]</obj_property>
+      <obj_property name="ObjectShortName">low_signal[15:0]</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
-      <obj_property name="AnalogYRangeMin">-5.17007e+09</obj_property>
-      <obj_property name="AnalogYRRangeMax">7.74159e+09</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/Modulation_0/high_signal" type="array">
+      <obj_property name="ElementShortName">high_signal[15:0]</obj_property>
+      <obj_property name="ObjectShortName">high_signal[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AudioProcessing_wrapper_tb/uut/AudioProcessing_i/Modulation_0/modulated_signal" type="array">
+      <obj_property name="ElementShortName">modulated_signal[31:0]</obj_property>
+      <obj_property name="ObjectShortName">modulated_signal[31:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

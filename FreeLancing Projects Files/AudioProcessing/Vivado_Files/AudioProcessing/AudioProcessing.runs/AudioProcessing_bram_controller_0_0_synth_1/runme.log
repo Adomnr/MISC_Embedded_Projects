@@ -9,7 +9,6 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source AudioProcessing_bram_controller_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 354.645 ; gain = 61.625
 Command: synth_design -top AudioProcessing_bram_controller_0_0 -part xc7z020clg400-3 -mode out_of_context
 Starting synth_design
 WARNING: [IP_Flow 19-3571] IP 'AudioProcessing_bram_controller_0_0' is restricted:
@@ -18,9 +17,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-3
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9504 
+INFO: Helper process launched with PID 14720 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 830.918 ; gain = 178.004
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 832.332 ; gain = 179.117
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'AudioProcessing_bram_controller_0_0' [d:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_bram_controller_0_0/synth/AudioProcessing_bram_controller_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'bram_controller' [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/bram_controller.v:23]
@@ -28,7 +27,7 @@ INFO: [Synth 8-6157] synthesizing module 'bram_controller' [D:/GitHub_Repo/MISC_
 INFO: [Synth 8-6155] done synthesizing module 'bram_controller' (1#1) [D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/bram_controller.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'AudioProcessing_bram_controller_0_0' (2#1) [d:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_bram_controller_0_0/synth/AudioProcessing_bram_controller_0_0.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 897.602 ; gain = 244.688
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 898.273 ; gain = 245.059
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -41,10 +40,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 897.602 ; gain = 244.688
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 898.273 ; gain = 245.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 897.602 ; gain = 244.688
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 898.273 ; gain = 245.059
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -52,28 +51,28 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 981.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 978.824 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_bram_controller_0_0_synth_1/.Xil/Vivado-16120-DESKTOP-Q2PB8PR/realtime/AudioProcessing_bram_controller_0_0_synth.xdc
+ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_bram_controller_0_0_synth_1/.Xil/Vivado-11100-DESKTOP-Q2PB8PR/realtime/AudioProcessing_bram_controller_0_0_synth.xdc
 Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
 Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.434 . Memory (MB): peak = 981.312 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.266 . Memory (MB): peak = 979.820 ; gain = 0.996
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -117,7 +116,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -130,7 +129,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -142,7 +141,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -166,7 +165,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -179,7 +178,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -191,25 +190,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -240,39 +239,39 @@ Report Instance Areas:
 |2     |  inst   |bram_controller |    24|
 +------+---------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 981.312 ; gain = 328.398
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 979.820 ; gain = 326.605
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 981.312 ; gain = 244.688
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 981.312 ; gain = 328.398
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 979.820 ; gain = 245.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 979.820 ; gain = 326.605
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 981.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 979.820 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 15 Infos, 2 Warnings, 0 Critical Warnings and 1 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 981.312 ; gain = 602.781
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 981.312 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 979.820 ; gain = 601.066
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 979.820 ; gain = 0.000
 Failed to write replay
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_bram_controller_0_0_synth_1/.Xil/Vivado-16120-DESKTOP-Q2PB8PR/dcp0/AudioProcessing_bram_controller_0_0_in_context.xdc
+ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_bram_controller_0_0_synth_1/.Xil/Vivado-11100-DESKTOP-Q2PB8PR/dcp0/AudioProcessing_bram_controller_0_0_in_context.xdc
 Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
 Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 981.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 979.820 ; gain = 0.000
 Failed to write replay
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_bram_controller_0_0_synth_1/.Xil/Vivado-16120-DESKTOP-Q2PB8PR/dcp1/AudioProcessing_bram_controller_0_0_in_context.xdc
+ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_bram_controller_0_0_synth_1/.Xil/Vivado-11100-DESKTOP-Q2PB8PR/dcp1/AudioProcessing_bram_controller_0_0_in_context.xdc
 Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
 Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
 
 ERROR: [Common 17-69] Command failed: Failed to create design checkpoint
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 11 10:47:12 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 11 14:00:09 2025...

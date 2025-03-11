@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Tue Mar 11 10:45:54 2025
+//Date        : Tue Mar 11 13:59:24 2025
 //Host        : DESKTOP-Q2PB8PR running 64-bit major release  (build 9200)
 //Command     : generate_target AudioProcessing.bd
 //Design      : AudioProcessing
@@ -18,7 +18,7 @@ module AudioProcessing
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.DATA_OUT DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.DATA_OUT, LAYERED_METADATA undef" *) output [15:0]data_out;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RSTN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RSTN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input rstn;
 
-  wire [15:0]Modulation_0_modulated_signal;
+  wire [31:0]Modulation_0_modulated_signal;
   wire [15:0]bram_controller_0_address_out;
   wire clock_1;
   wire [15:0]dds_compiler_0_m_axis_data_tdata;

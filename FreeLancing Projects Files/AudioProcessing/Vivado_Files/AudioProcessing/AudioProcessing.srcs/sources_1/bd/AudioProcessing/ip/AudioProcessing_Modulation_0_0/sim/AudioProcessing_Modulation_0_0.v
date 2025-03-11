@@ -64,9 +64,9 @@ module AudioProcessing_Modulation_0_0 (
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN AudioProcessing_clock, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
-input wire [15 : 0] low_signal;
-input wire [15 : 0] high_signal;
-output wire [15 : 0] modulated_signal;
+input wire [11 : 0] low_signal;
+input wire [11 : 0] high_signal;
+output wire [23 : 0] modulated_signal;
 
   Modulation inst (
     .clk(clk),

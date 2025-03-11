@@ -213,7 +213,7 @@
             "value": "Sine"
           },
           "Output_Width": {
-            "value": "16"
+            "value": "12"
           },
           "PINC1": {
             "value": "00000000010000"
@@ -265,14 +265,17 @@
         "vlnv": "xilinx.com:ip:fir_compiler:7.2",
         "xci_name": "AudioProcessing_fir_compiler_0_0",
         "parameters": {
+          "BestPrecision": {
+            "value": "false"
+          },
           "Clock_Frequency": {
             "value": "100.0"
           },
           "CoefficientVector": {
-            "value": "248,-364,-246,2679,-4723,-785,35959,35959,-785,-4723,2679,-246,-364,248"
+            "value": "452,-664, -448,4884,-8608,-1432,65536,65536, -1432, -8608,4884,-448,-664,452"
           },
           "Coefficient_Fractional_Bits": {
-            "value": "0"
+            "value": "16"
           },
           "Coefficient_Sets": {
             "value": "1"
@@ -284,7 +287,13 @@
             "value": "Inferred"
           },
           "Coefficient_Width": {
-            "value": "17"
+            "value": "34"
+          },
+          "Data_Sign": {
+            "value": "Signed"
+          },
+          "Data_Width": {
+            "value": "24"
           },
           "Filter_Architecture": {
             "value": "Systolic_Multiply_Accumulate"
@@ -293,10 +302,10 @@
             "value": "Full_Precision"
           },
           "Output_Width": {
-            "value": "33"
+            "value": "59"
           },
           "Quantization": {
-            "value": "Integer_Coefficients"
+            "value": "Maximize_Dynamic_Range"
           },
           "Sample_Frequency": {
             "value": "0.0441"
@@ -330,7 +339,7 @@
             "value": "Sine"
           },
           "Output_Width": {
-            "value": "16"
+            "value": "12"
           },
           "PINC1": {
             "value": "0000010000000000"
@@ -368,17 +377,17 @@
           },
           "low_signal": {
             "direction": "I",
-            "left": "15",
+            "left": "11",
             "right": "0"
           },
           "high_signal": {
             "direction": "I",
-            "left": "15",
+            "left": "11",
             "right": "0"
           },
           "modulated_signal": {
             "direction": "O",
-            "left": "15",
+            "left": "23",
             "right": "0"
           }
         }

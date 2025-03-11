@@ -237,7 +237,7 @@ proc create_root_design { parentCell } {
    CONFIG.Noise_Shaping {None} \
    CONFIG.Output_Frequency1 {0} \
    CONFIG.Output_Selection {Sine} \
-   CONFIG.Output_Width {16} \
+   CONFIG.Output_Width {12} \
    CONFIG.PINC1 {00000000010000} \
    CONFIG.Parameter_Entry {Hardware_Parameters} \
    CONFIG.Phase_Width {16} \
@@ -252,7 +252,7 @@ proc create_root_design { parentCell } {
    CONFIG.Noise_Shaping {None} \
    CONFIG.Output_Frequency1 {0} \
    CONFIG.Output_Selection {Sine} \
-   CONFIG.Output_Width {16} \
+   CONFIG.Output_Width {12} \
    CONFIG.PINC1 {0000010000000000} \
    CONFIG.Parameter_Entry {Hardware_Parameters} \
    CONFIG.Phase_Width {16} \
@@ -261,17 +261,20 @@ proc create_root_design { parentCell } {
   # Create instance: fir_compiler_0, and set properties
   set fir_compiler_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_0 ]
   set_property -dict [ list \
+   CONFIG.BestPrecision {false} \
    CONFIG.Clock_Frequency {100.0} \
-   CONFIG.CoefficientVector {248,-364,-246,2679,-4723,-785,35959,35959,-785,-4723,2679,-246,-364,248} \
-   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.CoefficientVector {452,-664, -448,4884,-8608,-1432,65536,65536, -1432, -8608,4884,-448,-664,452} \
+   CONFIG.Coefficient_Fractional_Bits {16} \
    CONFIG.Coefficient_Sets {1} \
    CONFIG.Coefficient_Sign {Signed} \
    CONFIG.Coefficient_Structure {Inferred} \
-   CONFIG.Coefficient_Width {17} \
+   CONFIG.Coefficient_Width {34} \
+   CONFIG.Data_Sign {Signed} \
+   CONFIG.Data_Width {24} \
    CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
    CONFIG.Output_Rounding_Mode {Full_Precision} \
-   CONFIG.Output_Width {33} \
-   CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.Output_Width {59} \
+   CONFIG.Quantization {Maximize_Dynamic_Range} \
    CONFIG.Sample_Frequency {0.0441} \
  ] $fir_compiler_0
 
