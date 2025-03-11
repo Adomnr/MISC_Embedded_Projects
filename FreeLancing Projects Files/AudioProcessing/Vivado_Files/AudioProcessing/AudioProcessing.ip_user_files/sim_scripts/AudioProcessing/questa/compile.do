@@ -90,9 +90,9 @@ vlog -work xil_defaultlib -64 \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_dds_compiler_1_0/sim/AudioProcessing_dds_compiler_1_0.vhd" \
-
-vlog -work xil_defaultlib -64 \
-"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/sim/AudioProcessing.v" \
+"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_mult_gen_0_0/sim/AudioProcessing_mult_gen_0_0.vhd" \
+"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_fir_compiler_1_0/sim/AudioProcessing_fir_compiler_1_0.vhd" \
+"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_dds_compiler_2_0/sim/AudioProcessing_dds_compiler_2_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

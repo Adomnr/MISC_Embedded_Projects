@@ -59,9 +59,9 @@ USE mult_gen_v12_0_15.mult_gen_v12_0_15;
 ENTITY AudioProcessing_mult_gen_0_0 IS
   PORT (
     CLK : IN STD_LOGIC;
-    A : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-    B : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-    P : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+    A : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    B : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    P : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END AudioProcessing_mult_gen_0_0;
 
@@ -93,17 +93,17 @@ ARCHITECTURE AudioProcessing_mult_gen_0_0_arch OF AudioProcessing_mult_gen_0_0 I
     );
     PORT (
       CLK : IN STD_LOGIC;
-      A : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-      B : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+      A : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      B : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       CE : IN STD_LOGIC;
       SCLR : IN STD_LOGIC;
-      P : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+      P : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
     );
   END COMPONENT mult_gen_v12_0_15;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF P: SIGNAL IS "XIL_INTERFACENAME p_intf, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximu" & 
-"m {}} value TRUE}}}} DATA_WIDTH 32}";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF P: SIGNAL IS "XIL_INTERFACENAME p_intf, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximu" & 
+"m {}} value TRUE}}}} DATA_WIDTH 16}";
   ATTRIBUTE X_INTERFACE_INFO OF P: SIGNAL IS "xilinx.com:signal:data:1.0 p_intf DATA";
   ATTRIBUTE X_INTERFACE_PARAMETER OF B: SIGNAL IS "XIL_INTERFACENAME b_intf, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF B: SIGNAL IS "xilinx.com:signal:data:1.0 b_intf DATA";
@@ -121,11 +121,11 @@ BEGIN
       C_HAS_CE => 0,
       C_HAS_SCLR => 0,
       C_LATENCY => 1,
-      C_A_WIDTH => 16,
+      C_A_WIDTH => 8,
       C_A_TYPE => 0,
-      C_B_WIDTH => 16,
+      C_B_WIDTH => 8,
       C_B_TYPE => 0,
-      C_OUT_HIGH => 31,
+      C_OUT_HIGH => 15,
       C_OUT_LOW => 0,
       C_MULT_TYPE => 0,
       C_CE_OVERRIDES_SCLR => 0,

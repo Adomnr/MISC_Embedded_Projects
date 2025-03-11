@@ -1,15 +1,15 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Tue Mar 11 15:33:45 2025
-//Host        : DESKTOP-Q2PB8PR running 64-bit major release  (build 9200)
+//Date        : Wed Mar 12 00:17:09 2025
+//Host        : DESKTOP-946HOG3 running 64-bit major release  (build 9200)
 //Command     : generate_target AudioProcessing.bd
 //Design      : AudioProcessing
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "AudioProcessing,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=AudioProcessing,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "AudioProcessing.hwdef" *) 
+(* CORE_GENERATION_INFO = "AudioProcessing,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=AudioProcessing,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "AudioProcessing.hwdef" *) 
 module AudioProcessing
    (clock,
     data_out,
@@ -20,10 +20,12 @@ module AudioProcessing
 
   wire [15:0]bram_controller_0_address_out;
   wire clock_1;
-  wire [15:0]dds_compiler_0_m_axis_data_tdata;
-  wire [15:0]dds_compiler_1_m_axis_data_tdata;
+  wire [7:0]dds_compiler_0_m_axis_data_tdata;
+  wire [7:0]dds_compiler_1_m_axis_data_tdata;
+  wire [15:0]dds_compiler_2_m_axis_data_tdata;
+  wire dds_compiler_2_m_axis_data_tvalid;
   wire [15:0]lowpass_fir_0_output_signal;
-  wire [31:0]mult_gen_0_P;
+  wire [15:0]mult_gen_0_P;
   wire rstn_1;
   wire [0:0]xlconstant_0_dout;
 
@@ -45,13 +47,21 @@ module AudioProcessing
   AudioProcessing_dds_compiler_1_0 dds_compiler_1
        (.aclk(clock_1),
         .m_axis_data_tdata(dds_compiler_1_m_axis_data_tdata));
+  AudioProcessing_dds_compiler_2_0 dds_compiler_2
+       (.aclk(clock_1),
+        .m_axis_data_tdata(dds_compiler_2_m_axis_data_tdata),
+        .m_axis_data_tvalid(dds_compiler_2_m_axis_data_tvalid));
   AudioProcessing_fir_compiler_0_0 fir_compiler_0
        (.aclk(clock_1),
         .s_axis_data_tdata(mult_gen_0_P),
         .s_axis_data_tvalid(xlconstant_0_dout));
+  AudioProcessing_fir_compiler_1_0 fir_compiler_1
+       (.aclk(clock_1),
+        .s_axis_data_tdata(dds_compiler_2_m_axis_data_tdata),
+        .s_axis_data_tvalid(dds_compiler_2_m_axis_data_tvalid));
   AudioProcessing_lowpass_fir_0_0 lowpass_fir_0
        (.clk(clock_1),
-        .input_signal(dds_compiler_0_m_axis_data_tdata),
+        .input_signal(mult_gen_0_P),
         .output_signal(lowpass_fir_0_output_signal));
   AudioProcessing_mult_gen_0_0 mult_gen_0
        (.A(dds_compiler_1_m_axis_data_tdata),

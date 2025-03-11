@@ -17,7 +17,9 @@
       "fir_compiler_0": "",
       "xlconstant_0": "",
       "dds_compiler_1": "",
-      "mult_gen_0": ""
+      "mult_gen_0": "",
+      "fir_compiler_1": "",
+      "dds_compiler_2": ""
     },
     "ports": {
       "clock": {
@@ -102,7 +104,7 @@
             "value": "false"
           },
           "Write_Depth_A": {
-            "value": "50000"
+            "value": "44100"
           },
           "Write_Width_A": {
             "value": "16"
@@ -195,7 +197,7 @@
             "value": "false"
           },
           "Latency": {
-            "value": "7"
+            "value": "3"
           },
           "M_DATA_Has_TUSER": {
             "value": "Not_Required"
@@ -213,7 +215,7 @@
             "value": "Sine"
           },
           "Output_Width": {
-            "value": "16"
+            "value": "8"
           },
           "PINC1": {
             "value": "00000000010000"
@@ -252,7 +254,13 @@
           "input_signal": {
             "direction": "I",
             "left": "15",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "output_signal": {
             "direction": "O",
@@ -289,11 +297,14 @@
           "Coefficient_Width": {
             "value": "34"
           },
+          "Data_Fractional_Bits": {
+            "value": "0"
+          },
           "Data_Sign": {
             "value": "Signed"
           },
           "Data_Width": {
-            "value": "32"
+            "value": "16"
           },
           "Filter_Architecture": {
             "value": "Systolic_Multiply_Accumulate"
@@ -302,7 +313,7 @@
             "value": "Full_Precision"
           },
           "Output_Width": {
-            "value": "67"
+            "value": "51"
           },
           "Quantization": {
             "value": "Maximize_Dynamic_Range"
@@ -319,6 +330,96 @@
       "dds_compiler_1": {
         "vlnv": "xilinx.com:ip:dds_compiler:6.0",
         "xci_name": "AudioProcessing_dds_compiler_1_0",
+        "parameters": {
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Latency": {
+            "value": "3"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "8"
+          },
+          "PINC1": {
+            "value": "0000010000000000"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "Phase_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "mult_gen_0": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "xci_name": "AudioProcessing_mult_gen_0_0",
+        "parameters": {
+          "PortAWidth": {
+            "value": "8"
+          },
+          "PortBWidth": {
+            "value": "8"
+          }
+        }
+      },
+      "fir_compiler_1": {
+        "vlnv": "xilinx.com:ip:fir_compiler:7.2",
+        "xci_name": "AudioProcessing_fir_compiler_1_0",
+        "parameters": {
+          "Clock_Frequency": {
+            "value": "100.0"
+          },
+          "CoefficientVector": {
+            "value": "0,0,0,-1,2,0,-4,9,-8,-7,74,74,-7,-8,9,-4,0,2,-1,0,0,0"
+          },
+          "Coefficient_Fractional_Bits": {
+            "value": "0"
+          },
+          "Coefficient_Sets": {
+            "value": "1"
+          },
+          "Coefficient_Sign": {
+            "value": "Signed"
+          },
+          "Coefficient_Structure": {
+            "value": "Inferred"
+          },
+          "Coefficient_Width": {
+            "value": "8"
+          },
+          "Filter_Architecture": {
+            "value": "Systolic_Multiply_Accumulate"
+          },
+          "Output_Rounding_Mode": {
+            "value": "Full_Precision"
+          },
+          "Output_Width": {
+            "value": "24"
+          },
+          "Quantization": {
+            "value": "Integer_Coefficients"
+          },
+          "Sample_Frequency": {
+            "value": "0.0441"
+          }
+        }
+      },
+      "dds_compiler_2": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "AudioProcessing_dds_compiler_2_0",
         "parameters": {
           "Has_Phase_Out": {
             "value": "false"
@@ -342,24 +443,12 @@
             "value": "16"
           },
           "PINC1": {
-            "value": "0000010000000000"
+            "value": "0100000000000000"
           },
           "Parameter_Entry": {
             "value": "Hardware_Parameters"
           },
           "Phase_Width": {
-            "value": "16"
-          }
-        }
-      },
-      "mult_gen_0": {
-        "vlnv": "xilinx.com:ip:mult_gen:12.0",
-        "xci_name": "AudioProcessing_mult_gen_0_0",
-        "parameters": {
-          "PortAWidth": {
-            "value": "16"
-          },
-          "PortBWidth": {
             "value": "16"
           }
         }
@@ -376,7 +465,9 @@
           "fir_compiler_0/aclk",
           "bram_controller_0/clk",
           "dds_compiler_1/aclk",
-          "mult_gen_0/CLK"
+          "mult_gen_0/CLK",
+          "fir_compiler_1/aclk",
+          "dds_compiler_2/aclk"
         ]
       },
       "bram_controller_0_address_out": {
@@ -400,14 +491,7 @@
       "dds_compiler_0_m_axis_data_tdata": {
         "ports": [
           "dds_compiler_0/m_axis_data_tdata",
-          "lowpass_fir_0/input_signal",
           "mult_gen_0/B"
-        ]
-      },
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "fir_compiler_0/s_axis_data_tvalid"
         ]
       },
       "dds_compiler_1_m_axis_data_tdata": {
@@ -419,7 +503,26 @@
       "mult_gen_0_P": {
         "ports": [
           "mult_gen_0/P",
-          "fir_compiler_0/s_axis_data_tdata"
+          "fir_compiler_0/s_axis_data_tdata",
+          "lowpass_fir_0/input_signal"
+        ]
+      },
+      "dds_compiler_2_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_2/m_axis_data_tdata",
+          "fir_compiler_1/s_axis_data_tdata"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "fir_compiler_0/s_axis_data_tvalid"
+        ]
+      },
+      "dds_compiler_2_m_axis_data_tvalid": {
+        "ports": [
+          "dds_compiler_2/m_axis_data_tvalid",
+          "fir_compiler_1/s_axis_data_tvalid"
         ]
       }
     }
