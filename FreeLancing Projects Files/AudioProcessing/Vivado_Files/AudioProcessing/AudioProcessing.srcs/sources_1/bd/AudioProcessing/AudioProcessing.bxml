@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="37">
   <CompositeFile CompositeFileTopName="AudioProcessing" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1741658781"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1741658781"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1741658781"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1741658781"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1741671955"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1741671955"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1741671955"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1741671955"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\AudioProcessing_blk_mem_gen_0_0\AudioProcessing_blk_mem_gen_0_0.xci" Type="IP">
         <Instance HierarchyPath="blk_mem_gen_0"/>
@@ -68,6 +68,22 @@
       </File>
       <File Name="ip\AudioProcessing_xlconstant_0_0\AudioProcessing_xlconstant_0_0.xci" Type="IP">
         <Instance HierarchyPath="xlconstant_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\AudioProcessing_dds_compiler_1_0\AudioProcessing_dds_compiler_1_0.xci" Type="IP">
+        <Instance HierarchyPath="dds_compiler_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\AudioProcessing_Modulation_0_0\AudioProcessing_Modulation_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Modulation_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

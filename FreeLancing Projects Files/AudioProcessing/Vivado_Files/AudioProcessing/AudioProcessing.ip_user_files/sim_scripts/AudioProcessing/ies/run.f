@@ -59,6 +59,12 @@
   "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_xlconstant_0_0/sim/AudioProcessing_xlconstant_0_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_dds_compiler_1_0/sim/AudioProcessing_dds_compiler_1_0.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_Modulation_0_0/sim/AudioProcessing_Modulation_0_0.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
   glbl.v
 -endlib
 

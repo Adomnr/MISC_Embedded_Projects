@@ -91,6 +91,12 @@ vlog -work xlconstant_v1_1_6  -v2k5 \
 vlog -work xil_defaultlib  -v2k5 \
 "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_xlconstant_0_0/sim/AudioProcessing_xlconstant_0_0.v" \
 
+vcom -work xil_defaultlib -93 \
+"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_dds_compiler_1_0/sim/AudioProcessing_dds_compiler_1_0.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 \
+"../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_Modulation_0_0/sim/AudioProcessing_Modulation_0_0.v" \
+
 vlog -work xil_defaultlib \
 "glbl.v"
 

@@ -4,6 +4,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub_Repo/MISC_Embedded_Projec
 INFO: [VRFC 10-311] analyzing module clock_divider_audio
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/lowpass_fir.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module lowpass_fir
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/new/Modulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modulation
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_blk_mem_gen_0_0/sim/AudioProcessing_blk_mem_gen_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AudioProcessing_blk_mem_gen_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_bram_controller_0_0/sim/AudioProcessing_bram_controller_0_0.v" into library xil_defaultlib
@@ -16,6 +18,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub_Repo/MISC_Embedded_Projec
 INFO: [VRFC 10-311] analyzing module AudioProcessing
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_xlconstant_0_0/sim/AudioProcessing_xlconstant_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AudioProcessing_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_Modulation_0_0/sim/AudioProcessing_Modulation_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AudioProcessing_Modulation_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/hdl/AudioProcessing_wrapper.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AudioProcessing_wrapper
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sim_1/new/AudioProcessing_wrapper_tb.v" into library xil_defaultlib

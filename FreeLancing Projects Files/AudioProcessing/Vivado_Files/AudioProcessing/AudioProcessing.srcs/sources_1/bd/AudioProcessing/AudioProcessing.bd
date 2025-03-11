@@ -15,7 +15,9 @@
       "dds_compiler_0": "",
       "lowpass_fir_0": "",
       "fir_compiler_0": "",
-      "xlconstant_0": ""
+      "xlconstant_0": "",
+      "dds_compiler_1": "",
+      "Modulation_0": ""
     },
     "ports": {
       "clock": {
@@ -214,7 +216,7 @@
             "value": "16"
           },
           "PINC1": {
-            "value": "000100000001000"
+            "value": "00000000010000"
           },
           "Parameter_Entry": {
             "value": "Hardware_Parameters"
@@ -297,13 +299,89 @@
             "value": "Integer_Coefficients"
           },
           "Sample_Frequency": {
-            "value": "0.441"
+            "value": "0.0441"
           }
         }
       },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "xci_name": "AudioProcessing_xlconstant_0_0"
+      },
+      "dds_compiler_1": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "AudioProcessing_dds_compiler_1_0",
+        "parameters": {
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Latency": {
+            "value": "7"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "16"
+          },
+          "PINC1": {
+            "value": "0000010000000000"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "Phase_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "Modulation_0": {
+        "vlnv": "xilinx.com:module_ref:Modulation:1.0",
+        "xci_name": "AudioProcessing_Modulation_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Modulation",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "AudioProcessing_clock",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "low_signal": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "high_signal": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "modulated_signal": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
       }
     },
     "nets": {
@@ -315,7 +393,9 @@
           "dds_compiler_0/aclk",
           "lowpass_fir_0/clk",
           "fir_compiler_0/aclk",
-          "bram_controller_0/clk"
+          "bram_controller_0/clk",
+          "dds_compiler_1/aclk",
+          "Modulation_0/clk"
         ]
       },
       "bram_controller_0_address_out": {
@@ -339,7 +419,8 @@
       "dds_compiler_0_m_axis_data_tdata": {
         "ports": [
           "dds_compiler_0/m_axis_data_tdata",
-          "lowpass_fir_0/input_signal"
+          "lowpass_fir_0/input_signal",
+          "Modulation_0/high_signal"
         ]
       },
       "xlconstant_0_dout": {
@@ -348,9 +429,15 @@
           "fir_compiler_0/s_axis_data_tvalid"
         ]
       },
-      "blk_mem_gen_0_douta": {
+      "dds_compiler_1_m_axis_data_tdata": {
         "ports": [
-          "blk_mem_gen_0/douta",
+          "dds_compiler_1/m_axis_data_tdata",
+          "Modulation_0/low_signal"
+        ]
+      },
+      "Modulation_0_modulated_signal": {
+        "ports": [
+          "Modulation_0/modulated_signal",
           "fir_compiler_0/s_axis_data_tdata"
         ]
       }

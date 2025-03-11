@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_fir_compiler_0_0/sim/AudioProcessing_fir_compiler_0_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'AudioProcessing_fir_compiler_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_dds_compiler_1_0/sim/AudioProcessing_dds_compiler_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AudioProcessing_dds_compiler_1_0'
