@@ -2,32 +2,22 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port clock -pg 1 -lvl 0 -x -80 -y 280 -defaultsOSRD
-preplace port rstn -pg 1 -lvl 0 -x -80 -y 400 -defaultsOSRD
-preplace portBus data_out -pg 1 -lvl 5 -x 1310 -y 250 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 4 -x 1120 -y 440 -defaultsOSRD
-preplace inst bram_controller_0 -pg 1 -lvl 2 -x 420 -y 360 -defaultsOSRD
-preplace inst clock_divider_audio_0 -pg 1 -lvl 1 -x 120 -y 450 -defaultsOSRD
-preplace inst dds_compiler_0 -pg 1 -lvl 2 -x 420 -y 220 -defaultsOSRD
-preplace inst lowpass_fir_0 -pg 1 -lvl 4 -x 1120 -y 290 -defaultsOSRD
-preplace inst fir_compiler_0 -pg 1 -lvl 4 -x 1120 -y 120 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 2 -x 420 -y 110 -defaultsOSRD
-preplace inst dds_compiler_1 -pg 1 -lvl 1 -x 120 -y 320 -defaultsOSRD
-preplace inst mult_gen_0 -pg 1 -lvl 2 -x 420 -y 510 -defaultsOSRD
-preplace inst fir_compiler_1 -pg 1 -lvl 3 -x 770 -y 550 -defaultsOSRD
-preplace inst dds_compiler_2 -pg 1 -lvl 2 -x 420 -y 680 -defaultsOSRD
-preplace netloc clock_1 1 0 4 -60 250 260 430 560 450 950
-preplace netloc bram_controller_0_address_out 1 2 2 580 440 N
-preplace netloc rstn_1 1 0 2 -50J 390 270J
-preplace netloc lowpass_fir_0_output_signal 1 4 1 1290 250n
-preplace netloc dds_compiler_0_m_axis_data_tdata 1 1 2 280 290 580J
-preplace netloc dds_compiler_1_m_axis_data_tdata 1 1 1 250 330n
-preplace netloc mult_gen_0_P 1 2 2 570 430 940
-preplace netloc dds_compiler_2_m_axis_data_tdata 1 2 1 570 530n
-preplace netloc xlconstant_0_dout 1 2 2 NJ 110 950
-preplace netloc dds_compiler_2_m_axis_data_tvalid 1 2 1 580 570n
-levelinfo -pg 1 -80 120 420 770 1120 1310
-pagesize -pg 1 -db -bbox -sgen -170 -120 1450 760
+preplace port clock -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port rstn -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace portBus data_out -pg 1 -lvl 4 -x 950 -y 240 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -x 730 -y 80 -defaultsOSRD
+preplace inst bram_controller_0 -pg 1 -lvl 2 -x 370 -y 80 -defaultsOSRD
+preplace inst fir_compiler_1 -pg 1 -lvl 3 -x 730 -y 240 -defaultsOSRD
+preplace inst dds_compiler_2 -pg 1 -lvl 2 -x 370 -y 230 -defaultsOSRD
+preplace inst clock_divider_audio_0 -pg 1 -lvl 1 -x 120 -y 70 -defaultsOSRD
+preplace netloc clock_1 1 0 3 20 150 220 150 520
+preplace netloc bram_controller_0_address_out 1 2 1 N 80
+preplace netloc rstn_1 1 0 2 NJ 130 220J
+preplace netloc dds_compiler_2_m_axis_data_tdata 1 2 1 530 220n
+preplace netloc fir_compiler_1_m_axis_data_tdata 1 3 1 N 240
+preplace netloc clock_divider_audio_0_clk_div 1 1 2 220J 10 510
+levelinfo -pg 1 0 120 370 730 950
+pagesize -pg 1 -db -bbox -sgen -90 0 1090 340
 "
 }
 0

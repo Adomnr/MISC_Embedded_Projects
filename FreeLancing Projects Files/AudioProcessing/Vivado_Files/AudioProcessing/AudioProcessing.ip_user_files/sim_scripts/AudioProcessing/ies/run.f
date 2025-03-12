@@ -10,14 +10,18 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_blk_mem_gen_0_0/sim/AudioProcessing_blk_mem_gen_0_0.v" \
   "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_bram_controller_0_0/sim/AudioProcessing_bram_controller_0_0.v" \
-  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_clock_divider_audio_0_0/sim/AudioProcessing_clock_divider_audio_0_0.v" \
-  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_lowpass_fir_0_0/sim/AudioProcessing_lowpass_fir_0_0.v" \
 -endlib
 -makelib ies_lib/xbip_utils_v3_0_10 \
   "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/1123/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/axi_utils_v2_0_6 \
   "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/1971/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/fir_compiler_v7_2_12 \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/c2da/hdl/fir_compiler_v7_2_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_fir_compiler_1_0/sim/AudioProcessing_fir_compiler_1_0.vhd" \
 -endlib
 -makelib ies_lib/xbip_pipe_v3_0_6 \
   "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
@@ -41,24 +45,6 @@
   "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/ce25/hdl/dds_compiler_v6_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_dds_compiler_0_0/sim/AudioProcessing_dds_compiler_0_0.vhd" \
--endlib
--makelib ies_lib/fir_compiler_v7_2_12 \
-  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/c2da/hdl/fir_compiler_v7_2_vh_rfs.vhd" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_fir_compiler_0_0/sim/AudioProcessing_fir_compiler_0_0.vhd" \
--endlib
--makelib ies_lib/xlconstant_v1_1_6 \
-  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_xlconstant_0_0/sim/AudioProcessing_xlconstant_0_0.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_dds_compiler_1_0/sim/AudioProcessing_dds_compiler_1_0.vhd" \
-  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_mult_gen_0_0/sim/AudioProcessing_mult_gen_0_0.vhd" \
-  "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_fir_compiler_1_0/sim/AudioProcessing_fir_compiler_1_0.vhd" \
   "../../../../AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_dds_compiler_2_0/sim/AudioProcessing_dds_compiler_2_0.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

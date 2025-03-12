@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# bram_controller, clock_divider_audio, lowpass_fir
+# bram_controller, clock_divider_audio
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -215,38 +215,6 @@ proc create_root_design { parentCell } {
      return 1
    }
   
-  # Create instance: dds_compiler_0, and set properties
-  set dds_compiler_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0 ]
-  set_property -dict [ list \
-   CONFIG.Frequency_Resolution {0.4} \
-   CONFIG.Has_Phase_Out {false} \
-   CONFIG.Latency {3} \
-   CONFIG.M_DATA_Has_TUSER {Not_Required} \
-   CONFIG.Mode_of_Operation {Standard} \
-   CONFIG.Noise_Shaping {None} \
-   CONFIG.Output_Frequency1 {0} \
-   CONFIG.Output_Selection {Sine} \
-   CONFIG.Output_Width {8} \
-   CONFIG.PINC1 {00000000010000} \
-   CONFIG.Parameter_Entry {Hardware_Parameters} \
-   CONFIG.Phase_Width {16} \
- ] $dds_compiler_0
-
-  # Create instance: dds_compiler_1, and set properties
-  set dds_compiler_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_1 ]
-  set_property -dict [ list \
-   CONFIG.Has_Phase_Out {false} \
-   CONFIG.Latency {3} \
-   CONFIG.M_DATA_Has_TUSER {Not_Required} \
-   CONFIG.Noise_Shaping {None} \
-   CONFIG.Output_Frequency1 {0} \
-   CONFIG.Output_Selection {Sine} \
-   CONFIG.Output_Width {8} \
-   CONFIG.PINC1 {0000010000000000} \
-   CONFIG.Parameter_Entry {Hardware_Parameters} \
-   CONFIG.Phase_Width {16} \
- ] $dds_compiler_1
-
   # Create instance: dds_compiler_2, and set properties
   set dds_compiler_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_2 ]
   set_property -dict [ list \
@@ -257,82 +225,37 @@ proc create_root_design { parentCell } {
    CONFIG.Output_Frequency1 {0} \
    CONFIG.Output_Selection {Sine} \
    CONFIG.Output_Width {16} \
-   CONFIG.PINC1 {0100000000000000} \
+   CONFIG.PINC1 {0000000000001010} \
    CONFIG.Parameter_Entry {Hardware_Parameters} \
    CONFIG.Phase_Width {16} \
  ] $dds_compiler_2
-
-  # Create instance: fir_compiler_0, and set properties
-  set fir_compiler_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_0 ]
-  set_property -dict [ list \
-   CONFIG.BestPrecision {false} \
-   CONFIG.Clock_Frequency {100.0} \
-   CONFIG.CoefficientVector {452,-664, -448,4884,-8608,-1432,65536,65536, -1432, -8608,4884,-448,-664,452} \
-   CONFIG.Coefficient_Fractional_Bits {16} \
-   CONFIG.Coefficient_Sets {1} \
-   CONFIG.Coefficient_Sign {Signed} \
-   CONFIG.Coefficient_Structure {Inferred} \
-   CONFIG.Coefficient_Width {34} \
-   CONFIG.Data_Fractional_Bits {0} \
-   CONFIG.Data_Sign {Signed} \
-   CONFIG.Data_Width {16} \
-   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
-   CONFIG.Output_Rounding_Mode {Full_Precision} \
-   CONFIG.Output_Width {51} \
-   CONFIG.Quantization {Maximize_Dynamic_Range} \
-   CONFIG.Sample_Frequency {0.0441} \
- ] $fir_compiler_0
 
   # Create instance: fir_compiler_1, and set properties
   set fir_compiler_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_1 ]
   set_property -dict [ list \
    CONFIG.Clock_Frequency {100.0} \
-   CONFIG.CoefficientVector {0,0,0,-1,2,0,-4,9,-8,-7,74,74,-7,-8,9,-4,0,2,-1,0,0,0} \
+   CONFIG.CoefficientSource {Vector} \
+   CONFIG.CoefficientVector {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,1,0,-1,1,-1,0,1,-1,1,1,-2,1,0,-1,2,-2,-1,3,-3,1,2,-5,5,0,-7,11,-9,-7,74,74,-7,-9,11,-7,0,5,-5,2,1,-3,3,-1,-2,2,-1,0,1,-2,1,1,-1,1,0,-1,1,-1,0,1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0} \
+   CONFIG.Coefficient_File {no_coe_file_loaded} \
    CONFIG.Coefficient_Fractional_Bits {0} \
    CONFIG.Coefficient_Sets {1} \
    CONFIG.Coefficient_Sign {Signed} \
    CONFIG.Coefficient_Structure {Inferred} \
    CONFIG.Coefficient_Width {8} \
    CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
-   CONFIG.Output_Rounding_Mode {Full_Precision} \
-   CONFIG.Output_Width {24} \
+   CONFIG.Output_Rounding_Mode {Truncate_LSBs} \
+   CONFIG.Output_Width {12} \
    CONFIG.Quantization {Integer_Coefficients} \
    CONFIG.Sample_Frequency {0.0441} \
  ] $fir_compiler_1
 
-  # Create instance: lowpass_fir_0, and set properties
-  set block_name lowpass_fir
-  set block_cell_name lowpass_fir_0
-  if { [catch {set lowpass_fir_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
-     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   } elseif { $lowpass_fir_0 eq "" } {
-     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   }
-  
-  # Create instance: mult_gen_0, and set properties
-  set mult_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mult_gen:12.0 mult_gen_0 ]
-  set_property -dict [ list \
-   CONFIG.OutputWidthHigh {15} \
-   CONFIG.PortAWidth {8} \
-   CONFIG.PortBWidth {8} \
- ] $mult_gen_0
-
-  # Create instance: xlconstant_0, and set properties
-  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
-
   # Create port connections
   connect_bd_net -net bram_controller_0_address_out [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins bram_controller_0/address_out]
-  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins bram_controller_0/clk] [get_bd_pins clock_divider_audio_0/clk] [get_bd_pins dds_compiler_0/aclk] [get_bd_pins dds_compiler_1/aclk] [get_bd_pins dds_compiler_2/aclk] [get_bd_pins fir_compiler_0/aclk] [get_bd_pins fir_compiler_1/aclk] [get_bd_pins lowpass_fir_0/clk] [get_bd_pins mult_gen_0/CLK]
-  connect_bd_net -net dds_compiler_0_m_axis_data_tdata [get_bd_pins dds_compiler_0/m_axis_data_tdata] [get_bd_pins mult_gen_0/B]
-  connect_bd_net -net dds_compiler_1_m_axis_data_tdata [get_bd_pins dds_compiler_1/m_axis_data_tdata] [get_bd_pins mult_gen_0/A]
+  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins clock_divider_audio_0/clk] [get_bd_pins dds_compiler_2/aclk] [get_bd_pins fir_compiler_1/aclk]
+  connect_bd_net -net clock_divider_audio_0_clk_div [get_bd_pins bram_controller_0/clk] [get_bd_pins clock_divider_audio_0/clk_div] [get_bd_pins fir_compiler_1/s_axis_data_tvalid]
   connect_bd_net -net dds_compiler_2_m_axis_data_tdata [get_bd_pins dds_compiler_2/m_axis_data_tdata] [get_bd_pins fir_compiler_1/s_axis_data_tdata]
-  connect_bd_net -net dds_compiler_2_m_axis_data_tvalid [get_bd_pins dds_compiler_2/m_axis_data_tvalid] [get_bd_pins fir_compiler_1/s_axis_data_tvalid]
-  connect_bd_net -net lowpass_fir_0_output_signal [get_bd_ports data_out] [get_bd_pins lowpass_fir_0/output_signal]
-  connect_bd_net -net mult_gen_0_P [get_bd_pins fir_compiler_0/s_axis_data_tdata] [get_bd_pins lowpass_fir_0/input_signal] [get_bd_pins mult_gen_0/P]
+  connect_bd_net -net fir_compiler_1_m_axis_data_tdata [get_bd_ports data_out] [get_bd_pins fir_compiler_1/m_axis_data_tdata]
   connect_bd_net -net rstn_1 [get_bd_ports rstn] [get_bd_pins bram_controller_0/rstn]
-  connect_bd_net -net xlconstant_0_dout [get_bd_pins fir_compiler_0/s_axis_data_tvalid] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
 

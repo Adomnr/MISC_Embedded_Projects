@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Wed Mar 12 00:17:09 2025
+//Date        : Wed Mar 12 01:53:20 2025
 //Host        : DESKTOP-946HOG3 running 64-bit major release  (build 9200)
 //Command     : generate_target AudioProcessing.bd
 //Design      : AudioProcessing
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "AudioProcessing,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=AudioProcessing,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "AudioProcessing.hwdef" *) 
+(* CORE_GENERATION_INFO = "AudioProcessing,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=AudioProcessing,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=2,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "AudioProcessing.hwdef" *) 
 module AudioProcessing
    (clock,
     data_out,
@@ -20,54 +20,30 @@ module AudioProcessing
 
   wire [15:0]bram_controller_0_address_out;
   wire clock_1;
-  wire [7:0]dds_compiler_0_m_axis_data_tdata;
-  wire [7:0]dds_compiler_1_m_axis_data_tdata;
+  wire clock_divider_audio_0_clk_div;
   wire [15:0]dds_compiler_2_m_axis_data_tdata;
-  wire dds_compiler_2_m_axis_data_tvalid;
-  wire [15:0]lowpass_fir_0_output_signal;
-  wire [15:0]mult_gen_0_P;
+  wire [15:0]fir_compiler_1_m_axis_data_tdata;
   wire rstn_1;
-  wire [0:0]xlconstant_0_dout;
 
   assign clock_1 = clock;
-  assign data_out[15:0] = lowpass_fir_0_output_signal;
+  assign data_out[15:0] = fir_compiler_1_m_axis_data_tdata;
   assign rstn_1 = rstn;
   AudioProcessing_blk_mem_gen_0_0 blk_mem_gen_0
        (.addra(bram_controller_0_address_out),
         .clka(clock_1));
   AudioProcessing_bram_controller_0_0 bram_controller_0
        (.address_out(bram_controller_0_address_out),
-        .clk(clock_1),
+        .clk(clock_divider_audio_0_clk_div),
         .rstn(rstn_1));
   AudioProcessing_clock_divider_audio_0_0 clock_divider_audio_0
-       (.clk(clock_1));
-  AudioProcessing_dds_compiler_0_0 dds_compiler_0
-       (.aclk(clock_1),
-        .m_axis_data_tdata(dds_compiler_0_m_axis_data_tdata));
-  AudioProcessing_dds_compiler_1_0 dds_compiler_1
-       (.aclk(clock_1),
-        .m_axis_data_tdata(dds_compiler_1_m_axis_data_tdata));
+       (.clk(clock_1),
+        .clk_div(clock_divider_audio_0_clk_div));
   AudioProcessing_dds_compiler_2_0 dds_compiler_2
        (.aclk(clock_1),
-        .m_axis_data_tdata(dds_compiler_2_m_axis_data_tdata),
-        .m_axis_data_tvalid(dds_compiler_2_m_axis_data_tvalid));
-  AudioProcessing_fir_compiler_0_0 fir_compiler_0
-       (.aclk(clock_1),
-        .s_axis_data_tdata(mult_gen_0_P),
-        .s_axis_data_tvalid(xlconstant_0_dout));
+        .m_axis_data_tdata(dds_compiler_2_m_axis_data_tdata));
   AudioProcessing_fir_compiler_1_0 fir_compiler_1
        (.aclk(clock_1),
+        .m_axis_data_tdata(fir_compiler_1_m_axis_data_tdata),
         .s_axis_data_tdata(dds_compiler_2_m_axis_data_tdata),
-        .s_axis_data_tvalid(dds_compiler_2_m_axis_data_tvalid));
-  AudioProcessing_lowpass_fir_0_0 lowpass_fir_0
-       (.clk(clock_1),
-        .input_signal(mult_gen_0_P),
-        .output_signal(lowpass_fir_0_output_signal));
-  AudioProcessing_mult_gen_0_0 mult_gen_0
-       (.A(dds_compiler_1_m_axis_data_tdata),
-        .B(dds_compiler_0_m_axis_data_tdata),
-        .CLK(clock_1),
-        .P(mult_gen_0_P));
-  AudioProcessing_xlconstant_0_0 xlconstant_0
-       (.dout(xlconstant_0_dout));
+        .s_axis_data_tvalid(clock_divider_audio_0_clk_div));
 endmodule
