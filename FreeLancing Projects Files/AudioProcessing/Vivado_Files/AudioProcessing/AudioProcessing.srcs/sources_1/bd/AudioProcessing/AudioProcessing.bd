@@ -5,34 +5,68 @@
       "device": "xc7z020clg400-3",
       "name": "AudioProcessing",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.1"
+      "tool_version": "2019.1",
+      "validated": "true"
     },
     "design_tree": {
       "blk_mem_gen_0": "",
       "bram_controller_0": "",
       "fir_compiler_1": "",
       "clock_divider_audio_0": "",
-      "dds_compiler_2": ""
+      "dds_compiler_2": "",
+      "xfft_0": ""
     },
     "ports": {
       "clock": {
         "type": "clk",
         "direction": "I",
         "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rstn",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "AudioProcessing_clock",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
           }
         }
       },
       "rstn": {
         "type": "rst",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
       },
       "data_out": {
         "type": "data",
         "direction": "O",
         "left": "31",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       }
     },
     "components": {
@@ -86,11 +120,27 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rstn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "AudioProcessing_clock",
+                "value_src": "default_prop"
+              }
+            }
           },
           "rstn": {
             "type": "rst",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
           },
           "address_out": {
             "direction": "O",
@@ -161,7 +211,17 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "AudioProcessing_clock",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              }
+            }
           },
           "clk_div": {
             "direction": "O"
@@ -203,6 +263,27 @@
             "value": "16"
           }
         }
+      },
+      "xfft_0": {
+        "vlnv": "xilinx.com:ip:xfft:9.1",
+        "xci_name": "AudioProcessing_xfft_0_0",
+        "parameters": {
+          "input_width": {
+            "value": "26"
+          },
+          "number_of_stages_using_block_ram_for_data_and_phase_factors": {
+            "value": "3"
+          },
+          "phase_factor_width": {
+            "value": "8"
+          },
+          "scaling_options": {
+            "value": "unscaled"
+          },
+          "target_clock_frequency": {
+            "value": "100"
+          }
+        }
       }
     },
     "nets": {
@@ -212,7 +293,8 @@
           "blk_mem_gen_0/clka",
           "fir_compiler_1/aclk",
           "clock_divider_audio_0/clk",
-          "dds_compiler_2/aclk"
+          "dds_compiler_2/aclk",
+          "xfft_0/aclk"
         ]
       },
       "bram_controller_0_address_out": {
@@ -230,7 +312,8 @@
       "fir_compiler_1_m_axis_data_tdata": {
         "ports": [
           "fir_compiler_1/m_axis_data_tdata",
-          "data_out"
+          "data_out",
+          "xfft_0/s_axis_data_tdata"
         ]
       },
       "clock_divider_audio_0_clk_div": {
@@ -244,6 +327,12 @@
         "ports": [
           "dds_compiler_2/m_axis_data_tdata",
           "fir_compiler_1/s_axis_data_tdata"
+        ]
+      },
+      "fir_compiler_1_m_axis_data_tvalid": {
+        "ports": [
+          "fir_compiler_1/m_axis_data_tvalid",
+          "xfft_0/s_axis_data_tvalid"
         ]
       }
     }

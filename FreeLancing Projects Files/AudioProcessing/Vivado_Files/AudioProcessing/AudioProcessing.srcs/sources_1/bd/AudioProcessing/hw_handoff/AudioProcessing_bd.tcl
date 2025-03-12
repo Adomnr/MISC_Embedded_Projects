@@ -250,12 +250,23 @@ proc create_root_design { parentCell } {
    CONFIG.Sample_Frequency {0.0441} \
  ] $fir_compiler_1
 
+  # Create instance: xfft_0, and set properties
+  set xfft_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xfft:9.1 xfft_0 ]
+  set_property -dict [ list \
+   CONFIG.input_width {26} \
+   CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {3} \
+   CONFIG.phase_factor_width {8} \
+   CONFIG.scaling_options {unscaled} \
+   CONFIG.target_clock_frequency {100} \
+ ] $xfft_0
+
   # Create port connections
   connect_bd_net -net bram_controller_0_address_out [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins bram_controller_0/address_out]
-  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins clock_divider_audio_0/clk] [get_bd_pins dds_compiler_2/aclk] [get_bd_pins fir_compiler_1/aclk]
+  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins clock_divider_audio_0/clk] [get_bd_pins dds_compiler_2/aclk] [get_bd_pins fir_compiler_1/aclk] [get_bd_pins xfft_0/aclk]
   connect_bd_net -net clock_divider_audio_0_clk_div [get_bd_pins bram_controller_0/clk] [get_bd_pins clock_divider_audio_0/clk_div] [get_bd_pins fir_compiler_1/s_axis_data_tvalid]
   connect_bd_net -net dds_compiler_2_m_axis_data_tdata [get_bd_pins dds_compiler_2/m_axis_data_tdata] [get_bd_pins fir_compiler_1/s_axis_data_tdata]
-  connect_bd_net -net fir_compiler_1_m_axis_data_tdata [get_bd_ports data_out] [get_bd_pins fir_compiler_1/m_axis_data_tdata]
+  connect_bd_net -net fir_compiler_1_m_axis_data_tdata [get_bd_ports data_out] [get_bd_pins fir_compiler_1/m_axis_data_tdata] [get_bd_pins xfft_0/s_axis_data_tdata]
+  connect_bd_net -net fir_compiler_1_m_axis_data_tvalid [get_bd_pins fir_compiler_1/m_axis_data_tvalid] [get_bd_pins xfft_0/s_axis_data_tvalid]
   connect_bd_net -net rstn_1 [get_bd_ports rstn] [get_bd_pins bram_controller_0/rstn]
 
   # Create address segments

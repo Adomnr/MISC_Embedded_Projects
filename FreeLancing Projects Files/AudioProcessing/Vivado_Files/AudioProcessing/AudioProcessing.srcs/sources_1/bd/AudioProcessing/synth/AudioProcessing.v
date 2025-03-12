@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Wed Mar 12 14:02:18 2025
+//Date        : Wed Mar 12 15:00:52 2025
 //Host        : DESKTOP-Q2PB8PR running 64-bit major release  (build 9200)
 //Command     : generate_target AudioProcessing.bd
 //Design      : AudioProcessing
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "AudioProcessing,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=AudioProcessing,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=2,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "AudioProcessing.hwdef" *) 
+(* CORE_GENERATION_INFO = "AudioProcessing,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=AudioProcessing,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=2,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "AudioProcessing.hwdef" *) 
 module AudioProcessing
    (clock,
     data_out,
@@ -23,6 +23,7 @@ module AudioProcessing
   wire clock_divider_audio_0_clk_div;
   wire [15:0]dds_compiler_2_m_axis_data_tdata;
   wire [31:0]fir_compiler_1_m_axis_data_tdata;
+  wire fir_compiler_1_m_axis_data_tvalid;
   wire rstn_1;
 
   assign clock_1 = clock;
@@ -44,6 +45,15 @@ module AudioProcessing
   AudioProcessing_fir_compiler_1_0 fir_compiler_1
        (.aclk(clock_1),
         .m_axis_data_tdata(fir_compiler_1_m_axis_data_tdata),
+        .m_axis_data_tvalid(fir_compiler_1_m_axis_data_tvalid),
         .s_axis_data_tdata(dds_compiler_2_m_axis_data_tdata),
         .s_axis_data_tvalid(clock_divider_audio_0_clk_div));
+  AudioProcessing_xfft_0_0 xfft_0
+       (.aclk(clock_1),
+        .m_axis_data_tready(1'b1),
+        .s_axis_config_tdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .s_axis_config_tvalid(1'b0),
+        .s_axis_data_tdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,fir_compiler_1_m_axis_data_tdata}),
+        .s_axis_data_tlast(1'b0),
+        .s_axis_data_tvalid(fir_compiler_1_m_axis_data_tvalid));
 endmodule
