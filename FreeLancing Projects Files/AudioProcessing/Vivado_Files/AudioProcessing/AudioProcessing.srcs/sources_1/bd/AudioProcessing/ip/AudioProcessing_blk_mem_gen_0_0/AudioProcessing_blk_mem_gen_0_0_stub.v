@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Tue Mar 11 23:59:27 2025
+// Date        : Tue Mar 11 23:59:26 2025
 // Host        : DESKTOP-946HOG3 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub {D:/GitHub Repos/MISC_Embedded_Projects/FreeLancing Projects
-//               Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_blk_mem_gen_0_0/AudioProcessing_blk_mem_gen_0_0_stub.v}
+// Command     : write_verilog -force -mode synth_stub -rename_top AudioProcessing_blk_mem_gen_0_0 -prefix
+//               AudioProcessing_blk_mem_gen_0_0_ AudioProcessing_blk_mem_gen_0_0_stub.v
 // Design      : AudioProcessing_blk_mem_gen_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-3

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xEB369FC225C0000B",
+      "boundary_crc": "0x1E945BF5D062C43C",
       "device": "xc7z020clg400-3",
       "name": "AudioProcessing",
       "synth_flow_mode": "Hierarchical",
@@ -58,7 +58,7 @@
       "data_out": {
         "type": "data",
         "direction": "O",
-        "left": "15",
+        "left": "31",
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
@@ -159,7 +159,7 @@
             "value": "Vector"
           },
           "CoefficientVector": {
-            "value": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,1,0,-1,1,-1,0,1,-1,1,1,-2,1,0,-1,2,-2,-1,3,-3,1,2,-5,5,0,-7,11,-9,-7,74,74,-7,-9,11,-7,0,5,-5,2,1,-3,3,-1,-2,2,-1,0,1,-2,1,1,-1,1,0,-1,1,-1,0,1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+            "value": "-2,9,-17,-23,289,289,-23,-17,9,-2"
           },
           "Coefficient_File": {
             "value": "no_coe_file_loaded"
@@ -177,16 +177,19 @@
             "value": "Inferred"
           },
           "Coefficient_Width": {
-            "value": "8"
+            "value": "10"
+          },
+          "Data_Width": {
+            "value": "16"
           },
           "Filter_Architecture": {
             "value": "Systolic_Multiply_Accumulate"
           },
           "Output_Rounding_Mode": {
-            "value": "Truncate_LSBs"
+            "value": "Full_Precision"
           },
           "Output_Width": {
-            "value": "12"
+            "value": "26"
           },
           "Quantization": {
             "value": "Integer_Coefficients"
@@ -222,7 +225,7 @@
             "value": "16"
           },
           "PINC1": {
-            "value": "0000000000001010"
+            "value": "000000000001000"
           },
           "Parameter_Entry": {
             "value": "Hardware_Parameters"

@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Tue Mar 11 23:59:27 2025
+-- Date        : Tue Mar 11 23:59:26 2025
 -- Host        : DESKTOP-946HOG3 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {D:/GitHub Repos/MISC_Embedded_Projects/FreeLancing Projects
---               Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.srcs/sources_1/bd/AudioProcessing/ip/AudioProcessing_blk_mem_gen_0_0/AudioProcessing_blk_mem_gen_0_0_sim_netlist.vhdl}
+-- Command     : write_vhdl -force -mode funcsim -rename_top AudioProcessing_blk_mem_gen_0_0 -prefix
+--               AudioProcessing_blk_mem_gen_0_0_ AudioProcessing_blk_mem_gen_0_0_sim_netlist.vhdl
 -- Design      : AudioProcessing_blk_mem_gen_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -19,8 +19,6 @@ entity AudioProcessing_blk_mem_gen_0_0_bindec is
     ena_array : out STD_LOGIC_VECTOR ( 9 downto 0 );
     addra : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of AudioProcessing_blk_mem_gen_0_0_bindec : entity is "bindec";
 end AudioProcessing_blk_mem_gen_0_0_bindec;
 
 architecture STRUCTURE of AudioProcessing_blk_mem_gen_0_0_bindec is
@@ -169,8 +167,6 @@ entity AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_mux is
     \douta[5]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \douta[6]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_mux : entity is "blk_mem_gen_mux";
 end AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_mux;
 
 architecture STRUCTURE of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_mux is
@@ -865,8 +861,6 @@ entity AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init is
     \DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_1\ : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 14 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init is
@@ -6154,8 +6148,6 @@ entity AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_prim_width is
     \DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_0\ : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 14 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_prim_width is
@@ -6728,8 +6720,6 @@ entity AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_generic_cstr is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_generic_cstr is
@@ -6993,8 +6983,6 @@ entity AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_top is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_top;
 
 architecture STRUCTURE of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_top is
@@ -7016,8 +7004,6 @@ entity AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_v8_4_3_synth is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_v8_4_3_synth : entity is "blk_mem_gen_v8_4_3_synth";
 end AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_v8_4_3_synth;
 
 architecture STRUCTURE of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_v8_4_3_synth is
@@ -7249,8 +7235,6 @@ entity AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_v8_4_3 is
   attribute C_WRITE_WIDTH_B of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_v8_4_3 : entity is 16;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_v8_4_3 : entity is "zynq";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_v8_4_3 : entity is "blk_mem_gen_v8_4_3";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_v8_4_3 : entity is "yes";
 end AudioProcessing_blk_mem_gen_0_0_blk_mem_gen_v8_4_3;
