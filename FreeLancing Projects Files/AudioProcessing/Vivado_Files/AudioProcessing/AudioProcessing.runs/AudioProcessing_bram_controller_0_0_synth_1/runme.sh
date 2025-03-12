@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/GitHub_Repo/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_bram_controller_0_0_synth_1'
+HD_PWD='D:/GitHub Repos/MISC_Embedded_Projects/FreeLancing Projects Files/AudioProcessing/Vivado_Files/AudioProcessing/AudioProcessing.runs/AudioProcessing_bram_controller_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -23,7 +23,7 @@
 `timescale 1ns / 1ps
 
 module AudioProcessing_wrapper_tb;
-
+   localparam T = 22675.737;
   // Inputs
   reg clock;
   reg rstn;
