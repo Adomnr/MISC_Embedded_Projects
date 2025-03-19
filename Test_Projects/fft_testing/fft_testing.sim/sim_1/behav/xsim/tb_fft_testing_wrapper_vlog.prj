@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../fft_testing.srcs/sources_1/bd/fft_testing/ip/fft_testing_ila_0_0/sim/fft_testing_ila_0_0.v" \
+"../../../../fft_testing.srcs/sources_1/bd/fft_testing/ip/fft_testing_xlconcat_0_0/sim/fft_testing_xlconcat_0_0.v" \
+"../../../../fft_testing.srcs/sources_1/bd/fft_testing/sim/fft_testing.v" \
+"../../../../fft_testing.srcs/sources_1/bd/fft_testing/hdl/fft_testing_wrapper.v" \
+"../../../../fft_testing.srcs/sim_1/new/tb_fft_testing_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
