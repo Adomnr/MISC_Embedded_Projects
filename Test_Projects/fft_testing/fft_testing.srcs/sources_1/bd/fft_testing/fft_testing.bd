@@ -1,11 +1,174 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0x6A4A8B19D01D55E9",
+      "device": "xc7z020clg400-3",
       "name": "fft_testing",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.1"
+      "tool_version": "2019.1",
+      "validated": "true"
     },
-    "design_tree": {}
+    "design_tree": {
+      "dds_compiler_0": "",
+      "xfft_0": "",
+      "ila_0": "",
+      "xlconcat_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "fft_testing_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "dds_compiler_0": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "fft_testing_dds_compiler_0_0",
+        "parameters": {
+          "Has_Phase_Out": {
+            "value": "true"
+          },
+          "Latency": {
+            "value": "7"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "16"
+          },
+          "PINC1": {
+            "value": "0000000000001010"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "Phase_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "xfft_0": {
+        "vlnv": "xilinx.com:ip:xfft:9.1",
+        "xci_name": "fft_testing_xfft_0_0",
+        "parameters": {
+          "input_width": {
+            "value": "16"
+          },
+          "number_of_stages_using_block_ram_for_data_and_phase_factors": {
+            "value": "3"
+          },
+          "scaling_options": {
+            "value": "unscaled"
+          },
+          "target_clock_frequency": {
+            "value": "100"
+          },
+          "target_data_throughput": {
+            "value": "100"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "fft_testing_ila_0_0",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "16384"
+          },
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "64"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "fft_testing_xlconcat_0_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "16"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "dds_compiler_0/aclk",
+          "ila_0/clk",
+          "xfft_0/aclk"
+        ]
+      },
+      "xfft_0_m_axis_data_tdata": {
+        "ports": [
+          "xfft_0/m_axis_data_tdata",
+          "ila_0/probe0"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_0/m_axis_data_tdata",
+          "xlconcat_0/In0"
+        ]
+      },
+      "dds_compiler_0_m_axis_phase_tdata": {
+        "ports": [
+          "dds_compiler_0/m_axis_phase_tdata",
+          "xlconcat_0/In1"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "xfft_0/s_axis_data_tdata"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tvalid": {
+        "ports": [
+          "dds_compiler_0/m_axis_data_tvalid",
+          "xfft_0/s_axis_data_tvalid",
+          "xfft_0/s_axis_config_tvalid"
+        ]
+      }
+    }
   }
 }
